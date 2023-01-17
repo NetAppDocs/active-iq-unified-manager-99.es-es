@@ -1,0 +1,38 @@
+---
+permalink: performance-checker/task-viewing-the-qos-policy-group-settings-for-specific-volumes-or-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: Puede ver los grupos de políticas de calidad de servicio que se aplican a sus volúmenes y LUN y puede vincular a la vista Performance/QoS Policy Groups para mostrar las opciones de configuración detalladas para cada política de calidad de servicio. 
+---
+= Ver la configuración del grupo de políticas de calidad de servicio aplicable a volúmenes o LUN específicos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede ver los grupos de políticas de calidad de servicio que se aplican a sus volúmenes y LUN y puede vincular a la vista Performance/QoS Policy Groups para mostrar las opciones de configuración detalladas para cada política de calidad de servicio.
+
+
+
+== Acerca de esta tarea
+
+A continuación se muestran los pasos para ver la política de calidad de servicio que se aplica a un volumen. Los pasos para ver esta información de una LUN son similares.
+
+
+
+== Pasos
+
+. En el panel de navegación izquierdo, haga clic en *almacenamiento* > *volúmenes*.
++
+El estado: Toda la vista de volúmenes se muestra de forma predeterminada.
+
+. En el menú Ver, seleccione *rendimiento: Volúmenes en QoS Policy Group*.
+. Localice el volumen que desea revisar y desplácese a la derecha hasta que vea la columna *Grupo de políticas de QoS*.
+. Haga clic en el nombre del grupo de políticas de calidad de servicio.
++
+La página correspondiente de calidad de servicio se muestra en función de si se trata de una política de calidad de servicio tradicional, una política de calidad de servicio adaptativa o una política de calidad de servicio que se creó con los niveles de servicio de Unified Manager.
+
+. Consulte los ajustes de configuración detallados del grupo de políticas de QoS.
+. Haga clic en el botón expandir (image:../media/chevron-down.gif[""]) Junto al nombre del grupo de políticas QoS para ver más detalles sobre el grupo de políticas.
+

@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-protection-storage-virtual-machine-associations-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La página SVM parpares le permite ver las VM de almacenamiento existentes entre la máquina virtual de almacenamiento de origen y de destino, así como crear una nueva máquina virtual de almacenamiento para que las aplicaciones de partners las utilicen para crear relaciones de SnapMirror y SnapVault. 
+---
+= Página SVM Peers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La página SVM parpares le permite ver las VM de almacenamiento existentes entre la máquina virtual de almacenamiento de origen y de destino, así como crear una nueva máquina virtual de almacenamiento para que las aplicaciones de partners las utilicen para crear relaciones de SnapMirror y SnapVault.
+
+
+
+== Botones de comando
+
+Los botones de comando le permiten realizar las siguientes tareas:
+
+* *Crear*
++
+Abre la página Create Storage Virtual Machine peers.
+
+* *Eliminar*
++
+Permite eliminar los pares de máquinas virtuales de almacenamiento seleccionados.
+
+
+
+
+
+== Lista de Storage VM parpares
+
+La lista SVM pares se muestra en una tabla las asociaciones de máquinas virtuales de almacenamiento de origen y destino que se crearon y el tipo de relación de protección permitida para cada asociación.
+
+* *Máquina virtual de almacenamiento de origen*
++
+Muestra el nombre de la SVM de origen.
+
+* *Cluster de origen*
++
+Muestra el nombre del clúster de origen.
+
+* *Máquina virtual de almacenamiento de destino*
++
+Muestra el nombre de la SVM de destino.
+
+* *Cluster de destino*
++
+Muestra el nombre del clúster de destino.
+
+* *Tipo*
++
+Muestra el tipo de relación de protección. Los tipos de relaciones son SnapMirror o SnapVault.
+
+

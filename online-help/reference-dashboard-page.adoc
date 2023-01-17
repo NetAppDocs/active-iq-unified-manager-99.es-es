@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-dashboard-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La página Dashboard tiene “paneles” que muestran el alto nivel de capacidad, rendimiento y estado de seguridad de los clústeres que se están supervisando. Esta página también proporciona un panel Management Actions que enumera las correcciones que Unified Manager puede realizar para resolver ciertos eventos. 
+---
+= Consola
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La página del panel contiene "'paneles'" que muestran el alto nivel de capacidad, rendimiento y estado de seguridad de los clústeres que supervisa. Esta página también proporciona un panel Management Actions que enumera las correcciones que Unified Manager puede realizar para resolver ciertos eventos.
+
+La mayoría de los paneles también muestran el número de eventos activos de esa categoría y el número de eventos nuevos añadidos a las 24 horas anteriores. Esta información le ayuda a decidir qué clústeres se podrían necesitar para analizar más a fin de resolver eventos. Al hacer clic en los eventos, se muestran los eventos principales y se proporciona un enlace a la página del inventario Event Management filtrada para mostrar los eventos activos de esa categoría.
+
+En la parte superior del panel puede seleccionar si los paneles muestran información de todos los clústeres supervisados ("todos los clústeres") o de un clúster individual. Para empezar, puede ver el estado de todos los clústeres y profundizar en cada clúster cuando desea ver información detallada.
+
+[NOTE]
+====
+Algunos de los paneles que se enumeran a continuación no aparecerán en la página en función de su configuración.
+
+====
+* *Panel de acciones de administración*
++
+Hay ciertos problemas que Unified Manager puede diagnosticar a fondo y proporcionar una única resolución. Si están disponibles, estas resoluciones se muestran en este panel con un botón *Fix it* o *Fix All*. Es posible solucionar estos problemas inmediatamente desde Unified Manager, en lugar de tener que utilizar ONTAP System Manager o la CLI de ONTAP. Para ver todos los problemas, haga clic en
+
++
+Consulte link:concept-fixing-ontap-issues-directly-from-unified-manager.html["Solución de problemas de ONTAP directamente desde Unified Manager"] si quiere más información.
+
+* *Panel de capacidad*
++
+Al ver todos los clústeres, este panel muestra la capacidad física utilizada (tras aplicar ahorros de eficiencia del almacenamiento) y la capacidad física disponible (sin incluir el potencial ahorro de eficiencia del almacenamiento) para cada clúster, el número de días que se prevé que los discos se llenen, La tasa de reducción de datos basada en la configuración de eficiencia del almacenamiento de ONTAP configurada. También incluye la capacidad utilizada para los niveles de cloud que haya configurado. Al hacer clic en el gráfico de barras irá la página del inventario de agregados para ese clúster. Al hacer clic en el texto "Days to Full" se muestra un mensaje que identifica el agregado con el menor número de días de capacidad restantes; haga clic en el nombre del agregado para ver más detalles.
+
++
+Al ver un único clúster, este panel muestra la capacidad física utilizada y la capacidad física disponible de los agregados de datos ordenados por cada tipo de disco individual del nivel local y del nivel de cloud. Al hacer clic en el gráfico de barras de un tipo de disco, se abre la página de inventario de volúmenes de los volúmenes que usan ese tipo de disco.
+
+* *Panel de capacidad de rendimiento*
++
+Cuando se visualizan todos los clústeres, este panel muestra el valor de capacidad de rendimiento de cada clúster (promediado en la 1 hora anterior) y el número de días hasta que la capacidad de rendimiento alcance el límite superior (según la tasa de crecimiento diaria). Al hacer clic en el gráfico de barras, irá la página del inventario de nodos de ese clúster. Tenga en cuenta que la página del inventario de nodos muestra la capacidad de rendimiento media de las 72 horas anteriores. Al hacer clic en el texto "días a lleno" se muestra un mensaje que identifica al nodo con el menor número de días de capacidad de rendimiento restantes; haga clic en el nombre del nodo para ver más detalles.
+
++
+Al ver un único clúster, este panel muestra los valores de porcentaje de capacidad de rendimiento del clúster utilizada, de IOPS totales y de rendimiento total (MB/s), así como el número de días que tardan en alcanzar el límite superior de cada una de estas tres métricas.
+
+* *Panel de IOPS de carga de trabajo*
++
+Al ver un solo clúster, este panel muestra el número total de cargas de trabajo que se están ejecutando actualmente en un determinado rango de IOPS e indica el número de cada tipo de disco cuando pasa el cursor por encima del gráfico.
+
+* *Panel de rendimiento de carga de trabajo*
++
+Este panel muestra el número total de cargas de trabajo conformes y no conformes que se asignan a cada política de nivel de servicio de rendimiento (PSL). También muestra la cantidad de cargas de trabajo a las que no se asigna una PSL. Al hacer clic en un gráfico de barras, se le llevan a las cargas de trabajo conformes asignadas a esa política en la página de cargas de trabajo. Al hacer clic en el número que sigue al gráfico de barras, se muestran las cargas de trabajo conformes y no conformes asignadas a esa política.
+
+* *Panel de seguridad*
++
+Al ver todos los clústeres, este panel muestra el número de clústeres que cumplen las normativas y no cumplen las normativas, el número de equipos virtuales de almacenamiento que cumplen las normativas y no cumplen las normativas, y el número de volúmenes cifrados y no cifrados. El cumplimiento se basa en la http://www.netapp.com/us/media/tr-4569.pdf["Guía de fortalecimiento de la seguridad de NetApp para ONTAP 9"]. Haga clic en la flecha derecha de la parte superior del panel para ver los detalles de seguridad de todos los clústeres de la página Seguridad.
+
++
+Al ver un único clúster, este panel muestra si el clúster cumple o no con las normativas, el número de equipos virtuales de almacenamiento que cumplen las normativas y no cumplen las normativas, y el número de volúmenes cifrados y no cifrados. Haga clic en la flecha derecha de la parte superior del panel para ver los detalles de seguridad del clúster en la página Seguridad.
+
+* *Panel de visión general del uso*
++
+Al ver todos los clústeres, puede elegir ver clústeres ordenados por IOPS más alta, mayor rendimiento (MB/s) o mayor capacidad física utilizada.
+
++
+Al ver un único clúster, puede elegir ver cargas de trabajo ordenadas por IOPS más alta, mayor rendimiento (MB/s) o mayor capacidad lógica utilizada.
+
+

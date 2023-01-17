@@ -1,0 +1,245 @@
+---
+permalink: api-automation/concept-metrics-apis.html 
+sidebar: sidebar 
+keywords:  
+summary: Active IQ Unified Manager ofrece un conjunto de API en la categoría /Datacenter que le permiten ver los datos de rendimiento de los clústeres y los objetos de almacenamiento en un centro de datos. Estas API recuperan los datos de rendimiento de los diferentes objetos de almacenamiento, como clústeres, nodos, LUN, volúmenes Agregados y equipos virtuales de almacenamiento. 
+---
+= Ver las métricas de rendimiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager le proporciona un conjunto de API en `/datacenter` categoría que permite ver los datos de rendimiento de los clústeres y los objetos de almacenamiento en un centro de datos. Estas API recuperan los datos de rendimiento de los diferentes objetos de almacenamiento, como clústeres, nodos, LUN, volúmenes Agregados y equipos virtuales de almacenamiento.
+
+La `/metrics` y.. `/analytics` Las API ofrecen distintas vistas de las métricas de rendimiento, mediante las cuales, puede obtener un análisis de los siguientes niveles de detalles sobre los siguientes objetos de almacenamiento en su centro de datos:
+
+* de clúster
+* nodos
+* Máquinas virtuales de almacenamiento
+* agregados
+* volúmenes
+* LUN
+
+
+La siguiente tabla dibuja una comparación entre `/metrics` y.. `/analytics` API con respecto a los detalles de los datos de rendimiento recuperados.
+
+[cols="2*"]
+|===
+| Métricas | Análisis 
+
+
+ a| 
+Detalles de rendimiento para un único objeto. Por ejemplo, la `+/datacenter/cluster/clusters/{key}/metrics+` API requiere que se introduzca la clave del clúster como el `path` parámetro para recuperar las métricas de ese clúster específico.
+ a| 
+Detalles de rendimiento para varios objetos del mismo tipo en un centro de datos. Por ejemplo, la `/datacenter/cluster/clusters/analytics` La API recupera las métricas colectivas de todos los clústeres de un centro de datos.
+
+
+
+ a| 
+Muestra de métricas de rendimiento para un objeto de almacenamiento según el parámetro de intervalo de tiempo para la recuperación.
+ a| 
+Valor agregado de alto nivel de rendimiento para un determinado tipo de objeto de almacenamiento durante un determinado período (por encima de 72 horas).
+
+
+
+ a| 
+Se recuperan detalles básicos del objeto, como los detalles de un nodo o de un clúster.
+ a| 
+No se recuperan detalles específicos.
+
+
+
+ a| 
+Los contadores acumulados, como los valores de rendimiento mínimo, máximo y promedio durante un período de tiempo, se recuperan para un único objeto, como, por ejemplo, lectura, escritura, total, y otros contadores. Por ejemplo, la `+/datacenter/cluster/nodes/{key}/metrics+` API recupera los siguientes detalles (entre otros) de un nodo :
+
+[listing]
+----
+ {
+      "iops": {
+        "local": {
+          "others": 100.53,
+          "read": 100.53,
+          "total": 100.53,
+          "write": 100.53
+        },
+        "others": 100.53,
+        "read": 100.53,
+        "total": 100.53,
+        "write": 100.53
+      },
+      "latency": {
+        "others": 100.53,
+        "read": 100.53,
+        "total": 100.53,
+        "write": 100.53
+      },
+      "performance_capacity": {
+        "available_iops_percent": 0,
+        "free_percent": 0,
+        "system_workload_percent": 0,
+        "used_percent": 0,
+        "user_workload_percent": 0
+      },
+      "throughput": {
+        "other": 100.53,
+        "read": 100.53,
+        "total": 100.53,
+        "write": 100.53
+      },
+---- a| 
+Se muestra un único valor agregado para todos los objetos del mismo tipo. Por ejemplo, la `/datacenter/cluster/nodes/analytics` API recupera los siguientes valores (entre otros) de todos los nodos:
+
+[listing]
+----
+ {
+      "iops": 2757.5723,
+      "latency": 0.8266,
+      "throughput": 13254.6992,
+      "utilization_percent": 58.6488,
+      "period": 72,
+      "performance_capacity": {
+        "used_percent": 63.5317,
+        "available_iops_percent": 60731.3086
+      },
+----
+
+
+ a| 
+El intervalo de tiempo y los datos de muestra se basan en el siguiente programa:el intervalo de tiempo de los datos. Los ejemplos pueden ser 1h, 12h, 1d, 2d, 3d, 15d, 1w, 1 m, 2 m, 3 m, 6 millones Recibirá muestras de 1 hora si el intervalo es superior a 3 días (72 horas); de lo contrario, son muestras de 5 minutos. El período de cada intervalo de tiempo es el siguiente:
+
+* 1h: Métricas de la última hora muestreadas en 5 minutos.
+* 12h: Métricas de las últimas 12 horas muestreadas en 5 minutos.
+* 1d: Métricas durante el día más reciente muestreadas durante 5 minutos.
+* 2d: Métricas de los últimos 2 días muestreadas durante 5 minutos.
+* 3d: Métricas de los últimos 3 días muestreadas en 5 minutos.
+* 15d: Métricas de los últimos 15 días muestreadas durante 1 hora.
+* 1w: Métricas de la semana más reciente muestreadas durante 1 hora.
+* 1 m: Métricas durante el último mes muestreadas durante 1 hora.
+* 2 m: Métricas de los últimos 2 meses, muestreadas en 1 hora.
+* 3M: Métricas de los últimos 3 meses muestreadas durante 1 hora.
+* 6m: Métricas de los últimos 6 meses muestreados en 1 hora.
+
+
+Valores disponibles: 1h, 12h, 1d, 2d, 3d, 15d, 1w, 1 m, 2 m, 3 m, 6 millones
+
+Valor predeterminado : 1h
+ a| 
+Más de 72 horas, es decir, 3 días. La duración sobre la que se calcula esta muestra se representa en el formato estándar ISO-8601.
+
+|===
+En la siguiente tabla se describe el `/metrics` y.. `/analytics` API más detalles.
+
+[NOTE]
+====
+Las métricas de IOPS y rendimiento que devuelven estas API son, por ejemplo, valores dobles `100.53`. No se admite el filtrado de estos valores flotantes por los caracteres de tubería (|) y comodín (*).
+
+====
+[cols="3*"]
+|===
+| HTTP Verbo | Ruta | Descripción 
+
+
+ a| 
+`GET`
+ a| 
+`+/datacenter/cluster/clusters/{key}/metrics+`
+ a| 
+Recupera los datos de rendimiento (muestra y resumen) de un clúster especificado por el parámetro de entrada de la clave de clúster. Se devuelve información, como la clave de clúster y el UUID, el intervalo de tiempo, IOPS, el rendimiento y el número de muestras.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/cluster/clusters/analytics`
+ a| 
+Recupera métricas de alto nivel de rendimiento para todos los clústeres de un centro de datos. Puede filtrar los resultados en función de los criterios requeridos. Se devuelven valores, como el número de IOPS agregado, el rendimiento y el período de recogida (en horas).
+
+
+
+ a| 
+`GET`
+ a| 
+`+/datacenter/cluster/nodes/{key}/metrics+`
+ a| 
+Recupera datos de rendimiento (muestra y resumen) de un nodo especificado por el parámetro de entrada de la clave del nodo. Se muestra información, como el UUID de nodo, el intervalo de tiempo, el resumen de las IOPS, el rendimiento, la latencia y el rendimiento, el número de muestras recogidas y el porcentaje utilizado.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/cluster/nodes/analytics`
+ a| 
+Recupera métricas de alto nivel de rendimiento para todos los nodos de un centro de datos. Puede filtrar los resultados en función de los criterios requeridos. Se devuelve información, como las claves de nodo y de clúster, y valores, como las IOPS agregadas, el rendimiento y el período de recogida (en horas).
+
+
+
+ a| 
+`GET`
+ a| 
+`+/datacenter/storage/aggregates/{key}/metrics+`
+ a| 
+Recupera datos de rendimiento (ejemplo y resumen) de un agregado especificado por el parámetro de entrada de la clave de agregado. Se muestra información, como el intervalo de tiempo, el resumen de IOPS, la latencia, el rendimiento y la capacidad de rendimiento, el número de muestras recogidas para cada contador y el porcentaje utilizado.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/storage/aggregates/analytics`
+ a| 
+Recupera métricas de alto nivel de rendimiento de todos los agregados de un centro de datos. Puede filtrar los resultados en función de los criterios requeridos. Se devuelve información, como las claves de agregado y de clúster, y valores, como las IOPS agregadas, el rendimiento y el período de recogida (en horas).
+
+
+
+ a| 
+`GET`
+ a| 
+`+/datacenter/storage/luns/{key}/metrics+`
+
+`+/datacenter/storage/volumes/{key}/metrics+`
+ a| 
+Recupera datos de rendimiento (muestra y resumen) de un LUN o un recurso compartido de archivos (volumen) especificado por el parámetro de entrada de la clave de volumen o LUN. Información, como el resumen de la cantidad mínima, máxima y promedio de las IOPS de lectura, escritura y total, la latencia y el rendimiento, y se devuelve el número de muestras recogidas para cada contador.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/storage/luns/analytics`
+
+`/datacenter/storage/volumes/analytics`
+ a| 
+Recupera métricas de rendimiento de alto nivel para todas las LUN o volúmenes en un centro de datos. Puede filtrar los resultados en función de los criterios requeridos. Se devuelve información, como la máquina virtual de almacenamiento y las claves del clúster, así como valores, como el número de IOPS agregadas, el rendimiento y el período de recogida (en horas).
+
+
+
+ a| 
+`GET`
+ a| 
+`+/datacenter/svm/svms/{key}/metrics+`
+ a| 
+Recupera datos de rendimiento (muestra y resumen) de una máquina virtual de almacenamiento especificada por el parámetro de entrada de la clave de máquina virtual de almacenamiento. Un resumen de las IOPS basado en cada protocolo admitido, por ejemplo `nvmf, fcp, iscsi`, y. `nfs`se devuelven , procesamiento, latencia y el número de muestras recogidas.
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/svm/svms/analytics`
+ a| 
+Recupera métricas de alto nivel de rendimiento para todos los equipos virtuales de almacenamiento de un centro de datos. Puede filtrar los resultados en función de los criterios requeridos. Se devuelve información, como el UUID de máquinas virtuales de almacenamiento, las IOPS agregadas, la latencia, el rendimiento y el período de recogida (en horas).
+
+
+
+ a| 
+`GET`
+ a| 
+`/datacenter/cluster/licensing/licenses` `+/datacenter/cluster/licensing/licenses/{key}+`
+ a| 
+Muestra los detalles de las licencias instaladas en los clústeres del centro de datos. Puede filtrar los resultados en función de los criterios requeridos. Se devuelve información, como la clave de licencia, la clave de clúster, la fecha de caducidad y el alcance de la licencia. Puede introducir una clave de licencia para recuperar los detalles de una licencia específica.
+
+|===

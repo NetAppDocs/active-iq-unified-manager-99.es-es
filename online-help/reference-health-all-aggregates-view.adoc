@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-health-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Estado: Todos los agregados muestra información sobre los agregados supervisados, y le permite ver y modificar la configuración del umbral.' 
+---
+= Estado: Vista todos los agregados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Estado: Todos los agregados muestra información sobre los agregados supervisados, y le permite ver y modificar la configuración del umbral.
+
+De forma predeterminada, los objetos de las páginas de vista se ordenan en función de la gravedad del evento. Los objetos con eventos críticos se enumeran primero y los objetos con eventos de advertencia aparecen en segundo lugar. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse. Cada agregado del grid de agregados tiene un enlace a System Manager de ONTAP. Este enlace le redirige para ver la misma relación de protección en System Manager de ONTAP.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Puede personalizar la configuración del umbral de capacidad para uno o más agregados mediante el botón *Editar umbral*.
+
+Consulte xref:reference-aggregate-health-fields.adoc[Agregar campos de salud] para obtener descripciones de todos los campos de esta página.

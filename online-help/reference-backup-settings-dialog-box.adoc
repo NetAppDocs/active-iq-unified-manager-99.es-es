@@ -1,0 +1,83 @@
+---
+permalink: online-help/reference-backup-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: El cuadro de diálogo Backup Settings se utiliza para configurar los ajustes de MySQL y NetApp Snapshot backup. Según el backup configurado, los campos relacionados aparecen en el cuadro de diálogo Backup Settings. Para un backup de una base de datos MySQL, se puede definir la programación de backups, el número de retención y la ruta de backup para una instancia de Active IQ Unified Manager seleccionada. 
+---
+= Cuadro de diálogo Backup Settings
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El cuadro de diálogo Backup Settings se utiliza para configurar los ajustes de MySQL y NetApp Snapshot backup. Según el backup configurado, los campos relacionados aparecen en el cuadro de diálogo Backup Settings. Para un backup de una base de datos MySQL, se puede definir la programación de backups, el número de retención y la ruta de backup para una instancia de Active IQ Unified Manager seleccionada.
+
+Puede cambiar la siguiente configuración de copia de seguridad de la base de datos:
+
+* *CLUSTER*
++
+Debe proporcionar la IP de gestión de clústeres del sistema de almacenamiento donde se alojarán los datos de Unified Manager.
+
+* *VOLUMEN*
++
+Se debe proporcionar el nombre del volumen que contiene el LUN dedicado para alojar datos de Unified Manager.
+
+* *VM DE ALMACENAMIENTO*
++
+Debe proporcionar el nombre de la máquina virtual de almacenamiento donde se encuentra el volumen, que contiene el LUN dedicado para alojar los datos de Unified Manager.
+
+* *LUN*
++
+Debe proporcionar el nombre de la LUN donde se alojan los datos de Unified Manager cuando el backup sea del tipo Snapshot de NetApp.
+
+* *RUTA DE MONTAJE*
++
+Cuando se utiliza el método de copia de seguridad de volcado de base de datos MySQL, este campo especifica la ruta de acceso a la ubicación en la que se almacenan los archivos de copia de seguridad. Cuando se utiliza el método de backup de Snapshot, esta ubicación muestra el clúster, la máquina virtual de almacenamiento y el volumen donde se almacenará el backup.
+
++
+En la siguiente tabla se especifica el formato de ruta de backup y las ubicaciones predeterminadas, para los diferentes sistemas operativos:
+
++
+[cols="2*"]
+|===
+| Sistema operativo del host | Formato de ruta de copia de seguridad 
+
+
+ a| 
+Dispositivo virtual
+ a| 
+`/opt/netapp/data/ocum-backup`
+
+
+
+ a| 
+Red Hat Enterprise Linux o CentOS de Linux
+ a| 
+`/data/ocum-backup`
+
+
+
+ a| 
+Microsoft Windows
+ a| 
+En caso de Windows, necesitará proporcionar la ruta de montaje. Por ejemplo, si la ruta de montaje es la unidad «D», deberá proporcionar la ruta de montaje como `D:`
+
+|===
+* * CUENTA DE RETENCIÓN*
++
+Especifica la cantidad máxima de backups que debe retener Unified Manager. El valor predeterminado es 10.
+
+* *Diario programado*
++
+Especifica la programación de backup diario con la hora.
+
+* *Semanal programado*
++
+Especifica la programación de backups semanales con el día y la hora.
+
+* *Ninguno*
++
+Especifica que no se crearán backups.
+
+

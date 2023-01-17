@@ -1,0 +1,54 @@
+---
+permalink: qsg-vapp.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, VMWare QSG, vApp QSG, quick installation 
+summary: Guía de inicio rápido para Unified Manager en plataforma VMware vSphere. 
+---
+= Instrucciones de inicio rápido para instalaciones de VMware
+:allow-uri-read: 
+
+
+
+
+== Requisitos del sistema
+
+* Sistema operativo: VMware ESXi 6.5, 6.7 y 7.0
+* RAM: 12 GB
+* CPU: 9572 MHz en total
+* Espacio libre en disco: 5 GB (thin provisioning), 152 GB (thick provisioning)
+
+
+Para ver los requisitos detallados del sistema, consulte link:./install-vapp/concept-requirements-for-installing-unified-manager.html["Requisitos para instalar Unified Manager"] y.. link:http://mysupport.netapp.com/matrix["Matriz de interoperabilidad"].
+
+
+
+== Instalando Active IQ Unified Manager
+
+
+
+=== Descargue el instalador
+
+. Descargue el `ActiveIQUnifiedManager-<version>.ova` paquete de instalación.
+. Guarde el archivo en un directorio local o en un directorio de red al que pueda acceder vSphere Client.
+
+
+
+
+=== Instale Unified Manager
+
+. En vSphere Client, haga clic en *Archivo > implementar plantilla OVF*.
+. Busque el archivo OVA y utilice el asistente para implementar el dispositivo virtual en el servidor ESXi.
+. En la página Network Configuration (Configuración de red), en la ficha Properties (Propiedades), rellene los campos según sea necesario para el tipo de instalación que esté realizando:
++
+** Para la configuración estática, introduzca la información requerida en todos los campos. No es necesario agregar información para el campo *DNS secundario*.
+** Para DHCP que utilice IPv4, no añada ninguna información en ningún campo.
+** Para DHCP con IPv6, marque la casilla “Habilitar direccionamiento IPv6 automático”. No añada ninguna información en ningún otro campo.
+
+
+. Encienda la máquina virtual.
+. Haga clic en la ficha Consola para ver el proceso de inicio inicial.
+. Configure la zona horaria.
+. Introduzca un nombre de usuario y una contraseña de mantenimiento de Unified Manager.
+
+
+Al finalizar la instalación, se muestra la información para conectarse a la interfaz de usuario web de Unified Manager.

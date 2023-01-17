@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-health-all-nfs-shares-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Estado: Todos los recursos compartidos de NFS muestra información sobre los recursos compartidos de NFS, como su estado, la ruta asociada con el volumen \(volúmenes FlexGroup o volúmenes FlexVol\), los niveles de acceso de los clientes a los recursos compartidos NFS y la política de exportación definida para los volúmenes que se exportan.' 
+---
+= Estado: Todos los recursos compartidos NFS vista
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Estado: Todos los recursos compartidos de NFS muestra información sobre los recursos compartidos de NFS, como su estado, la ruta asociada con el volumen (volúmenes FlexGroup o volúmenes FlexVol), los niveles de acceso de los clientes a los recursos compartidos NFS y la política de exportación definida para los volúmenes que se exportan.
+
+De forma predeterminada, los objetos de esta página se ordenan en función del estado. Los objetos con errores se enumeran primero y a continuación se muestran los objetos con estado normal. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Si desea analizar la latencia y el rendimiento de un objeto específico, haga clic en el icono más image:../media/more-icon.gif[""], A continuación *analizar carga de trabajo* y puede ver gráficos de rendimiento y capacidad en la página Análisis de carga de trabajo.
+
+Consulte xref:reference-nfs-shares-health-fields.adoc[NFS comparte campos de estado] para obtener descripciones de todos los campos de esta página.

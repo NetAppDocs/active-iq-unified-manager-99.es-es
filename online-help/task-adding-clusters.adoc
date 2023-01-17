@@ -1,0 +1,88 @@
+---
+permalink: online-help/task-adding-clusters.html 
+sidebar: sidebar 
+keywords: add cluster 
+summary: Puede añadir un clúster a la Active IQ Unified Manager para poder supervisar el clúster. Esto incluye la capacidad de obtener información del clúster, como el estado, la capacidad, el rendimiento y la configuración del clúster, para poder encontrar y resolver cualquier problema que pueda ocurrir. 
+---
+= Añadir clústeres
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede añadir un clúster a la Active IQ Unified Manager para poder supervisar el clúster. Esto incluye la capacidad de obtener información del clúster, como el estado, la capacidad, el rendimiento y la configuración del clúster, para poder encontrar y resolver cualquier problema que pueda ocurrir.
+
+
+
+== Antes de empezar
+
+* Debe tener el rol de administrador de aplicaciones o de administrador de almacenamiento.
+* Debe tener el nombre de host o la dirección IP de administración del clúster (IPv4 o IPv6) para el clúster.
++
+Cuando se utiliza el nombre de host, debe resolver la dirección IP de administración del clúster para la LIF de gestión del clúster. Si utiliza un LIF de gestión de nodos, la operación da error.
+
+* Debe tener el nombre de usuario y la contraseña para acceder al clúster.
++
+Esta cuenta debe tener el rol _admin_ con acceso a aplicaciones establecido en _ontapi_, _ssh_ y _http_.
+
+* Debe conocer el número de puerto para conectarse al clúster mediante el protocolo HTTPS (por lo general, el puerto 443).
+* El clúster de debe ejecutar el software ONTAP versión 9.1 o posterior.
+* Debe tener espacio suficiente en el servidor de Unified Manager. Se le impide agregar un clúster al servidor cuando más del 90 % del espacio ya está consumido.
+* Tiene los certificados necesarios. Se requieren dos tipos de certificados:
++
+*Certificados de servidor*: Utilizados para el registro. Se requiere un certificado válido para añadir un clúster. Si caduca el certificado de servidor, debe volver a regenerarlo y reiniciar Unified Manager para que los servicios se registren automáticamente. Para obtener información acerca de la generación de certificados, consulte el artículo de la base de conocimientos (KB): https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_renew_an_SSL_certificate_in_ONTAP_9["Cómo renovar un certificado SSL en ONTAP 9"]
+
++
+*Certificados de cliente*: Utilizados para la autenticación. Se requiere un certificado válido para añadir un clúster. No puede agregar un clúster a Unified Manager con un certificado caducado y si el certificado de cliente ya ha caducado, debe volver a regenerarlo antes de agregar el clúster. Sin embargo, si este certificado caduca en un clúster que ya se ha añadido y está siendo utilizado por Unified Manager, la mensajería de EMS sigue funcionando con el certificado caducado. No es necesario regenerar el certificado de cliente.
+
+
+
+[NOTE]
+====
+Puede agregar clústeres que están detrás de un servidor de seguridad/NAT utilizando la dirección IP NAT de Unified Manager. Los sistemas SnapProtect o de automatización de flujo de trabajo conectados también deben estar detrás del servidor de seguridad NAT y las llamadas API de SnapProtect deben utilizar la dirección IP NAT para identificar el clúster.
+
+====
+
+
+== Acerca de esta tarea
+
+* Cada clúster de una configuración de MetroCluster se debe añadir por separado.
+* Una única instancia de Unified Manager puede admitir un número determinado de nodos. Si necesita supervisar un entorno que supere el número de nodos admitidos, debe instalar una instancia adicional de Unified Manager para supervisar algunos de los clústeres.
+* Puede supervisar un único clúster mediante dos instancias de Unified Manager siempre que haya configurado una segunda LIF de gestión del clúster para que cada instancia de Unified Manager se conecte a través de un LIF diferente.
+
+
+
+
+== Pasos
+
+. En el panel de navegación izquierdo, haga clic en *Storage Management* > *Cluster Setup*.
+. En la página *Cluster Setup*, haga clic en *Add*.
+. En el cuadro de diálogo *Agregar clúster*, especifique los valores según sea necesario y, a continuación, haga clic en *Enviar*.
+. En el cuadro de diálogo *autorizar host*, haga clic en *Ver certificado* para ver la información del certificado sobre el clúster.
+. Haga clic en *Sí*.
++
+Unified Manager comprueba el certificado solo cuando se añade inicialmente el clúster. Unified Manager no comprueba el certificado para cada llamada API a ONTAP.
+
+
+
+
+
+== Resultados
+
+Después de detectar todos los objetos de un clúster nuevo (aproximadamente 15 minutos), Unified Manager comienza a recopilar datos de rendimiento históricos de los 15 días anteriores. Estas estadísticas se recopilan mediante la funcionalidad de recogida de continuidad de datos. Esta función le proporciona más de dos semanas de información sobre el rendimiento de un clúster inmediatamente después de añadir. Una vez completado el ciclo de recogida de continuidad de datos, se recogen datos de rendimiento del clúster en tiempo real, de forma predeterminada, cada cinco minutos.
+
+[NOTE]
+====
+Dado que la recogida de 15 días de datos de rendimiento requiere un uso intensivo de la CPU, se sugiere escalonar la adición de nuevos clústeres de manera que las encuestas de recogida de continuidad de datos no se ejecuten en demasiados clústeres al mismo tiempo. Además, si reinicia Unified Manager durante el período de recogida de continuidad de datos, la recogida se detiene y verá vacíos en los gráficos de rendimiento correspondientes al periodo que falta.
+
+====
+[TIP]
+====
+Si recibe un mensaje de error que no puede agregar el clúster, compruebe si existen los siguientes problemas:
+
+* Si los relojes de los dos sistemas no están sincronizados y la fecha de inicio del certificado HTTPS de Unified Manager es posterior a la fecha en el clúster. Debe asegurarse de que los relojes se sincronicen con NTP o un servicio similar.
+* Si el clúster ha alcanzado la cantidad máxima de destinos de notificaciones de EMS, no se puede añadir la dirección de Unified Manager. De manera predeterminada, solo se pueden definir 20 destinos de notificación de EMS en el clúster.
+
+
+====

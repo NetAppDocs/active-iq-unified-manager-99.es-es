@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-performance-volumes-in-qos-policy-group-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Performance: Volúmenes en la vista de grupo de políticas de calidad de servicio muestra información general de los eventos de rendimiento, los datos y la información de configuración de cada volumen que tiene asignada una política de calidad de servicio. Esto incluye políticas de calidad de servicio tradicionales, políticas de calidad de servicio adaptativas y políticas de calidad de servicio asignadas con los niveles de servicio de rendimiento \(PSLs\).' 
+---
+= Rendimiento: Volúmenes en la vista del grupo de políticas de calidad de servicio
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance: Volúmenes en la vista de grupo de políticas de calidad de servicio muestra información general de los eventos de rendimiento, los datos y la información de configuración de cada volumen que tiene asignada una política de calidad de servicio. Esto incluye políticas de calidad de servicio tradicionales, políticas de calidad de servicio adaptativas y políticas de calidad de servicio asignadas con niveles de servicio de rendimiento (PSU).
+
+De forma predeterminada, los objetos de las páginas de vista se ordenan en función de la gravedad del evento. Los objetos con eventos críticos se enumeran primero y los objetos con eventos de advertencia aparecen en segundo lugar. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Puede asignar directivas de umbral de rendimiento a cualquier objeto de las páginas de inventario de objetos o borrar directivas de umbral mediante los botones *asignar directiva de umbral de rendimiento* y *Borrar directiva de umbral de rendimiento*.
+
+Si desea analizar la latencia y el rendimiento de un objeto específico, haga clic en el icono más image:../media/more-icon.gif[""], A continuación *analizar carga de trabajo* y puede ver gráficos de rendimiento y capacidad en la página Análisis de carga de trabajo.
+
+Consulte xref:reference-volume-performance-fields.adoc[Campos de rendimiento de volumen] para obtener descripciones de todos los campos de esta página.

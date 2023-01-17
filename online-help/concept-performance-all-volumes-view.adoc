@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-performance-all-volumes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Performance: All Volumes View muestra información general de los eventos de rendimiento, los datos de contador y la información de configuración de cada volumen FlexVol y volumen FlexGroup que supervisa una instancia de Unified Manager. Esto permite supervisar rápidamente el rendimiento de los volúmenes y solucionar problemas de rendimiento y eventos de umbral.' 
+---
+= Rendimiento: Vista de todos los volúmenes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance: All Volumes View muestra información general de los eventos de rendimiento, los datos de contador y la información de configuración de cada volumen FlexVol y volumen FlexGroup que supervisa una instancia de Unified Manager. Esto permite supervisar rápidamente el rendimiento de los volúmenes y solucionar problemas de rendimiento y eventos de umbral.
+
+De forma predeterminada, los objetos de las páginas de vista se ordenan en función de la gravedad del evento. Los objetos con eventos críticos se enumeran primero y los objetos con eventos de advertencia aparecen en segundo lugar. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Puede asignar directivas de umbral de rendimiento a cualquier objeto de las páginas de inventario de objetos o borrar directivas de umbral mediante los botones *asignar directiva de umbral de rendimiento* y *Borrar directiva de umbral de rendimiento*.
+
+Si desea analizar la latencia y el rendimiento de un objeto específico, haga clic en el icono más image:../media/more-icon.gif[""], A continuación *analizar carga de trabajo* y puede ver gráficos de rendimiento y capacidad en la página Análisis de carga de trabajo.
+
+[NOTE]
+====
+Para los volúmenes de protección de datos (DP), solo se muestran los valores de contador del tráfico generado por el usuario.
+
+====
+[NOTE]
+====
+Los volúmenes raíz no se muestran en esta página.
+
+====
+Consulte xref:reference-volume-performance-fields.adoc[Campos de rendimiento de volumen] para obtener descripciones de todos los campos de esta página.

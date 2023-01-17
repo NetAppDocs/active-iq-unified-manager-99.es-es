@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-mbps-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Los gráficos de contadores MB/s muestran el número de megabytes de datos transferidos hacia y desde el objeto seleccionado por segundo. 
+---
+= Gráficos de contadores de rendimiento MB/s.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los gráficos de contadores MB/s muestran el número de megabytes de datos transferidos hacia y desde el objeto seleccionado por segundo.
+
+La ventana emergente que se muestra cuando el cursor se encuentra en el área del gráfico muestra los valores específicos del contador en momentos específicos.
+
+Cuando se muestra en la vista Zoom, los gráficos del volumen y LUN también muestran los ajustes máximos del umbral de rendimiento de MB/s de calidad de servicio (QoS), si están configurados.
+
+Al ver un volumen o LUN que comparten los MB/s de una política de calidad de servicio compartida, se muestra una línea de «'carga de trabajo total MB/s» para mostrar los MB/s que utilizan todas las demás cargas de trabajo que comparten esta política.
+
+En la parte inferior de la página del gráfico se muestra información sobre el mínimo, máximo, promedio y percentil 95o MB/s para el intervalo de tiempo seleccionado.
+
+Hay dos tipos de gráficos MB/s disponibles:
+
+
+
+== MB/s - Gráfico de contadores total
+
+Muestra el número de megabytes de datos transferidos hacia y desde el objeto seleccionado por segundo.
+
+
+
+== MB/s: Tabla de contadores de desglose
+
+Muestra los mismos datos MB/s separados en las operaciones de lectura de disco, lectura, escritura y otras operaciones de Flash Cache.
+
+Esta opción de gráfico se aplica cuando el objeto seleccionado es una SVM, un nodo, un agregado, un volumen o una LUN.
+
+[NOTE]
+====
+Los datos de Flash Cache solo se muestran para nodos, y solo cuando se instala un módulo Flash Cache en el nodo.
+
+====
+
+
+== *Botón Zoom View*
+
+Muestra una vista ampliada de los datos del gráfico de contadores.
+
+* Eventos
++
+La aparición de eventos críticos, de error, de advertencia e informativos se indica en las líneas de tiempo que aparecen encima de los gráficos.
+
+* Umbrales
++
+La línea horizontal discontinua indica el valor del umbral de advertencia de uso establecido en Unified Manager.
+
++
+La línea de color rojo fijo indica el valor del umbral crítico de utilización configurado en Unified Manager.
+
+* Contadores
++
+Los contadores del panel izquierdo muestran los valores de contador que se están mostrando. Anular la selección o selección de image:../media/eye-icon.gif[""] Asociado con un contador se oculta y muestra esa información de contador del gráfico y puede ayudar a comparar el objeto MB/s.
+
+

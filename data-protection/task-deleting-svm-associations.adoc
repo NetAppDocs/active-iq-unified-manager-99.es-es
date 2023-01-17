@@ -1,0 +1,45 @@
+---
+permalink: data-protection/task-deleting-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: Es posible eliminar iguales de máquinas virtuales de almacenamiento para aplicaciones de socios a fin de eliminar la relación de aprovisionamiento secundaria entre máquinas virtuales de almacenamiento de origen y de destino; por ejemplo, puede hacer esto cuando la máquina virtual de almacenamiento de destino está completa y desea crear una nueva paridad de protección de máquinas virtuales de almacenamiento. 
+---
+= Eliminación de pares de equipos virtuales de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible eliminar iguales de máquinas virtuales de almacenamiento para aplicaciones de socios a fin de eliminar la relación de aprovisionamiento secundaria entre máquinas virtuales de almacenamiento de origen y de destino; por ejemplo, puede hacer esto cuando la máquina virtual de almacenamiento de destino está completa y desea crear una nueva paridad de protección de máquinas virtuales de almacenamiento.
+
+
+
+== Antes de empezar
+
+Debe tener el rol de administrador de aplicaciones o de administrador del almacenamiento.
+
+
+
+== Acerca de esta tarea
+
+El botón *Eliminar* se desactiva hasta que se selecciona al menos un par de VM de almacenamiento. Cambiar las asociaciones que utilizan las funciones de eliminación y creación afecta solo a las operaciones de aprovisionamiento futuras; no mueve los volúmenes de destino existentes.
+
+
+
+== Pasos
+
+. En el panel de navegación izquierdo, haga clic en *Protección* > *Storage VM peers*.
+. Seleccione al menos un par de máquinas virtuales de almacenamiento.
++
+El botón *Eliminar* está activado.
+
+. Haga clic en *Eliminar.*
++
+Aparecerá un cuadro de diálogo de advertencia.
+
+. Haga clic en *Sí* para continuar.
++
+El par de máquina virtual de almacenamiento seleccionado se eliminará de la lista.
+
+

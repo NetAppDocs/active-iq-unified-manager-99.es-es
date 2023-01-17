@@ -1,0 +1,54 @@
+---
+section: install-windows
+title: Instale Unified Manager en sistemas Windows
+entries:
+- title: Introducción a Active IQ Unified Manager
+  pdf-filename: Introducción a Active IQ Unified Manager (sistemas Windows)
+  url: "/install-windows/concept-introduction-to-unified-manager.html"
+  entries:
+  - title: Lo que hace Unified Manager Server
+    url: "/install-windows/concept-what-the-unified-manager-server-does.html"
+  - title: Descripción general de la secuencia de instalación
+    url: "/install-windows/concept-overview-of-the-installation-sequence-um.html"
+- title: Requisitos para instalar Unified Manager
+  pdf-filename: Requisitos para la instalación de Unified Manager (sistemas Windows)
+  url: "/install-windows/concept-requirements-for-installing-unified-manager.html"
+  entries:
+  - title: Requisitos del sistema de hardware e infraestructura virtual
+    url: "/install-windows/concept-virtual-infrastructure-or-hardware-system-requirements.html"
+  - title: Requisitos de instalación y software de Windows
+    url: "/install-windows/reference-windows-software-and-installation-requirements.html"
+  - title: Exploradores compatibles
+    url: "/install-windows/concept-browser-and-platform-requirements.html"
+  - title: Requisitos de protocolo y puerto
+    url: "/install-windows/reference-protocol-and-port-requirements.html"
+  - title: Rellenar la hoja de cálculo
+    url: "/install-windows/reference-completing-the-worksheet-um.html"
+- title: Instalación, actualización y eliminación del software Unified Manager
+  pdf-filename: Instalación, actualización y eliminación del software Unified Manager
+    (sistemas Windows)
+  url: "/install-windows/concept-installing-upgrading-and-removing-unified-manager-software.html"
+  entries:
+  - title: Descripción general del proceso de instalación
+    url: "/install-windows/concept-overview-of-the-installation-process-on-windows.html"
+  - title: Instalación de Unified Manager en Windows
+    url: "/install-windows/concept-installing-unified-manager-win.html"
+    entries:
+    - title: Instalación de Unified Manager
+      url: "/install-windows/task-installing-unified-manager-on-windows.html"
+    - title: Realizar una instalación desatendida de Unified Manager
+      url: "/install-windows/task-unattended-installation-of-unified-manager.html"
+  - title: Cambio de la contraseña de JBoss
+    url: "/install-windows/task-changing-the-jboss-password-on-windows.html"
+  - title: Actualizar Unified Manager
+    url: "/install-windows/task-upgrading-to-unified-manager-on-microsoft-windows.html"
+  - title: Actualizar productos de terceros
+    pdf-filename: Actualización de productos de terceros (sistemas Windows)
+    url: "/install-windows/concept-upgrading-third-party-products-on-windows-um.html"
+    entries:
+    - title: Actualización de OpenJDK
+      url: "/install-windows/task-upgrading-openjdk-on-windows-ocum.html"
+  - title: Reiniciar Unified Manager
+    url: "/install-windows/task-restarting-unified-manager-win.html"
+  - title: Desinstale Unified Manager
+    url: "/install-windows/task-uninstalling-unified-manager-win.html"

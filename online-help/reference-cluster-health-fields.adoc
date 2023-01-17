@@ -1,0 +1,85 @@
+---
+permalink: online-help/reference-cluster-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Los siguientes campos están disponibles en la vista Estado: Todos los clústeres y se pueden utilizar en vistas personalizadas y en informes.' 
+---
+= Campos de estado del clúster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los siguientes campos están disponibles en la vista Estado: Todos los clústeres y se pueden utilizar en vistas personalizadas y en informes.
+
+* *Estado*
++
+Un icono que identifica el estado actual del clúster. El estado puede ser crítico (image:../media/sev-critical-um60.png[""]), error (image:../media/sev-error-um60.png[""]), Advertencia (image:../media/sev-warning-um60.png[""]), o normal (image:../media/sev-normal-um60.png[""]).
+
+* *Cluster*
++
+El nombre del clúster. Puede hacer clic en el nombre del clúster para ir a la página de detalles de estado del clúster.
+
+* *Cluster FQDN*
++
+El nombre de dominio completo (FQDN) del clúster.
+
+* *Estado de la comunicación*
++
+Si el clúster es accesible o no.
+
++
+El estado se muestra como correcto si es posible acceder al clúster. Si no se puede acceder al clúster o si las credenciales de inicio de sesión no son válidas, el estado se muestra como no accesible.
+
+* *Salud del sistema*
++
+Información de alto nivel acerca del estado del clúster, que se calcula en función del estado de varios subsistemas de clúster.
+
++
+Los valores posibles son OK, OK con suprimido, degradado y componentes no accesibles. Estos valores están determinados por los monitores de estado del software ONTAP.
+
+* *Última hora de actualización*
++
+La Marca de hora del momento en que se recogieron las muestras de supervisión del clúster por última vez.
+
+* *FIPS activado*
++
+Si el modo FIPS está habilitado en el clúster.
+
+* *Versión del SO*
++
+La versión de ONTAP que ejecuta el clúster.
+
++
+Si los nodos del clúster ejecutan versiones diferentes de ONTAP, se muestra la primera versión de ONTAP.
+
+* *Número de nodos*
++
+El número de nodos que pertenecen al clúster.
+
+* *Nombre de host o Dirección IP*
++
+El nombre de dominio completo, el nombre corto o la dirección IP de la LIF de gestión del clúster que se utiliza para conectarse al clúster.
+
+* * Espacio lógico utilizado*
++
+El tamaño real de los datos que se almacenan en todos los agregados de este clúster sin aplicar el ahorro derivado del uso de las tecnologías de eficiencia del almacenamiento de ONTAP.
+
+* *Personalidad*
++
+Identifica si se trata de un clúster configurado de una cabina All SAN.
+
+* *Número de serie*
++
+El número de serie del clúster.
+
+* *Contacto*
++
+La información de contacto del clúster.
+
+* *Ubicación*
++
+La ubicación del clúster.
+
+

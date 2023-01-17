@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-performance-all-nvme-namespaces-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Performance: All NVMe Namespaces muestra información general sobre los eventos de rendimiento, los datos y la información de configuración de cada espacio de nombres de NVMe que se supervisa mediante una instancia de Unified Manager. Esto permite supervisar rápidamente el rendimiento y el estado de los espacios de nombres, así como resolver problemas y eventos de umbral.' 
+---
+= Performance: Toda la vista NVMe Namespaces
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Performance: All NVMe Namespaces muestra información general sobre los eventos de rendimiento, los datos y la información de configuración de cada espacio de nombres de NVMe que se supervisa mediante una instancia de Unified Manager. Esto permite supervisar rápidamente el rendimiento y el estado de los espacios de nombres, así como resolver problemas y eventos de umbral.
+
+De forma predeterminada, los objetos de las páginas de vista se ordenan en función de la gravedad del evento. Los objetos con eventos críticos se enumeran primero y los objetos con eventos de advertencia aparecen en segundo lugar. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Puede asignar directivas de umbral de rendimiento a cualquier objeto de las páginas de inventario de objetos o borrar directivas de umbral mediante los botones *asignar directiva de umbral de rendimiento* y *Borrar directiva de umbral de rendimiento*.
+
+Consulte xref:reference-nvme-namespace-performance-fields.adoc[Campos de rendimiento del espacio de nombres de NVMe] para obtener descripciones de todos los campos de esta página.

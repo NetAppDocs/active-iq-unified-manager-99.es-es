@@ -1,0 +1,14 @@
+---
+permalink: install-windows/concept-installing-upgrading-and-removing-unified-manager-software.html 
+sidebar: sidebar 
+keywords:  
+summary: Puede instalar el software Unified Manager, actualizarlo a una versión más reciente del software o quitar la aplicación Unified Manager. 
+---
+= Instalación, actualización y eliminación del software Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede instalar el software Unified Manager, actualizarlo a una versión más reciente del software o quitar la aplicación Unified Manager.

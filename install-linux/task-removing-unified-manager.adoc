@@ -1,0 +1,41 @@
+---
+permalink: install-linux/task-removing-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Puede detener y desinstalar Unified Manager desde el host Red Hat Enterprise Linux o CentOS con un solo comando. 
+---
+= Se quita Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede detener y desinstalar Unified Manager desde el host Red Hat Enterprise Linux o CentOS con un solo comando.
+
+
+
+== Antes de empezar
+
+* Debe tener acceso de usuario raíz al servidor desde el que desea quitar Unified Manager.
+* Security-Enhanced Linux (SELinux) debe estar desactivado en la máquina de Red Hat. Cambie el modo de tiempo de ejecución de SELinux a "'permisive'" mediante el `setenforce 0` comando.
+* Todos los clústeres (orígenes de datos) deben quitarse del servidor de Unified Manager antes de quitar el software.
+
+
+
+
+== Pasos
+
+. Inicie sesión como usuario raíz en el servidor en el que desea quitar Unified Manager.
+. Detenga y quite Unified Manager del servidor: `rpm -e netapp-um`
++
+Este paso elimina todos los paquetes de RPM de NetApp asociados. No elimina los módulos de software previos, como Java, MySQL y p7zip.
+
+. Si procede, elimine los módulos de software compatibles, como Java, MySQL y p7zip: `rpm -e p7zip mysql-community-client mysql-community-server mysql-community-common mysql-community-libs java-x.y`
+
+
+
+
+== Resultados
+
+Una vez finalizada esta operación, se elimina el software. Todos los datos del `/opt/netapp/data` el directorio se mueve al `/opt/netapp/data/BACKUP` carpeta tras la desinstalación. Al desinstalar Unified Manager también se quitan los paquetes de Java y MySQL, a menos que los paquetes sean necesarios y los use otra aplicación del sistema. Sin embargo, los datos de MySQL no se eliminan.

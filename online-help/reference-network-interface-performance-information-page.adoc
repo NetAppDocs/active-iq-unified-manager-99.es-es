@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-network-interface-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Utilice la página Información de interfaz de red/rendimiento para ver una lista de los atributos configurados de la interfaz de red \(LIF\). Esta información puede ayudar a responder preguntas relacionadas con el rendimiento.' 
+---
+= Página Network Interface/Performance Information
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilice la página Network Interface/Performance Information para ver una lista de los atributos configurados de la interfaz de red (LIF). Esta información puede ayudar a responder preguntas relacionadas con el rendimiento.
+
+
+
+== Atributos de interfaz de red
+
+* *Dirección IP*
++
+La dirección IPv4 o IPv6 asignada a la LIF. Puede haber varias direcciones IP asignadas a una LIF.
+
+* *Rol*
++
+El rol determina la clase de tráfico que se admite en la LIF.
+
++
+Los LIF pueden incluir uno de los siguientes roles:
+
++
+** SQL Server
+** Clúster
+** Gestión de nodos
+** Interconexión de clústeres
+
+
+* *Grupo de recuperación tras fallos*
++
+El nombre del grupo de recuperación tras fallos que está asignado a la interfaz de red.
+
++
+Este campo se aplica solo a las LIF de red, no a LOS LIF SAN (FC/ISCSI) y NVMe.
+
+* *Política de relevo*
++
+El nombre de la política de conmutación por error que está asignada a la LIF.
+
++
+Este campo se aplica solo a las LIF de red, no a LOS LIF SAN (FC/ISCSI) y NVMe.
+
+* *Puerto de la casa*
++
+El nombre del nodo y el puerto que se han definido como el puerto de inicio de esta interfaz. Puede hacer clic en el nombre para mostrar los detalles del puerto en la página Explorador de puertos/rendimiento.
+
+* *Puerto actual*
++
+El nombre del nodo y el puerto en el que la interfaz se encuentra alojada actualmente. Puede hacer clic en el nombre para mostrar los detalles del puerto en la página Explorador de puertos/rendimiento.
+
+

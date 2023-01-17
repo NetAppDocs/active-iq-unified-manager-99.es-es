@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-lif-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Los siguientes campos están disponibles en la vista rendimiento: Todas las interfaces de red y se pueden utilizar en vistas personalizadas y en informes.' 
+---
+= Campos de rendimiento de la interfaz de red
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los siguientes campos están disponibles en la vista rendimiento: Todas las interfaces de red y se pueden utilizar en vistas personalizadas y en informes.
+
+* *Estado*
++
+Un objeto en buen estado sin eventos activos muestra un icono de Marca de verificación verde (image:../media/sev-normal-um60.png["Icono de gravedad del evento: Normal"]). Si el objeto tiene un evento activo, el icono del indicador de evento identifica la gravedad del evento: Los eventos críticos son rojos (image:../media/sev-critical-um60.png["Icono para la gravedad del evento: Crucial"]), los eventos de error son naranjas (image:../media/sev-error-um60.png["Icono para la gravedad del evento: Error"]), y los sucesos de advertencia son amarillos (image:../media/sev-warning-um60.png["Icono de gravedad del evento: Advertencia"]).
+
+* *Interfaz de red*
++
+Puede hacer clic en el nombre de la interfaz de red (LIF) para ir a la página de detalles de rendimiento de esa LIF.
+
+* *Tipo*
++
+El tipo de interfaz: Red (iSCSI, NFS, CIFS), FCP o FC nVMF.
+
+* *Latencia*
++
+El tiempo de respuesta medio para todas las solicitudes de I/o, expresado en milisegundos por operación. La latencia no es aplicable a los LIF NFS y los LIF CIFS, y se muestra como N/A para estos tipos.
+
+* *IOPS*
++
+Las operaciones de entrada/salida por segundo. IOPS no es aplicable a los LIF NFS ni a los LIF CIFS, y se muestra como N/A para estos tipos.
+
+* *MB/s*
++
+El rendimiento de la interfaz, medido en megabytes por segundo.
+
+* *Cluster*
++
+El clúster al que pertenece la interfaz. Puede hacer clic en el nombre del clúster para ir a la página de detalles de ese clúster.
+
+* *Cluster FQDN*
++
+El nombre de dominio completo (FQDN) del clúster.
+
+* *SVM*
++
+La máquina virtual de almacenamiento a la que pertenece la interfaz. Puede hacer clic en el nombre de la SVM para desplazarse a la página de detalles de esa SVM.
+
+* *Ubicación del hogar*
++
+La ubicación de inicio de la interfaz, que se muestra como nombre de nodo y nombre de puerto, está separada por dos puntos (:). Si la ubicación se muestra con puntos suspensivos (...), puede colocar el cursor sobre el nombre de la ubicación para ver la ubicación completa.
+
+* *Ubicación actual*
++
+La ubicación actual de la interfaz, que se muestra como nombre de nodo y nombre de puerto, está separada por dos puntos (:). Si la ubicación se muestra con puntos suspensivos (...), puede colocar el cursor sobre el nombre de la ubicación para ver la ubicación completa.
+
+* *Rol*
++
+El rol de la interfaz: Data, Cluster, Node Management o Intercluster.
+
+* *Política de umbral*
++
+La política de umbral de rendimiento definida por el usuario, o políticas, que están activas en este objeto de almacenamiento. Puede colocar el cursor sobre los nombres de directivas que contienen puntos suspensivos (...). para ver el nombre completo de la directiva o la lista de nombres de directivas asignadas. Los botones *Assign Performance Threshold Policy* y *Clear Performance Threshold Policy* permanecen desactivados hasta que seleccione uno o más objetos haciendo clic en las casillas de verificación situadas en el extremo izquierdo.
+
+

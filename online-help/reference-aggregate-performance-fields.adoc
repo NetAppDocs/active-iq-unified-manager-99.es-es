@@ -1,0 +1,113 @@
+---
+permalink: online-help/reference-aggregate-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Los siguientes campos están disponibles en la vista Performance: All Aggregates y pueden utilizarse en vistas personalizadas y en informes.' 
+---
+= Campos de rendimiento de agregados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los siguientes campos están disponibles en la vista Performance: All Aggregates y pueden utilizarse en vistas personalizadas y en informes.
+
+* *Estado*
++
+Un objeto en buen estado sin eventos activos muestra un icono de Marca de verificación verde (image:../media/sev-normal-um60.png["Icono de gravedad del evento: Normal"]). Si el objeto tiene un evento activo, el icono del indicador de evento identifica la gravedad del evento: Los eventos críticos son rojos (image:../media/sev-critical-um60.png["Icono para la gravedad del evento: Crucial"]), los eventos de error son naranjas (image:../media/sev-error-um60.png["Icono para la gravedad del evento: Error"]), y los sucesos de advertencia son amarillos (image:../media/sev-warning-um60.png["Icono de gravedad del evento: Advertencia"]).
+
+* *Agregado*
++
+Puede hacer clic en el nombre del agregado para desplazarse a la página de detalles de rendimiento del agregado.
+
+* *Tipo*
++
+El tipo de agregado:
+
++
+** HDD
+** Híbrido
++
+Combina HDD y SSD, pero Flash Pool no se ha habilitado.
+
+** Híbrido (Flash Pool)
++
+Combina HDD y SSD y Flash Pool se ha habilitado.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSD y un nivel de cloud
+
+** HDD (FabricPool)
++
+Combina HDD y un nivel de cloud
+
+** VMDisk (SDS)
++
+Discos virtuales en una máquina virtual
+
+** VMDisk (FabricPool)
++
+Combina discos virtuales y un nivel de cloud
+
+** LUN (FlexArray)
+
+
+* *Latencia*
++
+El tiempo de respuesta medio para todas las solicitudes de I/o del agregado, expresado en milisegundos por operación.
+
+* *IOPS*
++
+Las operaciones de entrada/salida por segundo en el agregado.
+
+* *MB/s*
++
+El rendimiento en el agregado, medido en megabytes por segundo.
+
+* *Capacidad de rendimiento utilizada*
++
+El porcentaje de capacidad de rendimiento que usa el agregado.
+
+* *Utilización*
++
+El porcentaje de discos del agregado que se está usando actualmente.
+
+* *IOPS* disponible
++
+El número de operaciones de entrada/salida por segundo actualmente disponibles (libres) en este agregado para cargas de trabajo adicionales.
+
+* *Capacidad libre*
++
+La capacidad de almacenamiento sin utilizar para este agregado, en gigabytes.
+
+* *Capacidad total*
++
+La capacidad total de almacenamiento de este agregado, en gigabytes.
+
+* *Informes de datos inactivos*
++
+Si la funcionalidad de generación de informes de datos inactivos está habilitada o deshabilitada en este agregado. Cuando se encuentra habilitada, los volúmenes de este agregado muestran la cantidad de datos inactivos en la vista rendimiento: Todos los volúmenes.
+
++
+El valor de este campo es «'N/A'» cuando la versión de ONTAP no admite la generación de informes de datos inactivos.
+
+* *Cluster*
++
+El clúster al que pertenece el agregado. Puede hacer clic en el nombre del clúster para ir a la página de detalles de ese clúster.
+
+* *Cluster FQDN*
++
+El nombre de dominio completo (FQDN) del clúster.
+
+* *Nodo*
++
+El nodo al que pertenece el agregado. Puede hacer clic en el nombre del nodo para ir a la página de detalles de ese nodo.
+
+* *Política de umbral*
++
+La política de umbral de rendimiento definida por el usuario, o políticas, que están activas en este objeto de almacenamiento. Puede colocar el cursor sobre los nombres de directivas que contienen puntos suspensivos (...). para ver el nombre completo de la directiva o la lista de nombres de directivas asignadas. Los botones *Assign Performance Threshold Policy* y *Clear Performance Threshold Policy* permanecen desactivados hasta que seleccione uno o más objetos haciendo clic en las casillas de verificación situadas en el extremo izquierdo.
+
+

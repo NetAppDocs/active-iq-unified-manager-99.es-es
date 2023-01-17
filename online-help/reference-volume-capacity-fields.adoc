@@ -1,0 +1,159 @@
+---
+permalink: online-help/reference-volume-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Los siguientes campos están disponibles en la vista Capacity: Todos los volúmenes y se pueden usar en vistas personalizadas y en informes.' 
+---
+= Campos de capacidad de volúmenes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los siguientes campos están disponibles en la vista Capacity: Todos los volúmenes y se pueden usar en vistas personalizadas y en informes.
+
+* *Volumen*
++
+El nombre del volumen.
+
+* *Tasa de crecimiento diario %*
++
+La tasa de crecimiento que se produce cada 24 horas en el volumen.
+
+* *Días hasta lleno*
++
+La cantidad estimada de días que queda para que el volumen alcance la capacidad completa.
+
+* *Datos disponibles %*
++
+La capacidad de datos disponible en un volumen como porcentaje.
+
+* *Capacidad de datos disponible*
++
+La capacidad de datos disponible en un volumen.
+
+* *Datos usados %*
++
+Los datos usados en un volumen como porcentaje.
+
+* *Capacidad de datos usados*
++
+La capacidad de datos utilizada en un volumen.
+
+* *Capacidad total de datos*
++
+La capacidad de datos total (utilizada más disponible) en un volumen.
+
+* * Espacio lógico utilizado*
++
+El espacio lógico utilizado por los datos en este volumen sin aplicar los ahorros obtenidos con las tecnologías de eficiencia del almacenamiento de ONTAP.
+
+* *Desbordamiento de instantánea %*
++
+El porcentaje de espacio de datos que consumen las copias Snapshot.
+
+* *Reserva Snapshot disponible %*
++
+La cantidad de espacio disponible para las copias snapshot en el volumen como porcentaje.
+
+* *Capacidad disponible de la reserva Snapshot*
++
+La cantidad de espacio disponible para las copias snapshot en el volumen.
+
+* *Reserva Snapshot utilizada %*
++
+La cantidad de espacio utilizada por las copias Snapshot en el volumen como porcentaje.
+
+* *Capacidad utilizada de la Reserva Snapshot*
++
+La cantidad de espacio utilizada por las copias snapshot en el volumen.
+
+* *Capacidad total de la Reserva Snapshot*
++
+Muestra la capacidad total de la copia Snapshot en el volumen.
+
+* *Capacidad comprometida de cuota*
++
+El espacio reservado para las cuotas del volumen.
+
+* *Capacidad sobrecomprometida de la cuota*
++
+La cantidad de espacio que se puede utilizar para las cuotas antes de que el sistema genere el evento de exceso de cuota de volumen.
+
+* *Número total de inodos*
++
+El número de inodos en el volumen.
+
+* *Utilización de inode %*
++
+El porcentaje de espacio de inodo utilizado en el volumen.
+
+* *Thin-Provisioning*
++
+Si la garantía de espacio está establecida para el volumen seleccionado. Los valores válidos son Yes y no
+
+* *Garantía Espacial*
++
+La opción de garantía de almacenamiento asociada con el volumen.
+
+* *Auto-fila*
++
+Si el volumen crece automáticamente en tamaño cuando está sin espacio.
+
+* *Instantánea eliminación automática*
++
+Si la eliminación automática de copias Snapshot está habilitada o deshabilitada.
+
+* *Deduplicación*
++
+Si la deduplicación está habilitada o deshabilitada en el volumen.
+
+* *Compresión*
++
+Si la compresión está habilitada o deshabilitada para el volumen.
+
+* *Estado*
++
+Estado del volumen que se está exportando.
+
+* *Función de protección*
++
+El rol de protección que se configuró para el volumen.
+
+* *Tipo de SnapLock*
++
+Si el volumen es un volumen SnapLock o no de SnapLock.
+
+* *Fecha de caducidad de SnapLock*
++
+La fecha de vencimiento de SnapLock.
+
+* *Política de organización en niveles*
++
+La política de organización en niveles establecida para el volumen. Válido solo cuando se implementa en agregados habilitados para FabricPool.
+
+* *Política de almacenamiento en caché*
++
+La política de almacenamiento en caché asociada con el volumen seleccionado.
+
++
+La política ofrece información acerca de cómo se produce el almacenamiento en caché Flash Pool en el volumen. Consulte el estado: Todos los volúmenes para obtener más información sobre las políticas de almacenamiento en caché.
+
+* *Prioridad de retención de caché*
++
+La prioridad que se utiliza para conservar pools en caché.
+
+* *Storage VM*
++
+El nombre de la máquina virtual de almacenamiento (SVM) que contiene el volumen.
+
+* *Cluster*
++
+El nombre del clúster en el que reside el volumen. Puede hacer clic en el nombre del clúster para ir a la página de detalles de estado del clúster.
+
+* *Cluster FQDN*
++
+El nombre de dominio completo (FQDN) del clúster.
+
+

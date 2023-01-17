@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-health-all-volumes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Estado: Todos los volúmenes muestra información sobre los volúmenes en los sistemas de almacenamiento que se supervisan y permite modificar la configuración de umbral de volumen.' 
+---
+= Estado: Vista de todos los volúmenes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Estado: Todos los volúmenes muestra información sobre los volúmenes en los sistemas de almacenamiento que se supervisan y permite modificar la configuración de umbral de volumen.
+
+De forma predeterminada, los objetos de las páginas de vista se ordenan en función de la gravedad del evento. Los objetos con eventos críticos se enumeran primero y los objetos con eventos de advertencia aparecen en segundo lugar. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse. Cada volumen de la cuadrícula volúmenes tiene enlaces a System Manager de ONTAP. La opción de menú *Ver en System Manager* está disponible como uno de los vínculos para cada volumen. Este enlace le redirige para ver la misma relación de protección en System Manager de ONTAP.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Si desea analizar la latencia y el rendimiento de un objeto específico, haga clic en el icono más image:../media/more-icon.gif[""], A continuación *analizar carga de trabajo* y puede ver gráficos de rendimiento y capacidad en la página Análisis de carga de trabajo.
+
+Consulte xref:reference-volume-health-fields.adoc[Campos de estado del volumen] para obtener descripciones de todos los campos de esta página.
+
+
+
+== Botones de comando
+
+* *Editar umbral*
++
+Muestra el cuadro de diálogo Editar umbrales, lo que permite editar la configuración del umbral de estado para uno o varios volúmenes.
+
+* *Proteger*
++
+Muestra los siguientes submenús:
+
++
+** SnapMirror
++
+Permite crear una relación de SnapMirror para los volúmenes seleccionados.
+
+** SnapVault
++
+Permite crear una relación de SnapVault para los volúmenes seleccionados.
+
+
+
+* *Restaurar*
++
+Muestra el cuadro de diálogo Restore, que permite restaurar directorios o archivos desde un volumen a la vez.
+
+* *Annotate*
++
+Permite anotar el volumen seleccionado.
+
+

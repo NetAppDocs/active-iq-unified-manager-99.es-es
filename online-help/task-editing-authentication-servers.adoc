@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: Es posible cambiar el puerto que utiliza Unified Manager Server para comunicarse con el servidor de autenticación. 
+---
+= Editar servidores de autenticación
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible cambiar el puerto que utiliza Unified Manager Server para comunicarse con el servidor de autenticación.
+
+
+
+== Antes de empezar
+
+Debe tener la función Administrador de aplicaciones.
+
+
+
+== Pasos
+
+. En el panel de navegación izquierdo, haga clic en *General* > *autenticación remota*.
+. Active la casilla *Desactivar búsqueda de grupo anidada*.
+. En el área *servidores de autenticación*, seleccione el servidor de autenticación que desea editar y, a continuación, haga clic en *Editar*.
+. En el cuadro de diálogo *Editar servidor de autenticación*, edite los detalles del puerto.
+. Haga clic en *Guardar*.
+

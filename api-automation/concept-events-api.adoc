@@ -1,0 +1,70 @@
+---
+permalink: api-automation/concept-events-api.html 
+sidebar: sidebar 
+keywords:  
+summary: Los eventos y las API del sistema en la categoría de servidor de gestión le permiten recuperar los eventos generados para los clústeres supervisados en el centro de datos y ver los detalles de la instancia en el entorno de Active IQ Unified Manager respectivamente. 
+---
+= Ver eventos y detalles del sistema
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La `events` y.. `system` API en la `management-server` Category permite recuperar los eventos que se generan para los clústeres supervisados en el centro de datos y ver los detalles de la instancia en el entorno de Active IQ Unified Manager respectivamente.
+
+
+
+== Ver eventos
+
+Mediante el uso de `/management-server/events` API, puede consultar los eventos en su centro de datos, incluidos los datos históricos. Utilice los filtros incorporados, como el nombre, el nivel de impacto, el área de impacto, la gravedad, estado, nombre de recurso y tipo de recurso, para ver eventos específicos. El tipo de recurso y los parámetros de área devuelven información sobre el objeto de almacenamiento en el que se produce el evento. El área de impacto devuelve la información sobre el problema sobre el que se genera el evento, como disponibilidad, capacidad, configuración, seguridad, protección y rendimiento.
+
+También puede utilizar la clave de evento para consultar los detalles de un evento específico y ejecutar el siguiente conjunto de operaciones en los recursos.
+
+[cols="4*"]
+|===
+| Categoría | Verbo HTTP | Ruta | Descripción 
+
+
+ a| 
+servidor de gestión
+ a| 
+OBTENGA
+ a| 
+`/management-server/events`
+ a| 
+El cuerpo de respuesta consta de los detalles del evento de los eventos consultados en ese centro de datos.
+
+
+
+ a| 
+servidor de gestión
+ a| 
+OBTENGA
+ a| 
+`+/management-server/events/{key}+`
+ a| 
+Ejecute esta API si desea consultar un evento determinado. Introduzca la clave de evento del trabajo para ver los detalles. El cuerpo de respuesta consta de los detalles de ese evento.
+
+|===
+
+
+== Ver los detalles del sistema
+
+Mediante el uso de `/management-server/system` API, puede consultar los detalles específicos de cada instancia del entorno de Unified Manager. La API muestra información sobre el producto y los servicios, como la versión de Unified Manager instalada en el sistema, UUID, nombre del proveedor, SO del host y el nombre, Descripción y estado de los servicios que se ejecutan en la instancia de Unified Manager.
+
+[cols="4*"]
+|===
+| Categoría | Verbo HTTP | Ruta | Descripción 
+
+
+ a| 
+servidor de gestión
+ a| 
+OBTENGA
+ a| 
+`/management-server/system`
+ a| 
+No se requiere ningún parámetro de entrada para ejecutar esta API. Los detalles del sistema de la instancia actual de Unified Manager se devuelven de forma predeterminada.
+
+|===

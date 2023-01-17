@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-viewing-detailed-security-status-for-clusters-and-svms.html 
+sidebar: sidebar 
+keywords: cluster security status,SVM security status,volume encryption status 
+summary: La página Security muestra el estado de seguridad de alto nivel de todos los clústeres, así como el estado de seguridad detallado de cada clúster. El estado detallado del clúster incluye cumplimiento de normativas, cumplimiento de normativas de SVM y cumplimiento de normativas de cifrado de volúmenes. 
+---
+= Ver el estado de seguridad detallado de los clústeres y las SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La página Security muestra el estado de seguridad de alto nivel de todos los clústeres, así como el estado de seguridad detallado de cada clúster. El estado detallado del clúster incluye cumplimiento de normativas, cumplimiento de normativas de SVM y cumplimiento de normativas de cifrado de volúmenes.
+
+
+
+== Pasos
+
+. En el panel de navegación de la izquierda, haga clic en *Panel*.
+. En función de si desea ver el estado de seguridad de todos los clústeres supervisados o de un único clúster, seleccione *todos los clústeres* o seleccione un único clúster en el menú desplegable.
+. Haga clic en la flecha derecha del panel *Seguridad*.
++
+La página Seguridad muestra la siguiente información:
+
++
+** el estado de seguridad del clúster (número de clústeres que son compatibles o no)
+** El estado de seguridad de SVM (número de SVM que son compatibles o no)
+** el estado de cifrado de volúmenes (número de volúmenes cifrados o no cifrados).
+** los métodos de autenticación de clúster que se están usando en cada clúster
+
+
+. Consulte la http://www.netapp.com/us/media/tr-4569.pdf["Guía de fortalecimiento de la seguridad de NetApp para ONTAP 9"] Para obtener instrucciones sobre cómo hacer que todos los clústeres, SVM y volúmenes cumplan con las recomendaciones de seguridad de NetApp.
+

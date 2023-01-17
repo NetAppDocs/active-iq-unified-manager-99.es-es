@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-health-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Estado: Todos los clústeres permite ver información de estado de los clústeres que se van a supervisar.' 
+---
+= Estado: Vista todos los clústeres
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Estado: Todos los clústeres permite ver información de estado de los clústeres que se van a supervisar.
+
+De forma predeterminada, los objetos de las páginas de vista se ordenan en función de la gravedad del evento. Los objetos con eventos críticos se enumeran primero y los objetos con eventos de advertencia aparecen en segundo lugar. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse. Cada clúster de la cuadrícula clústeres tiene enlaces a System Manager de ONTAP. Este enlace le redirige para ver la misma relación de protección en System Manager de ONTAP. La opción de menú *Ver en System Manager* está disponible como uno de los vínculos. El enlace *Ver en System Manager* también está disponible en la página de detalles sobre el estado, el rendimiento y la capacidad del clúster.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Puede utilizar el botón *Configuración de clúster* para modificar o agregar clústeres a Active IQ Unified Manager. Se enumeran todos los clústeres disponibles en Active IQ Unified Manager y cada enlace con el nombre del clúster permite acceder a la página de System Manager de ONTAP para facilitar la navegación.
+
+Puede asociar un clúster a una anotación predefinida utilizando el botón *anotación*.
+
+Consulte xref:reference-cluster-health-fields.adoc[Campos de estado del clúster] para obtener descripciones de todos los campos de esta página.

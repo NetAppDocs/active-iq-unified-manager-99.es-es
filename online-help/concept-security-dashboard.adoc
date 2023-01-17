@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-security-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: Puede activar o desactivar el panel Seguridad en el panel Active IQ Unified Manager. Si está activada, también puede personalizar la configuración para la supervisión del cumplimiento y los eventos de seguridad y las acciones de gestión pertinentes. 
+---
+= Panel de seguridad
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede activar o desactivar el panel Seguridad en el panel Active IQ Unified Manager. Si está activada, también puede personalizar la configuración para la supervisión del cumplimiento y los eventos de seguridad y las acciones de gestión pertinentes.
+
+[NOTE]
+====
+Solo los usuarios con rol de administrador pueden editar esta configuración.
+
+====
+Los criterios de seguridad para sus clústeres de ONTAP, sus equipos virtuales de almacenamiento y sus volúmenes se evalúan en función de las recomendaciones definidas en la Guía de seguridad reforzada de ONTAP 9. El panel de seguridad de la consola muestra el estado de cumplimiento de normativas de seguridad de los clústeres, las máquinas virtuales de almacenamiento y los volúmenes. Al habilitar esta función, también se generan eventos de seguridad para cualquier equipo virtual del clúster o almacenamiento que haya infracciones de seguridad.
+
+
+
+== Personalización de los ajustes
+
+Al habilitar esta función, puede personalizar la configuración para la supervisión de cumplimiento de normativas según corresponda a su entorno de ONTAP. Esta configuración activa los eventos de seguridad y las acciones de administración pertinentes. Siga estos pasos:
+
+. Haga clic en *Personalizar*. Aparece la ventana emergente Personalizar la configuración del panel de seguridad.
+. Para activar o desactivar la configuración personalizada para los clústeres de ONTAP, expanda la selección *Configuración general* para los clústeres. Para obtener información sobre las opciones para personalizar el cumplimiento de normativas de clústeres, consulte link:reference-cluster-compliance-categories.adoc["*Categorías de cumplimiento de clusters*"].
+. Para activar o desactivar la configuración personalizada para los equipos virtuales de almacenamiento, amplíe la selección *Configuración general* para los equipos virtuales de almacenamiento. Para obtener información acerca de las opciones para personalizar el cumplimiento de normativas de equipos virtuales de almacenamiento, consulte link:reference-svm-compliance-categories.adoc["Categorías de cumplimiento de normativas para máquinas virtuales de almacenamiento"].
+. También especifica si se va a utilizar el transporte HTTPS para enviar mensajes de AutoSupport desde ONTAP.
+. Si habilita la configuración de autenticación, se generan alertas desde Unified Manager para el usuario administrador de ONTAP predeterminado.
+

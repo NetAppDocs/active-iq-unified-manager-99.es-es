@@ -1,0 +1,20 @@
+---
+permalink: online-help/reference-capacity-all-volumes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La capacidad: Todos los volúmenes de la vista le permite ver información sobre la capacidad y la utilización de los volúmenes de un clúster. Esta información permite comprender los posibles riesgos de la capacidad y ver la capacidad configurada, utilizada y no utilizada de los volúmenes. Además, la información le ayuda a tomar decisiones sobre la habilitación de funciones de ahorro de espacio como la deduplicación y thin provisioning.' 
+---
+= Capacity: Vista de todos los volúmenes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La capacidad: Todos los volúmenes de la vista le permite ver información sobre la capacidad y la utilización de los volúmenes de un clúster. Esta información permite comprender los posibles riesgos de la capacidad y ver la capacidad configurada, utilizada y no utilizada de los volúmenes. Además, la información le ayuda a tomar decisiones sobre la habilitación de funciones de ahorro de espacio como la deduplicación y thin provisioning.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Si desea analizar la latencia y el rendimiento de un objeto específico, haga clic en el icono más image:../media/more-icon.gif[""], A continuación *analizar carga de trabajo* y puede ver gráficos de rendimiento y capacidad en la página Análisis de carga de trabajo.
+
+Consulte xref:reference-volume-capacity-fields.adoc[Campos de capacidad de volúmenes] para obtener descripciones de todos los campos de esta página.

@@ -1,0 +1,29 @@
+---
+permalink: install-linux/task-restarting-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Es posible que tenga que reiniciar Unified Manager después de realizar cambios de configuración. 
+---
+= Reiniciar Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible que tenga que reiniciar Unified Manager después de realizar cambios de configuración.
+
+
+
+== Antes de empezar
+
+Debe tener acceso de usuario raíz al servidor Red Hat Enterprise Linux o CentOS en el que está instalado Unified Manager.
+
+
+
+== Pasos
+
+. Inicie sesión como usuario raíz en el servidor en el que desea reiniciar el servicio Unified Manager.
+. Detenga el servicio Unified Manager y el software MySQL asociado en el orden que se muestra:
+. Inicie Unified Manager en el orden mostrado:
+

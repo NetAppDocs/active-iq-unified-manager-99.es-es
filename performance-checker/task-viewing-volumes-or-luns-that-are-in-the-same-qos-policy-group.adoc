@@ -1,0 +1,38 @@
+---
+permalink: performance-checker/task-viewing-volumes-or-luns-that-are-in-the-same-qos-policy-group.html 
+sidebar: sidebar 
+keywords:  
+summary: Puede mostrar una lista de los volúmenes y LUN que se hayan asignado al mismo grupo de políticas de calidad de servicio. 
+---
+= Ver volúmenes o LUN que estén en el mismo grupo de políticas de calidad de servicio
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede mostrar una lista de los volúmenes y LUN que se hayan asignado al mismo grupo de políticas de calidad de servicio.
+
+
+
+== Acerca de esta tarea
+
+En el caso de los grupos de políticas de calidad de servicio tradicionales «que son » entre varios volúmenes, puede resultar útil ver si determinados volúmenes están utilizando en exceso el rendimiento definido para el grupo de políticas. También puede ser útil para decidir si puede añadir otros volúmenes al grupo de políticas sin un impacto negativo sobre los otros volúmenes.
+
+En el caso de políticas de calidad de servicio adaptativas y de políticas de nivel de servicio de Unified Manager Performance, esto puede ser útil para ver todos los volúmenes o LUN que están utilizando un grupo de políticas para poder ver qué objetos se verían afectados si cambió la configuración de la política de calidad de servicio.
+
+
+
+== Pasos
+
+. En el panel de navegación izquierdo, haga clic en *almacenamiento* > *grupos de políticas QoS*.
++
+La vista rendimiento: Grupos de políticas de calidad de servicio tradicionales se muestra de forma predeterminada.
+
+. Si usted está interesado en el grupo de políticas tradicionales, quédese en esta página. De lo contrario, seleccione una de las opciones adicionales Ver para mostrar todos los grupos de políticas de QoS adaptativos o todos los grupos de políticas de QoS que crearon los niveles de servicio de Unified Manager Performance.
+. En la política QoS que le interesa, haga clic en el botón expandir (image:../media/chevron-down.gif[""]) Junto al nombre del grupo de políticas QoS para ver más detalles.image:../media/adaptive-qos-expanded.gif[""]
+. Haga clic en el enlace Volumes o LUN para ver los objetos con esta política de calidad de servicio.
++
+La página Performance Inventory de los volúmenes o LUN se muestra con la lista ordenada de los objetos que está utilizando la política de calidad de servicio.
+
+

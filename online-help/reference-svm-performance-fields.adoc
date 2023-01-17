@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-svm-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Los siguientes campos están disponibles en la vista Performance: All Storage VMs y se pueden usar en vistas personalizadas y en informes.' 
+---
+= Campos de rendimiento de máquinas virtuales de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los siguientes campos están disponibles en la vista Performance: All Storage VMs y se pueden usar en vistas personalizadas y en informes.
+
+* *Estado*
++
+Un objeto en buen estado sin eventos activos muestra un icono de Marca de verificación verde (image:../media/sev-normal-um60.png["Icono de gravedad del evento: Normal"]). Si el objeto tiene un evento activo, el icono del indicador de evento identifica la gravedad del evento: Los eventos críticos son rojos (image:../media/sev-critical-um60.png["Icono para la gravedad del evento: Crucial"]), los eventos de error son naranjas (image:../media/sev-error-um60.png["Icono para la gravedad del evento: Error"]), y los sucesos de advertencia son amarillos (image:../media/sev-warning-um60.png["Icono de gravedad del evento: Advertencia"]).
+
+* *Storage VM*
++
+Puede hacer clic en el nombre de la SVM para desplazarse a la página de detalles de rendimiento de esa SVM.
+
+* *Latencia*
++
+El tiempo de respuesta medio para todas las solicitudes de I/o, expresado en milisegundos por operación.
+
+* *IOPS*
++
+Las operaciones de entrada/salida por segundo para la SVM.
+
+* *MB/s*
++
+El rendimiento en la SVM, medido en megabytes por segundo.
+
+* *Capacidad libre*
++
+La capacidad de almacenamiento sin utilizar del SVM, en gigabytes.
+
+* *Capacidad total*
++
+La capacidad de almacenamiento total del SVM, en gigabytes.
+
+* *Cluster*
++
+El clúster al que pertenece la SVM. Puede hacer clic en el nombre del clúster para ir a la página de detalles de ese clúster.
+
+* *Cluster FQDN*
++
+El nombre de dominio completo (FQDN) del clúster.
+
+* *Política de umbral*
++
+La política de umbral de rendimiento definida por el usuario, o políticas, que están activas en este objeto de almacenamiento. Puede colocar el cursor sobre los nombres de directivas que contienen puntos suspensivos (...). para ver el nombre completo de la directiva o la lista de nombres de directivas asignadas. Los botones *Assign Performance Threshold Policy* y *Clear Performance Threshold Policy* permanecen desactivados hasta que seleccione uno o más objetos haciendo clic en las casillas de verificación situadas en el extremo izquierdo.
+
+

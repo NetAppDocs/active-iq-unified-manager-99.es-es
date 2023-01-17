@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-understanding-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: Los pares de VM de almacenamiento son los mapas de una máquina virtual de almacenamiento de origen a una máquina virtual de almacenamiento de destino que utilizan las aplicaciones del partner para la selección de recursos y el aprovisionamiento de volúmenes secundarios. 
+---
+= Comprensión de los compañeros de las máquinas virtuales de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los pares de VM de almacenamiento son los mapas de una máquina virtual de almacenamiento de origen a una máquina virtual de almacenamiento de destino que utilizan las aplicaciones del partner para la selección de recursos y el aprovisionamiento de volúmenes secundarios.
+
+Los iguales siempre se crean entre una máquina virtual de almacenamiento de origen y una máquina virtual de almacenamiento de destino, independientemente de si la máquina virtual de almacenamiento de destino es un destino secundario o un destino terciario. No se puede usar una máquina virtual de almacenamiento de destino secundario como origen para crear un par con una máquina virtual de almacenamiento de destino terciario.
+
+Es posible establecer una relación entre iguales de una máquina virtual de almacenamiento de tres maneras:
+
+* Peer cualquier máquina virtual de almacenamiento
++
+Es posible crear una relación entre iguales entre cualquier máquina virtual de almacenamiento de origen primario y una o varias máquina virtual de almacenamiento de destino. Esto significa que todas las máquinas virtuales de almacenamiento existentes que necesitan protección en este momento, así como todas las máquinas virtuales de almacenamiento que se creen en el futuro, tienen una relación entre iguales con la máquina virtual de almacenamiento de destino especificada. Por ejemplo, puede ser conveniente que se incluyan aplicaciones de diversos orígenes en distintas ubicaciones en un backup en una o varias máquinas virtuales de almacenamiento de destino en una misma ubicación.
+
+* Conectar una máquina virtual de almacenamiento determinada
++
+Es posible crear una relación entre iguales entre una máquina virtual de almacenamiento de origen específica y una o varias máquinas virtuales de almacenamiento de destino específicas. Por ejemplo, si proporciona servicios de almacenamiento a muchos clientes cuyos datos deben estar separados entre sí, puede elegir esta opción para asociar una máquina virtual de almacenamiento de origen específica a una máquina virtual de almacenamiento de destino específica que esté asignada únicamente a ese cliente.
+
+* La misma paridad con una máquina virtual de almacenamiento externa
++
+Es posible crear una paridad entre una máquina virtual de almacenamiento de origen y un volumen flexible externo de una máquina virtual de almacenamiento de destino.
+
+

@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-fixing-ontap-issues-directly-from-unified-manager.html 
+sidebar: sidebar 
+keywords: fix it,fix all 
+summary: Puede solucionar algunos problemas de ONTAP directamente desde la interfaz de usuario de Unified Manager en lugar de tener que utilizar System Manager de ONTAP o la CLI de ONTAP. La opción “acciones de administración” proporciona correcciones a varios problemas de ONTAP que han activado eventos de Unified Manager. 
+---
+= Solución de problemas de ONTAP directamente desde Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede solucionar algunos problemas de ONTAP directamente desde la interfaz de usuario de Unified Manager en lugar de tener que utilizar System Manager de ONTAP o la CLI de ONTAP. La opción «Gestión» proporciona correcciones a varios problemas de ONTAP que han desencadenado eventos de Unified Manager.
+
+Puede corregir problemas directamente desde la página acciones de administración seleccionando la opción *acciones de administración* en el panel de navegación izquierdo. Las acciones de administración también están disponibles en el panel Management Actions (acciones de administración) en el panel Dashboard (Panel), la página de detalles de eventos y la selección Workload Analysis (Análisis de carga de trabajo) en el menú de navegación izquierdo.
+
+Hay ciertos problemas que Unified Manager puede diagnosticar a fondo y proporcionar una única resolución. Si están disponibles, estas resoluciones se muestran en acciones de administración con un botón *Fix it*. Haga clic en el botón *Fix it* para solucionar el problema. Debe tener el rol de administrador de aplicaciones o de administrador del almacenamiento.
+
+Unified Manager envía comandos ONTAP al clúster para realizar la corrección solicitada. Cuando finaliza la corrección, el evento se ha obsoleto.
+
+Algunas acciones de administración permiten solucionar el mismo problema en varios objetos de almacenamiento con el botón *Fix All*. Por ejemplo, puede haber 5 volúmenes que tengan el evento "'espacio de volumen lleno'" que se podría resolver haciendo clic en la acción de administración *reparar todo* para "'Habilitar crecimiento automático de volumen'". Mediante un solo clic, puede solucionar este problema en 5 volúmenes.

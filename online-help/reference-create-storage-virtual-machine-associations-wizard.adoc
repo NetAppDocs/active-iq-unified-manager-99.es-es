@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-create-storage-virtual-machine-associations-wizard.html 
+sidebar: sidebar 
+keywords:  
+summary: El asistente Create Storage Virtual Machine peer permite configurar una máquina virtual de almacenamiento de origen y de destino para usar en relaciones de protección de SnapMirror y SnapVault. 
+---
+= Asistente Create Storage Virtual Machine Peers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El asistente Create Storage Virtual Machine peer permite configurar una máquina virtual de almacenamiento de origen y de destino para usar en relaciones de protección de SnapMirror y SnapVault.
+
+
+
+== Seleccione Source
+
+El panel Select Source permite seleccionar la máquina virtual de almacenamiento principal o de origen en el mismo nivel de la máquina virtual de almacenamiento.
+
+* *Cualquiera*
++
+Permite crear una relación entre iguales entre cualquier origen de máquina virtual de almacenamiento a una o más máquina virtual de almacenamiento de destino, o secundaria. Esto significa que todas las máquinas virtuales de almacenamiento existentes que actualmente requieren protección, así como todas las máquinas virtuales de almacenamiento que se creen en el futuro, tienen una relación entre iguales con la máquina virtual de almacenamiento de destino especificada. Por ejemplo, puede ser conveniente que se lanzaran backups de aplicaciones de varios orígenes distintos en ubicaciones en una o varias máquinas virtuales de almacenamiento de destino en una misma ubicación.
+
+* *Individual*
++
+Permite configurar una máquina virtual de almacenamiento de origen específica con una o varias máquinas virtuales de almacenamiento de destino. Por ejemplo, si proporciona servicios de almacenamiento a muchos clientes cuyos datos deben estar separados entre sí, elija esta opción para asociar un origen específico de las máquinas virtuales de almacenamiento a un destino específico de máquinas virtuales de almacenamiento que se asigne solo a ese cliente.
+
+* *Ninguna (externa)*
++
+Permite crear una asociación entre una máquina virtual de almacenamiento de origen y un volumen flexible externo de una máquina virtual de almacenamiento de destino.
+
++
+** Máquina virtual de almacenamiento
++
+Enumera los nombres de la máquina virtual de almacenamiento de origen disponible
+
+** Clúster
++
+Enumera los clústeres en los que reside cada máquina virtual de almacenamiento
+
+
+
+* *Permitir este tipo de relaciones*
++
+Permite seleccionar el tipo de relación para la asociación:
+
++
+** SnapMirror
++
+Especifica una relación de SnapMirror como tipo de paridad. Al seleccionar esta opción, se habilita la replicación de datos de los orígenes seleccionados a los destinos seleccionados.
+
+** SnapVault
++
+Especifica una relación de SnapVault como tipo de par. Al seleccionar esta opción, se habilitan los backups de las ubicaciones primarias seleccionadas para llegar a las ubicaciones secundarias seleccionadas.
+
+
+
+
+
+
+
+== Seleccione Protección de destinos
+
+El panel Select Protection Destinations del asistente Create Storage Virtual Machine Peers permite seleccionar dónde copiar o replicar los datos. Solo se pueden crear iguales en una máquina virtual de almacenamiento de destino por clúster.
+
+
+
+== Botones de comando
+
+Los botones de comando le permiten realizar las siguientes tareas:
+
+* *Siguiente*
++
+Avanza a la siguiente página del asistente.
+
+* *Atrás*
++
+Regresa a la página anterior del asistente.
+
+* *Fin*
++
+Aplica las selecciones y crea la asociación.
+
+* *Cancelar*
++
+Descarta las selecciones y cierra el asistente Create Storage Virtual Machine Peers.
+
+

@@ -1,0 +1,47 @@
+---
+permalink: online-help/task-enabling-and-disabling-the-ability-to-upload-scripts.html 
+sidebar: sidebar 
+keywords: script upload 
+summary: La capacidad de cargar scripts en Unified Manager y ejecutarlas está habilitada de forma predeterminada. Si la organización no desea permitir esta actividad debido a motivos de seguridad, puede desactivar esta funcionalidad. 
+---
+= Habilitar y deshabilitar la carga de scripts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La capacidad de cargar scripts en Unified Manager y ejecutarlas está habilitada de forma predeterminada. Si la organización no desea permitir esta actividad debido a motivos de seguridad, puede desactivar esta funcionalidad.
+
+
+
+== Antes de empezar
+
+Debe tener la función Administrador de aplicaciones.
+
+
+
+== Pasos
+
+. En el panel de navegación izquierdo, haga clic en *General* > *Configuración de funciones*.
+. En la página *Configuración de característica*, desactive o habilite la secuencia de comandos eligiendo una de las siguientes opciones:
+
+
+[cols="2*"]
+|===
+| Si desea... | Realice lo siguiente... 
+
+
+ a| 
+Desactivar scripts
+ a| 
+En el panel *carga de secuencia de comandos*, mueva el botón deslizante hacia la izquierda.
+
+
+
+ a| 
+Activar scripts
+ a| 
+En el panel *carga de secuencia de comandos*, mueva el botón deslizante hacia la derecha.
+
+|===

@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-iops-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: Los gráficos de contadores IOPS muestran el número de operaciones de entrada/salida procesadas por segundo por el objeto de almacenamiento seleccionado. 
+---
+= Gráficos de contadores de rendimiento de IOPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los gráficos de contadores IOPS muestran el número de operaciones de entrada/salida procesadas por segundo por el objeto de almacenamiento seleccionado.
+
+La ventana emergente que aparece al mover el cursor por el área del gráfico muestra los valores de contador en momentos específicos.
+
+Cuando se muestra en la vista Zoom, los gráficos IOPS del volumen y LUN también muestran los ajustes de umbral de calidad de servicio (QoS) máximo y mínimo de rendimiento, si se han configurado. Si se configuran las políticas de calidad de servicio adaptativas, los gráficos IOPS/TB muestran la configuración máxima de la calidad de servicio y del umbral de rendimiento esperado.
+
+[NOTE]
+====
+En algunos casos, cuando se utilizan políticas de calidad de servicio adaptativas, los valores máximo y mínimo se establecen en el mismo valor de los gráficos. Esto sucede ya sea en volúmenes grandes en los que se utiliza muy poco espacio o en volúmenes muy pequeños.
+
+====
+Cuando visualice un volumen o una LUN que comparte IOPS de una política de calidad de servicio compartida, aparecerá una línea de «'IOPS de carga de trabajo total» para mostrar las IOPS que utilizan todas las demás cargas de trabajo que comparten esta política.
+
+La parte inferior de la página de gráfico muestra información sobre el valor de IOPS mínimo, máximo, promedio y 95 percentil para este objeto en el intervalo de tiempo seleccionado.
+
+Existen cuatro tipos de gráficos IOPS disponibles:
+
+
+
+== Gráfico de contadores IOPS - total
+
+Muestra el número de operaciones de entrada/salida procesadas por segundo.
+
+Cuando se muestra para un nodo, al seleccionar «'total'» se muestra la tasa de IOPS de los datos que se transfieren a través de este nodo que pueden residir en el nodo local o en el remoto, y al seleccionar «'total (local)'» se muestra la tasa de IOPS de los datos que residen únicamente en el nodo actual.
+
+
+
+== IOPS - gráfico de contadores
+
+Muestra los mismos datos de IOPS separados en IOPS de lectura, escritura y otros.
+
+Esta opción de gráfico se aplica cuando el objeto seleccionado es una SVM, un nodo, un agregado, un volumen o una LUN.
+
+Cuando se muestra para un nodo, al seleccionar «'desglose» se muestra el desglose de IOPS de los datos que se transfieren a través de este nodo y que pueden residir en el nodo local o en el remoto, y al seleccionar «'desglose (local)» se muestra el desglose de IOPS de los datos que únicamente residen en el nodo actual.
+
+
+
+== IOPS: Gráfico de contadores de protocolos
+
+Muestra los mismos datos de IOPS, pero para las SVM los datos de rendimiento están separados en componentes individuales para el tráfico de los protocolos CIFS, NFS, FCP, NVMe e iSCSI.
+
+
+
+== Gráfico IOPS/TB - total counter
+
+Muestra el número de operaciones de entrada/salida procesadas por segundo según el espacio lógico total que consume el volumen, en terabytes. También denominado densidad de I/o, este contador mide el rendimiento que ofrece una cantidad de capacidad de almacenamiento determinada.
+
+Esta opción de gráfico solo está disponible cuando el objeto seleccionado es un volumen. Solo muestra los datos de rendimiento cuando la capacidad lógica utilizada por el volumen es mayor o igual a 128 GB. Los vacíos se mostrarán en el gráfico cuando la capacidad utilizada caiga por debajo de los 128 GB durante el periodo de tiempo seleccionado.
+
+
+
+== *Botón Zoom View*
+
+Muestra una vista ampliada de los datos del gráfico de contadores.
+
+* Eventos
++
+La aparición de eventos críticos, de error, de advertencia e informativos se indica en las líneas de tiempo que aparecen encima de los gráficos.
+
+* Umbrales
++
+La línea horizontal discontinua indica el valor del umbral de advertencia de uso establecido en Unified Manager.
+
++
+La línea de color rojo fijo indica el valor del umbral crítico de utilización configurado en Unified Manager.
+
+* Contadores
++
+Los contadores del panel izquierdo muestran los valores de contador que se están mostrando. Anular la selección o selección de image:../media/eye-icon.gif[""] Que está asociado con un contador se oculta y muestra esa información del contador del gráfico y puede ayudar al comparar IOPS del objeto.
+
+

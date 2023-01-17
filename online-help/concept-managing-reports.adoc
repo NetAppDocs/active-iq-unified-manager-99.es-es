@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-managing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Active IQ Unified Manager permite crear y gestionar informes directamente desde la interfaz de usuario de Unified Manager para que se pueda ver información sobre el estado, la capacidad, el rendimiento y las relaciones de protección de objetos de almacenamiento de los clústeres. La revisión de esta información le puede ayudar a identificar problemas potenciales antes de que se produzcan. 
+---
+= Gestión de informes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager permite crear y gestionar informes directamente desde la interfaz de usuario de Unified Manager para que se pueda ver información sobre el estado, la capacidad, el rendimiento y las relaciones de protección de objetos de almacenamiento de los clústeres. La revisión de esta información le puede ayudar a identificar problemas potenciales antes de que se produzcan.
+
+Puede descargar informes como valores separados por comas (.csv), Microsoft Excel (.xlsx) o archivos PDF. También puede programar el envío de un informe mediante correo electrónico a un grupo de destinatarios. Los informes se envían como archivos adjuntos de correo electrónico.
+
+Además de generar informes desde la interfaz de usuario, puede extraer datos de estado y rendimiento de Unified Manager mediante estos métodos adicionales:
+
+* Utilizar las herramientas ODBC (Open Database Connectivity) y ODBC para acceder directamente a la base de datos para obtener información del clúster
+* Ejecutar las API DE REST de Unified Manager para obtener la información que desea revisar
+
+
+A partir de esta versión de Active IQ Unified Manager, se realizan las siguientes mejoras en los informes :
+
+* Se envía un correo electrónico para un informe según la programación configurada. Incluso cuando genere un informe bajo demanda, recibirá un correo electrónico.
+* El nombre de archivo del informe y los metadatos del informe incluyen el nombre de host desde donde se generó el informe.
++
+Incluso si alguien cambia el nombre de archivo, todavía puede identificar el nombre de host desde donde se generó el informe debido a esta mejora.
+
+

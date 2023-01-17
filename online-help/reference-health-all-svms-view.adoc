@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-health-all-svms-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Estado: Todas las máquinas virtuales de almacenamiento permite ver información detallada acerca de las máquinas virtuales de almacenamiento \(SVM\) que va a supervisar.' 
+---
+= Estado: Vista todas las máquinas virtuales de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Estado: Todas las máquinas virtuales de almacenamiento permite ver información detallada acerca de las máquinas virtuales de almacenamiento (SVM) que va a supervisar.
+
+De forma predeterminada, los objetos de las páginas de vista se ordenan en función de la gravedad del evento. Los objetos con eventos críticos se enumeran primero y los objetos con eventos de advertencia aparecen en segundo lugar. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse. Cada máquina virtual de almacenamiento de la cuadrícula de máquinas virtuales de almacenamiento tiene enlaces a System Manager de ONTAP. Este enlace le redirige para ver la misma relación de protección en System Manager de ONTAP.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Puede asociar una SVM a una anotación predefinida utilizando el botón *Annotate*.
+
+Consulte xref:reference-svm-health-fields.adoc[Campos de estado de SVM] para obtener descripciones de todos los campos de esta página.

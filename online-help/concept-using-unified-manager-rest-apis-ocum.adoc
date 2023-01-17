@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-using-unified-manager-rest-apis-ocum.html 
+sidebar: sidebar 
+keywords: REST APIs 
+summary: Active IQ Unified Manager le proporciona API DE REST para ver la información sobre la supervisión y la gestión de su entorno de almacenamiento. Las API también permiten aprovisionar y gestionar objetos de almacenamiento basados en políticas. 
+---
+= Usar API de REST de Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager le proporciona API DE REST para ver la información sobre la supervisión y la gestión de su entorno de almacenamiento. Las API también permiten aprovisionar y gestionar objetos de almacenamiento basados en políticas.
+
+También puede ejecutar API de ONTAP en todos los clústeres gestionados por ONTAP usando la puerta de enlace API compatible con Unified Manager.
+
+Para obtener información sobre las API DE REST de Unified Manager, consulte link:../api-automation/concept-getting-started-with-getting-started-with-um-apis.html["Primeros pasos con Active IQ Unified Manager"].

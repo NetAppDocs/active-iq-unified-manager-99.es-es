@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-health-all-nodes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Estado: Todos los nodos permite ver información detallada sobre los nodos de todos los clústeres que gestiona Unified Manager.' 
+---
+= Estado: Vista de todos los nodos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Estado: Todos los nodos permite ver información detallada sobre los nodos de todos los clústeres que gestiona Unified Manager.
+
+De forma predeterminada, los objetos de las páginas de vista se ordenan en función de la gravedad del evento. Los objetos con eventos críticos se enumeran primero y los objetos con eventos de advertencia aparecen en segundo lugar. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse. Cada nodo de la cuadrícula de nodos tiene enlaces a System Manager de ONTAP. Este enlace le redirige para ver la misma relación de protección en System Manager de ONTAP.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+En el menú *Informes*, la opción *Informe de inventario de hardware* se proporciona cuando Unified Manager, y los clústeres que administra, se instalan en un sitio sin conectividad de red externa. Este botón genera un `.csv` archivo que contiene una lista completa de información sobre clústeres y nodos; por ejemplo, números de modelo de hardware y números de serie, tipos y números de disco, licencias instaladas, etc. Esta funcionalidad de generación de informes resulta útil para la renovación de contratos en sitios seguros que no están conectados a la plataforma Active IQ de NetApp.
+
+Consulte xref:reference-node-health-fields.adoc[Campos de estado del nodo] para obtener descripciones de todos los campos de esta página.

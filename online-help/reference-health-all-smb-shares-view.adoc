@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-health-all-smb-shares-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'El Estado: Todos los recursos compartidos de SMB muestran información sobre los recursos compartidos de SMB/CIFS, como su estado, el nombre del recurso compartido, la ruta de unión, los objetos, la configuración de seguridad, y se han definido políticas de exportación para el recurso compartido.' 
+---
+= Estado: Todos los recursos compartidos de SMB
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El Estado: Todos los recursos compartidos de SMB muestran información sobre los recursos compartidos de SMB/CIFS, como su estado, el nombre del recurso compartido, la ruta de unión, los objetos, la configuración de seguridad, y se han definido políticas de exportación para el recurso compartido.
+
+De forma predeterminada, los objetos de esta página se ordenan en función del estado. Los objetos con errores se enumeran primero y a continuación se muestran los objetos con estado normal. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Si desea analizar la latencia y el rendimiento de un objeto específico, haga clic en el icono más image:../media/more-icon.gif[""], A continuación *analizar carga de trabajo* y puede ver gráficos de rendimiento y capacidad en la página Análisis de carga de trabajo.
+
+Consulte xref:reference-smb-cifs-shares-health-fields.adoc[Campos de estado de los recursos compartidos SMB/CIFS] para obtener descripciones de todos los campos de esta página.

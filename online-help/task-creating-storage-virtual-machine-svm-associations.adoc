@@ -1,0 +1,66 @@
+---
+permalink: online-help/task-creating-storage-virtual-machine-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: El asistente para la creación de compañeros de equipo virtual de almacenamiento permite que las aplicaciones de protección de partners asocien una máquina virtual de almacenamiento de origen con una máquina virtual de almacenamiento de destino para utilizarla con las relaciones de SnapMirror y SnapVault. Las aplicaciones de partners utilizan estas asociaciones en el momento del aprovisionamiento inicial de volúmenes de destino para determinar los recursos que se deben seleccionar. 
+---
+= Creación de iguales de máquinas virtuales de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El asistente para la creación de compañeros de equipo virtual de almacenamiento permite que las aplicaciones de protección de partners asocien una máquina virtual de almacenamiento de origen con una máquina virtual de almacenamiento de destino para utilizarla con las relaciones de SnapMirror y SnapVault. Las aplicaciones de partners utilizan estas asociaciones en el momento del aprovisionamiento inicial de volúmenes de destino para determinar los recursos que se deben seleccionar.
+
+
+
+== Antes de empezar
+
+* La máquina virtual de almacenamiento que está asociando ya debe existir.
+* Debe tener el rol de administrador de aplicaciones o de administrador del almacenamiento.
+
+
+
+
+== Acerca de esta tarea
+
+Para cualquier tipo de relación y máquina virtual de almacenamiento de origen, solo se puede seleccionar una máquina virtual de almacenamiento de destino en cada clúster de destino.
+
+Cambiar asociaciones utilizando las funciones DELETE y CREATE sólo afecta a las operaciones de aprovisionamiento futuras. No mueve volúmenes de destino existentes.
+
+
+
+== Pasos
+
+. En el panel de navegación izquierdo, haga clic en *Protección* > *Storage VM peers*.
+. En la página *SVM peers*, haga clic en *Crear*.
++
+Se iniciará el asistente Create Storage Virtual Machine Peers.
+
+. Seleccione una de las siguientes fuentes:
++
+** *Cualquiera*
++
+Seleccione esta opción si desea crear una asociación entre cualquier origen de máquina virtual de almacenamiento primario a una o varias máquinas virtuales de almacenamiento de destino. Esto significa que todos los equipos virtuales de almacenamiento existentes que actualmente requieren protección, así como todos los equipos virtuales de almacenamiento que se creen en el futuro, están asociados con el equipo virtual de almacenamiento de destino especificado. Por ejemplo, puede ser conveniente que se lanzaran backups de aplicaciones de varios orígenes distintos en ubicaciones en una o varias máquinas virtuales de almacenamiento de destino en una misma ubicación.
+
+** *Individual*
++
+Elija esta opción si desea seleccionar una máquina virtual de almacenamiento de origen específica asociada con una o varias máquina virtual de almacenamiento de destino. Por ejemplo, si proporciona servicios de almacenamiento a muchos clientes cuyos datos deben estar separados entre sí, elija esta opción para asociar un origen específico de las máquinas virtuales de almacenamiento a un destino específico de máquinas virtuales de almacenamiento que se asigne solo a ese cliente.
+
+** *Ninguna (externa)*
++
+Seleccione esta opción si desea crear una asociación entre una máquina virtual de almacenamiento de origen y un volumen flexible externo de una máquina virtual de almacenamiento de destino.
+
+
+
+. Seleccione el tipo de relación de protección que desea crear o los dos:
++
+** *SnapMirror*
+** *SnapVault*
+
+
+. Haga clic en *Siguiente*.
+. Seleccione uno o varios destinos de protección para máquinas virtuales de almacenamiento.
+. Haga clic en *Finalizar*.
+

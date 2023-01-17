@@ -1,0 +1,129 @@
+---
+permalink: online-help/reference-volume-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Los siguientes campos están disponibles en la vista Performance: Todos los volúmenes y se pueden usar en vistas personalizadas y en informes.' 
+---
+= Campos de rendimiento de volumen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los siguientes campos están disponibles en la vista Performance: Todos los volúmenes y se pueden usar en vistas personalizadas y en informes.
+
+* *Estado*
++
+Un objeto en buen estado sin eventos activos muestra un icono de Marca de verificación verde (image:../media/sev-normal-um60.png["Icono de gravedad del evento: Normal"]). Si el objeto tiene un evento activo, el icono del indicador de evento identifica la gravedad del evento: Los eventos críticos son rojos (image:../media/sev-critical-um60.png["Icono para la gravedad del evento: Crucial"]), los eventos de error son naranjas (image:../media/sev-error-um60.png["Icono para la gravedad del evento: Error"]), y los sucesos de advertencia son amarillos (image:../media/sev-warning-um60.png["Icono de gravedad del evento: Advertencia"]).
+
+* *Volumen*
++
+El nombre del volumen. Es posible hacer clic en el nombre del volumen para desplazarse a la página de detalles de rendimiento del volumen.
+
+* *Estilo*
++
+El estilo de volumen, FlexVol o FlexGroup.
+
+* *Latencia*
++
+Para los volúmenes FlexVol, es el tiempo de respuesta medio del volumen para todas las solicitudes de I/o, expresadas en milisegundos por operación. Para los volúmenes FlexGroup, esta es la latencia media de todos los volúmenes constituyentes.
+
+* *IOPS*
++
+Para los volúmenes FlexVol, es la cantidad de operaciones de entrada/salida por segundo del volumen. Para los volúmenes FlexGroup, esta es la suma de IOPS para todos los volúmenes constituyentes.
+
+* *MB/s*
++
+Para volúmenes FlexVol, el rendimiento en el volumen, medido en megabytes por segundo. Para los volúmenes FlexGroup, esta es la suma de MB/s para todos los volúmenes constituyentes.
+
+* *IOPS/TB*
++
+El número de operaciones de entrada/salida procesadas por segundo según el espacio total que consume la carga de trabajo, en terabytes. Este contador mide el rendimiento que ofrece una cantidad de capacidad de almacenamiento determinada.
+
+* *Capacidad libre*
++
+La capacidad de almacenamiento sin utilizar del volumen, expresada en gigabytes.
+
+* *Capacidad total*
++
+La capacidad de almacenamiento total del volumen, expresada en gigabytes.
+
+* *Grupo de políticas QoS*
++
+El nombre del grupo de políticas de calidad de servicio que se asigna al volumen. Puede hacer clic en el nombre del grupo de políticas para ir a la página de detalles QoS a fin de obtener más información acerca de la configuración del grupo de políticas.
+
+* *Política de organización en niveles*
++
+La política de organización en niveles establecida en el volumen. La política solo se ve afectada cuando se implementa el volumen en un agregado de FabricPool. Las directivas disponibles son:
+
++
+** Ninguno. Los datos para este volumen siempre permanecen en el nivel de rendimiento.
+** Solo Snapshot. Solo los datos de Snapshot se mueven automáticamente al nivel de cloud. El resto de datos permanecen en el nivel de rendimiento.
+** Backup. En los volúmenes de protección de datos, todos los datos de usuario transferidos inician en el nivel de cloud, pero las lecturas posteriores de los clientes pueden hacer que los datos activos se muevan de nuevo al nivel de rendimiento.
+** Automático. Los datos de este volumen se mueven automáticamente entre el nivel de rendimiento y el nivel de cloud cuando ONTAP determina que los datos están «activos» o «inactivos».
+** Todo. Los datos para este volumen siempre permanecen en el nivel de cloud.
+
+
+* *Datos fríos*
++
+El tamaño de los datos de usuario almacenados en el volumen que está inactivo (frío).
+
++
+El valor se indica como «'N/A'» en las siguientes situaciones:
+
++
+** Cuando se desactiva «"informes de datos inactivos" en el agregado en el que reside el volumen.
+** Cuando se activa «"notificación de datos inactivos"», pero no se ha alcanzado el número mínimo de días para la recogida de datos.
+** Al utilizar la política de organización en niveles de «'backup» o cuando se utiliza una versión de ONTAP anterior a 9.4 (cuando la generación de informes de datos inactivos no está disponible).
+
+
+* *Recomendación sobre la nube*
++
+Unified Manager ejecuta análisis de capacidad en cada volumen para determinar si puede mejorar la utilización de disco del sistema de almacenamiento y ahorrar espacio en el nivel de rendimiento moviendo datos inactivos (fríos) al nivel de cloud. Cuando la recomendación sea "'Tier'", coloque el cursor sobre la palabra *Tier* para ver la recomendación. Las recomendaciones posibles son:
+
++
+** El aprendizaje. No se han recopilado datos suficientes para hacer una recomendación.
+** Nivel. El análisis ha determinado que el volumen contiene datos inactivos (fríos) y que debe configurar el volumen para moverlos al nivel de cloud.
+** Sin acción. O bien el volumen tiene pocos datos inactivos, o el volumen ya está configurado en la política de organización en niveles «'auto'» o «'all'», o la versión de ONTAP no es compatible con FabricPool. Si ha iniciado sesión en Unified Manager con la función Administrador de aplicaciones o Administrador de almacenamiento, cuando pasa el cursor por encima de la palabra *Tier*, el enlace *Configurar volumen* está disponible para iniciar System Manager para que pueda realizar el cambio recomendado.
+
+
+* *Cluster*
++
+El clúster al que pertenece el volumen. Puede hacer clic en el nombre del clúster para ir a la página de detalles de ese clúster.
+
+* *Cluster FQDN*
++
+El nombre de dominio completo (FQDN) del clúster.
+
+* *Nodo*
++
+El nombre del nodo en el que reside el volumen de FlexVol o el número de nodos en los que reside el volumen de FlexGroup.
+
++
+Para FlexVol Volumes, puede hacer clic en el nombre para mostrar detalles del nodo en la página de detalles Node. Para FlexGroup Volumes, puede hacer clic en el número para mostrar los nodos que se usan en FlexGroup en la página del inventario Nodes.
+
+* *Storage VM*
++
+La máquina virtual de almacenamiento (SVM) a la que pertenece el volumen. Puede hacer clic en el nombre de la SVM para desplazarse a la página de detalles de esa SVM.
+
+* *Agregado*
++
+El nombre del agregado en el que reside el volumen de FlexVol o el número de agregados en los que reside el volumen de FlexGroup.
+
++
+En FlexVol Volumes, puede hacer clic en el nombre para mostrar los detalles del agregado en la página de detalles Aggregate. Para FlexGroup Volumes, puede hacer clic en el número para mostrar los agregados que se usan en FlexGroup en la página del inventario Aggregates.
+
+* *Tipos de disco*
++
+Muestra el tipo de disco en el que reside el volumen.
+
+* *Política de umbral*
++
+La política de umbral de rendimiento definida por el usuario, o políticas, que están activas en este objeto de almacenamiento. Puede colocar el cursor sobre los nombres de directivas que contienen puntos suspensivos (...). para ver el nombre completo de la directiva o la lista de nombres de directivas asignadas. Los botones *Assign Performance Threshold Policy* y *Clear Performance Threshold Policy* permanecen desactivados hasta que seleccione uno o más objetos haciendo clic en las casillas de verificación situadas en el extremo izquierdo.
+
+* *Grupo de políticas QoS*
++
+El nombre del grupo de políticas de calidad de servicio que se asigna al volumen. Puede hacer clic en el nombre del grupo de políticas para ir a la página de detalles QoS a fin de obtener más información acerca de la configuración del grupo de políticas.
+
+

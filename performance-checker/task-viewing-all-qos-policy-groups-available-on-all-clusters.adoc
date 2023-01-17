@@ -1,0 +1,27 @@
+---
+permalink: performance-checker/task-viewing-all-qos-policy-groups-available-on-all-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: Puede mostrar una lista de todos los grupos de políticas de calidad de servicio disponibles en los clústeres que Unified Manager supervisa. Esto incluye políticas de calidad de servicio tradicionales, políticas de calidad de servicio adaptativas y políticas de calidad de servicio gestionadas por las políticas de nivel de servicio de Unified Manager. 
+---
+= Ver todos los grupos de políticas de calidad de servicio disponibles en todos los clústeres
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede mostrar una lista de todos los grupos de políticas de calidad de servicio disponibles en los clústeres que Unified Manager supervisa. Esto incluye políticas de calidad de servicio tradicionales, políticas de calidad de servicio adaptativas y políticas de calidad de servicio gestionadas por las políticas de nivel de servicio de Unified Manager.
+
+
+
+== Pasos
+
+. En el panel de navegación izquierdo, haga clic en *almacenamiento* > *grupos de políticas QoS*.
++
+La vista rendimiento: Grupos de políticas de calidad de servicio tradicionales se muestra de forma predeterminada.
+
+. Consulte la configuración detallada de cada grupo de políticas tradicional de calidad de servicio disponible.
+. Haga clic en el botón expandir (image:../media/chevron-down.gif[""]) Junto al nombre del grupo de políticas QoS para ver más detalles sobre el grupo de políticas.
+. En el menú View, seleccione una de las opciones adicionales para ver todos los grupos de políticas de calidad de servicio adaptativos o para ver todos los grupos de políticas de calidad de servicio creados mediante los niveles de servicio de Unified Manager Performance.
+

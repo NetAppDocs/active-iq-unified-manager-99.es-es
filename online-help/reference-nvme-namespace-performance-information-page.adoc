@@ -1,0 +1,52 @@
+---
+permalink: online-help/reference-nvme-namespace-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Use la página NVMe Namespace/Performance Information para ver una lista de los atributos físicos y lógicos del espacio de nombres. Esta información puede ayudar a responder preguntas relacionadas con el rendimiento. 
+---
+= Página NVMe Namespace/Performance Information
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use la página NVMe Namespace/Performance Information para ver una lista de los atributos físicos y lógicos del espacio de nombres. Esta información puede ayudar a responder preguntas relacionadas con el rendimiento.
+
+
+
+== Atributos de espacio de nombres de NVMe
+
+* *Cluster*
++
+El nombre del clúster al que pertenece el espacio de nombres. Puede hacer clic en el nombre para mostrar los detalles del clúster en la página Cluster/Performance Explorer.
+
+* *Capacidad (libre/total)*
++
+La capacidad de almacenamiento total del espacio de nombres y la cantidad de almacenamiento disponible actualmente.
+
+* *Nodo*
++
+El nombre del nodo en el que reside el espacio de nombres. Puede hacer clic en el nombre para mostrar los detalles del nodo en la página Node/Performance Explorer.
+
+* *Ruta*
++
+La ruta completa del espacio de nombres NVMe, por ejemplo, `/vol/vol1/namespace1`.
+
+* *Estado*
++
+El estado del espacio de nombres. los estados válidos pueden ser en línea, sin conexión, nvfail y con errores de espacio.
+
+* *Subsistema*
++
+El subsistema del espacio de nombres.
+
+* *Storage VM*
++
+El nombre de la SVM a la que pertenece el espacio de nombres. Puede hacer clic en el nombre para mostrar los detalles de SVM en la página Storage VM/Performance Explorer.
+
+* *Volumen*
++
+El nombre del volumen al que pertenece el espacio de nombres. Puede hacer clic en el nombre para mostrar detalles del volumen en la página Volume/Performance Explorer.
+
+

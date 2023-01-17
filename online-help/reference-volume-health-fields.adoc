@@ -1,0 +1,344 @@
+---
+permalink: online-help/reference-volume-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Los siguientes campos están disponibles en la vista Estado: Todos los volúmenes y se pueden utilizar en vistas personalizadas y en informes.' 
+---
+= Campos de estado del volumen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los siguientes campos están disponibles en la vista Estado: Todos los volúmenes y se pueden utilizar en vistas personalizadas y en informes.
+
+* *Estado*
++
+El estado actual de un volumen. El estado puede ser crítico (image:../media/sev-critical-um60.png["Icono para la gravedad del evento: Crucial"]), error (image:../media/sev-error-um60.png["Icono para la gravedad del evento: Error"]), Advertencia (image:../media/sev-warning-um60.png["Icono de gravedad del evento: Advertencia"]), o normal (image:../media/sev-normal-um60.png["Icono de gravedad del evento: Normal"]).
+
+* *Volumen*
++
+El nombre del volumen.
+
+* *Storage VM*
++
+La SVM que contiene el volumen.
+
+* *Estado*
++
+El estado actual del volumen:
+
++
+** Sin conexión
++
+No se permite el acceso de lectura o escritura al volumen.
+
+** En línea
++
+Se permite el acceso de lectura y escritura al volumen.
+
+** Restringida
++
+Se permiten operaciones limitadas, como la reconstrucción de paridad, pero no se permite el acceso a los datos.
+
+** Mixto
++
+No todos los componentes de un volumen FlexGroup están en el mismo estado.
+
+
+
+* *Función de protección*
++
+El rol de protección de un volumen:
+
++
+** Sin protección
++
+Un volumen de lectura/escritura sin relaciones de SnapMirror o SnapVault salientes o entrantes
+
+** Protegido
++
+Un volumen de lectura/escritura con una relación de SnapMirror o SnapVault saliente
+
+** Destino
++
+Un volumen de protección de datos (DP) o un volumen de lectura/escritura con una relación de SnapMirror o SnapVault entrante
+
+** No aplicable
++
+Volumen para el que no se aplican las funciones de protección, como un volumen de uso compartido de carga, un componente de datos o un volumen temporal
+
+
+
++
+Al hacer clic en el rol, se muestra la pestaña Protection de la página de detalles Volume/Health.
+
+* * Protegido por*
++
+El tipo de protección usado para el volumen; recuperación ante desastres de Storage VM, SnapMirror o SnapMirror; recuperación ante desastres de Storage VM. Este campo está oculto de forma predeterminada.
+
+* *Estilo*
++
+El estilo de volumen: FlexVol o FlexGroup.
+
+* *Ruta de montaje*
++
+La ruta en la que se monta el volumen.
+
+* *Datos disponibles %*
++
+El porcentaje de espacio físico disponible actualmente para datos en el volumen.
+
+* *Capacidad de datos disponible*
++
+La cantidad de espacio físico actualmente disponible para los datos del volumen.
+
+* *Datos usados %*
++
+El porcentaje de espacio físico utilizado por datos en el volumen según la capacidad de datos disponible total.
+
+* *Capacidad de datos usados*
++
+La cantidad de espacio físico utilizado por los datos en el volumen.
+
+* *Capacidad total de datos*
++
+El espacio físico total disponible para los datos del volumen.
+
+* *Informes de espacio lógico*
++
+Si el volumen tiene configurada la generación de informes de espacio lógico. El valor puede ser Enabled, Disabled o Not aplica.
+
++
+El espacio lógico indica el tamaño real de los datos que se están almacenando en el volumen sin aplicar el ahorro derivado de las tecnologías de eficiencia del almacenamiento de ONTAP.
+
+* * Espacio lógico utilizado %*
++
+El porcentaje de espacio lógico utilizado por datos del volumen según la capacidad de datos disponible total.
+
+* * Espacio lógico utilizado*
++
+El espacio lógico utilizado por los datos del volumen.
+
+* *Estado de movimiento*
++
+El estado actual de la operación de movimiento de volúmenes. El estado puede ser en curso, en pausa, fallido o finalizado.
+
+* *Tipo*
++
+El tipo de volumen. El tipo de volumen puede ser de lectura/escritura o protección de datos, uso compartido de carga o caché de datos.
+
+* *Thin-Provisioning*
++
+Si la garantía de espacio está establecida para el volumen seleccionado. Los valores válidos son Yes y no
+
+* *Deduplicación*
++
+Si la deduplicación está activada en el volumen. La columna muestra Enabled o Disabled.
+
+* *Compresión*
++
+Si la compresión está habilitada en el volumen. La columna muestra Enabled o Disabled.
+
+* *En transición*
++
+Si el volumen completó o no la transición.
+
+* *Tipo de SnapLock*
++
+El tipo de SnapLock del agregado que contiene el volumen. Las opciones disponibles son Compliance, Enterprise, Non-SnapLock.
+
+* *Política de instantánea local*
++
+Las políticas de copia de Snapshot local para los volúmenes que se muestran en la lista. El nombre de la política predeterminada es el predeterminado.
+
+* *Política de organización en niveles*
++
+La política de organización en niveles establecida en el volumen. La política solo se ve afectada cuando se implementa el volumen en un agregado de FabricPool:
+
++
+** None: Los datos de este volumen siempre permanecen en el nivel de rendimiento.
+** Solo Snapshot: Solo se mueven automáticamente los datos Snapshot al nivel de cloud. El resto de datos permanecen en el nivel de rendimiento.
+** Backup: En los volúmenes de protección de datos, todos los datos de usuario transferidos inician en el nivel de cloud, pero las lecturas posteriores de clientes pueden hacer que los datos activos se muevan al nivel de rendimiento.
+** Auto: Los datos de este volumen se mueven automáticamente entre el nivel de rendimiento y el nivel de cloud cuando ONTAP determina que los datos están «activos» o «inactivos».
+** All: Los datos de este volumen siempre permanecen en el nivel de cloud.
+
+
+* *Política de almacenamiento en caché*
++
+La política de almacenamiento en caché asociada con el volumen seleccionado. La política proporciona información acerca de cómo se produce el almacenamiento en caché Flash Pool en el volumen.
+
+
+
+[cols="2*"]
+|===
+| Política de caché | Descripción 
+
+
+ a| 
+Automático
+ a| 
+Read almacena en caché todos los bloques de metadatos y los bloques de datos de usuario de lectura aleatoria, y Write almacena en caché todos los bloques de datos de usuario sobrescritos de forma aleatoria.
+
+
+
+ a| 
+Ninguno
+ a| 
+No almacena en caché ningún bloque de metadatos o datos de usuario.
+
+
+
+ a| 
+Todo
+ a| 
+Read almacena en caché todos los bloques de datos de usuario que se leen y escriben. La política no realiza ningún almacenamiento en caché de escritura.
+
+
+
+ a| 
+Escritura All-Random
+ a| 
+Esta política es una combinación de las políticas All y no Read-Random Write y realiza las siguientes acciones:
+
+* Read almacena en caché todos los bloques de datos de usuario que se leen y escriben.
+* Write almacena en caché todos los bloques de datos de usuario sobrescritos de forma aleatoria.
+
+
+
+
+ a| 
+Todos leídos
+ a| 
+Read almacena en caché todos los bloques de datos de usuario, lectura aleatoria y lectura secuencial.
+
+
+
+ a| 
+Todas las lecturas y escrituras aleatorias
+ a| 
+Esta política es una combinación de las políticas todas de lectura y no lectura/escritura aleatoria y realiza las siguientes acciones:
+
+* Read almacena en caché todos los bloques de datos de usuario, lectura aleatoria y lectura secuencial.
+* Write almacena en caché todos los bloques de datos de usuario sobrescritos de forma aleatoria.
+
+
+
+
+ a| 
+Lectura y escritura aleatoria total
+ a| 
+Read almacena en caché todos los metadatos, lectura aleatoria, lectura secuencial y bloques de datos de usuario escritos de forma aleatoria.
+
+
+
+ a| 
+All Read Random Write-Random Write
+ a| 
+Esta política es una combinación de las políticas de lectura aleatoria y sin lectura/escritura aleatoria y realiza lo siguiente:
+
+* Read almacena en caché todos los metadatos, las lecturas aleatoria y los bloques de datos de usuario escritos de forma aleatoria.
+* Write almacena en caché todos los bloques de datos de usuario sobrescritos de forma aleatoria.
+
+
+
+
+ a| 
+Meta
+ a| 
+Read almacena en caché solo bloques de metadatos.
+
+
+
+ a| 
+Escritura aleatoria
+ a| 
+Esta política es una combinación de los metadatos y no Read-Random Write y realiza lo siguiente: Sólo cachés de lectura
+
+
+
+ a| 
+Sin lectura/escritura aleatoria
+ a| 
+Write almacena en caché todos los bloques de datos de usuario sobrescritos de forma aleatoria. La política no ejecuta ningún almacenamiento en caché de lectura.
+
+
+
+ a| 
+Lectura aleatoria
+ a| 
+Read almacena en caché todos los bloques de metadatos y los bloques de datos de usuario de lectura aleatoria.
+
+
+
+ a| 
+Lectura-escritura aleatoria
+ a| 
+Read almacena en caché todos los metadatos, lectura aleatoria y bloques de datos de usuario escritos de forma aleatoria.
+
+
+
+ a| 
+Lectura-escritura-escritura aleatoria
+ a| 
+Esta política es una combinación de las políticas de lectura aleatoria y sin lectura/escritura aleatoria y realiza lo siguiente:
+
+* Read almacena en caché todos los metadatos, lectura aleatoria y bloques de datos de usuario sobrescritos de forma aleatoria.
+* Write almacena en caché todos los bloques de datos de usuario sobrescritos de forma aleatoria.
+
+
+|===
+* *Prioridad de retención de caché*
++
+La prioridad de retención de caché del volumen. Una prioridad de retención de caché define cuánto tiempo estarán los bloques de un volumen en estado de caché en un Flash Pool una vez que lleguen a estar inactivos.
+
++
+** Bajo
++
+Almacene en caché los bloques de volumen frío durante el menor tiempo posible
+
+** Normal
++
+Almacene en caché los bloques de datos fríos durante el tiempo predeterminado
+
+** Alto
++
+Almacene en caché los bloques de volumen frío para el mayor tiempo posible
+
+
+
+* *Tipo de cifrado*
++
+El tipo de cifrado que se aplica a un volumen.
+
++
+** Software: Volúmenes protegidos con las soluciones de cifrado por software de cifrado de volúmenes de NetApp (NVE) o cifrado de agregados de NetApp (NAE).
+** Hardware: Volúmenes protegidos con cifrado de hardware de cifrado del almacenamiento de NetApp (NSE).
+** Software y hardware: Volúmenes protegidos por cifrado de software y hardware.
+** None: Volúmenes que no están cifrados.
+
+
+* *Agregado*
++
+El nombre del agregado en el que reside el volumen o el número de agregados en los que reside el volumen FlexGroup.
+
++
+Puede hacer clic en el nombre para mostrar los detalles en la página de detalles Aggregate. Para FlexGroup Volumes, puede hacer clic en el número para mostrar los agregados que se utilizan en FlexGroup en la página Aggregates.
+
+* *Nodo*
++
+El nombre del nodo al que pertenece el volumen o el número de nodos en los que reside el volumen FlexGroup. Para ver más detalles sobre el nodo del clúster, haga clic en el nombre del nodo.
+
++
+Puede hacer clic en el nombre del nodo para mostrar detalles en la página de detalles Node. Para FlexGroup Volumes, puede hacer clic en el número para mostrar los nodos que se usan en la FlexGroup en la página Nodes.
+
+* *Cluster*
++
+El clúster que contiene el volumen de destino. Para ver más detalles sobre el clúster, haga clic en el nombre del clúster.
+
+* *Cluster FQDN*
++
+El nombre de dominio completo (FQDN) del clúster.
+
+

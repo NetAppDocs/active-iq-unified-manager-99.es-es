@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-capacity-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista capacidad: Todos los agregados le permite ver información sobre la capacidad y la utilización de los agregados en todos los clústeres. Esta información le permite comprender los posibles riesgos de la capacidad y también ver la capacidad configurada, utilizada y no utilizada de los agregados.' 
+---
+= Capacity: Vista All Aggregates
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista capacidad: Todos los agregados le permite ver información sobre la capacidad y la utilización de los agregados en todos los clústeres. Esta información le permite comprender los posibles riesgos de la capacidad y también ver la capacidad configurada, utilizada y no utilizada de los agregados.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Consulte xref:reference-aggregate-capacity-fields.adoc[Campos de capacidad de agregados] para obtener descripciones de todos los campos de esta página.

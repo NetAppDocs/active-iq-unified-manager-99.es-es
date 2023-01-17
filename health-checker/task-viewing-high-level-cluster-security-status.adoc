@@ -1,0 +1,36 @@
+---
+permalink: health-checker/task-viewing-high-level-cluster-security-status.html 
+sidebar: sidebar 
+keywords: cluster security status,SVM security status 
+summary: El panel Seguridad de la consola de Unified Manager muestra el estado de seguridad de alto nivel para todos los clústeres o para un único clúster, según la vista actual. 
+---
+= Ver el estado de seguridad de clúster de alto nivel
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El panel Seguridad de Unified Manager Dashboard muestra un estado de seguridad de alto nivel para todos los clústeres o para un único clúster, en función de la vista actual.
+
+
+
+== Pasos
+
+. En el panel de navegación de la izquierda, haga clic en *Panel*.
+. En función de si desea ver el estado de seguridad de todos los clústeres supervisados o de un único clúster, seleccione *todos los clústeres* o seleccione un único clúster en el menú desplegable.
+. Consulte el panel *Seguridad* para ver el estado general.
++
+Este panel muestra:
+
++
+** una lista de los eventos de seguridad recibidos en las últimas 24 horas
+** Un enlace de cada uno de estos eventos a la página de detalles Event
+** Un enlace para ver todos los eventos de seguridad activos en la página del inventario Event Management
+** el estado de seguridad del clúster (número de clústeres que son compatibles o no)
+** El estado de seguridad de SVM (número de SVM que son compatibles o no)
+** el estado de cifrado de volúmenes (número de volúmenes cifrados o no cifrados).
+
+
+. Haga clic en la flecha derecha en la parte superior del panel para ver los detalles de seguridad en la página *Seguridad*.
+

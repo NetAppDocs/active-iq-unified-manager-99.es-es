@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-the-health-and-capacity-status-of-all-san-array-clusters.html 
+sidebar: sidebar 
+keywords: All SAN Array,health and capacity 
+summary: Se pueden usar las páginas del inventario de clústeres para mostrar el estado y la capacidad de los clústeres de la cabina All SAN. 
+---
+= Ver el estado y la capacidad de los clústeres de la cabina All SAN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se pueden usar las páginas del inventario de clústeres para mostrar el estado y la capacidad de los clústeres de la cabina All SAN.
+
+
+
+== Antes de empezar
+
+Debe tener el rol de operador, administrador de aplicaciones o administrador de almacenamiento.
+
+
+
+== Acerca de esta tarea
+
+Se puede ver información general de todos los clústeres de cabina SAN en la vista Estado: Todos los clústeres y su capacidad: Todos los clústeres. Además, puede ver detalles en la página de detalles Cluster / Health.
+
+
+
+== Pasos
+
+. En el panel de navegación izquierdo, haga clic en *almacenamiento* > *clústeres*.
+. Asegúrese de que la columna "'Personality'" se muestra en la vista *Salud: Todos los clusters*, o añádala utilizando el control *Mostrar / Ocultar*.
++
+Esta columna muestra «"cabina All SAN»» de los clústeres de la cabina All SAN.
+
+. Revise la información.
+. Para ver información acerca de la capacidad de almacenamiento en esos clústeres, seleccione la vista *capacidad: All Clusters*.
+. Para ver información detallada sobre el estado y la capacidad de almacenamiento de esos clústeres, haga clic en el nombre de un clúster de cabina All SAN.
++
+Consulte los detalles en las pestañas Estado, capacidad y nodos en la página de detalles Cluster / Health
+
+

@@ -1,0 +1,75 @@
+---
+permalink: online-help/reference-qtree-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Los siguientes campos están disponibles en la vista Capacity: All Qtrees y se pueden usar en vistas personalizadas y en informes.' 
+---
+= Campos de capacidad de Qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los siguientes campos están disponibles en la vista Capacity: All Qtrees y se pueden usar en vistas personalizadas y en informes.
+
+* *Estado*
++
+Muestra el estado actual del qtree. El estado puede ser crítico (image:../media/sev-critical-um60.png["Icono para la gravedad del evento: Crucial"]), error (image:../media/sev-error-um60.png["Icono para la gravedad del evento: Error"]), Advertencia (image:../media/sev-warning-um60.png["Icono de gravedad del evento: Advertencia"]), o normal (image:../media/sev-normal-um60.png["Icono de gravedad del evento: Normal"]).
+
+* *Qtree*
++
+Muestra el nombre del qtree.
+
+* *Volumen*
++
+Muestra el nombre del volumen que contiene el qtree.
+
++
+Es posible hacer clic en el nombre del volumen para ver más información acerca del volumen.
+
+* *Tipo de cuota*
++
+Si se establece una cuota para el qtree, especifica si la cuota es para un usuario, un grupo de usuarios o un árbol.
+
+* *Usuario o Grupo*
++
+Muestra el nombre del usuario o del grupo de usuarios. Habrá varias filas para cada usuario y grupo de usuarios. Cuando el tipo de cuota es Qtree o si no se establece la cuota, la columna está vacía.
+
+* *Disco utilizado %*
++
+Muestra el porcentaje de espacio en disco utilizado. Si se establece un límite de disco duro, este valor se basa en el límite de disco duro. Si la cuota se establece sin un límite duro de disco, el valor se basa en el espacio de datos de volumen. Si no se establece la cuota o si las cuotas están desactivadas en el volumen al que pertenece el qtree, aparece "'no aplicable'" en la página de la cuadrícula y el campo está vacío en los datos de exportación de CSV.
+
+* *Límite de disco duro*
++
+Muestra la cantidad máxima de espacio en disco asignado al qtree. Unified Manager genera un evento crítico cuando se alcanza este límite y no se permiten más escrituras de disco. El valor se muestra como "'Unlimited'" en las siguientes condiciones: Si la cuota se establece sin un límite de disco duro, si no se establece la cuota o si las cuotas están desactivadas en el volumen al que pertenece el qtree.
+
+* *Límite de software de disco*
++
+Muestra la cantidad de espacio en disco asignado al qtree antes de que se genere un evento de advertencia. El valor se muestra como "'Unlimited'" en las siguientes condiciones: Si la cuota se establece sin un límite de software de disco, si no se establece la cuota o si las cuotas están desactivadas en el volumen al que pertenece el qtree.
+
+* *Archivos usados %*
++
+Muestra el porcentaje de archivos usados en el qtree. Si se establece el límite duro del archivo, este valor se basa en el límite duro del archivo. No se muestra ningún valor si la cuota se establece sin un límite duro de archivo. Si no se establece la cuota o si las cuotas están desactivadas en el volumen al que pertenece el qtree, aparece "'no aplicable'" en la página de la cuadrícula y el campo está vacío en los datos de exportación de CSV.
+
+* *Límite duro de archivos*
++
+Muestra el límite rígido para el número de archivos permitidos en los qtrees. El valor se muestra como "'Unlimited'" en las siguientes condiciones: Si la cuota se establece sin un límite mínimo de archivo, si no se establece la cuota o si las cuotas están desactivadas en el volumen al que pertenece el qtree.
+
+* *Límite de software de archivo*
++
+Muestra el límite soft del número de archivos permitidos en los qtrees. El valor se muestra como "'Unlimited'" en las siguientes condiciones: Si la cuota se establece sin un límite de software de archivo, si no se establece la cuota o si las cuotas están desactivadas en el volumen al que pertenece el qtree.
+
+* *SVM*
++
+Muestra el nombre de la máquina virtual de almacenamiento (SVM) que contiene el qtree.
+
+* *Cluster*
++
+Muestra el nombre del clúster que contiene el qtree.
+
+* *Cluster FQDN*
++
+Muestra el nombre de dominio completo (FQDN) del clúster.
+
+

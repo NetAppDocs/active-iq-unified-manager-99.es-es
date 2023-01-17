@@ -1,0 +1,1569 @@
+---
+section: online-help
+title: Ayuda en línea
+entries:
+- title: Introducción a Active IQ Unified Manager
+  pdf-filename: Introducción a Active IQ Unified Manager (administración y supervisión)
+  url: "/online-help/concept-introduction-to-unified-manager.html"
+  entries:
+  - title: Introducción a la supervisión del estado de Active IQ Unified Manager
+    url: "/online-help/concept-introduction-to-unified-manager-health-monitoring.html"
+  - title: Funciones de supervisión del estado de Unified Manager
+    url: "/online-help/concept-unified-manager-health-monitoring-features.html"
+  - title: Introducción a la supervisión del rendimiento de Active IQ Unified Manager
+    url: "/online-help/concept-introduction-to-unified-manager-performance-monitoring.html"
+  - title: Funciones de supervisión del rendimiento de Unified Manager
+    url: "/online-help/concept-unified-manager-performance-monitoring-features.html"
+  - title: Usar API de REST de Unified Manager
+    url: "/online-help/concept-using-unified-manager-rest-apis-ocum.html"
+  - title: Lo que hace Unified Manager Server
+    url: "/online-help/concept-what-the-unified-manager-server-does.html"
+    entries:
+    - title: Cómo funciona el proceso de detección
+      url: "/online-help/concept-how-the-discovery-process-works.html"
+    - title: Actividad de recogida de datos de rendimiento y configuración del clúster
+      url: "/online-help/concept-cluster-configuration-and-performance-data-collection-activity.html"
+    - title: Qué es un ciclo de recopilación de continuidad de datos
+      url: "/online-help/concept-what-a-data-continuity-collection-cycle-is.html"
+    - title: Lo que significa la Marca de hora en los datos y eventos recopilados
+      url: "/online-help/concept-what-the-timestamp-means-in-collected-data-and-events.html"
+- title: La interfaz de usuario
+  url: "/online-help/concept-understanding-the-user-interface.html"
+  entries:
+  - title: Diseños de ventana típicos
+    url: "/online-help/concept-typical-window-layouts-um-6-x.html"
+  - title: Personalización del diseño de ventanas
+    url: "/online-help/reference-window-layout-customization.html"
+  - title: Uso de la ayuda de Unified Manager
+    url: "/online-help/task-using-the-unified-manager-help.html"
+  - title: Guardado de marcadores de sus temas favoritos de la Ayuda
+    url: "/online-help/task-bookmarking-your-favorite-help-topics-onc.html"
+  - title: Buscar objetos de almacenamiento
+    url: "/online-help/task-searching-for-storage-objects.html"
+  - title: Exportar datos de almacenamiento como informes
+    url: "/online-help/task-exporting-storage-data-as-reports.html"
+  - title: Filtrado del contenido de la página de inventario
+    url: "/online-help/task-filtering-inventory-page-content.html"
+  - title: Ver eventos activos desde el timbre de notificación
+    url: "/online-help/task-viewing-active-events-from-the-notification-bell.html"
+- title: Supervisar y gestionar clústeres desde la consola
+  url: "/online-help/concept-monitoring-and-managing-clusters-from-the-dashboard.html"
+  entries:
+  - title: Consola
+    url: "/online-help/reference-dashboard-page.html"
+  - title: Solución de problemas de ONTAP directamente desde Unified Manager
+    url: "/online-help/concept-fixing-ontap-issues-directly-from-unified-manager.html"
+    entries:
+    - title: "¿Qué opciones tengo cuando veo el botón reparar o reparar todo"
+      url: "/online-help/concept-what-options-do-i-have-when-i-see-the-fix-it-button.html"
+    - title: Ver el estado de las acciones de gestión que ha elegido corregir
+      url: "/online-help/task-viewing-the-status-of-all-management-actions-you-have-chosen-to-fix.html"
+    - title: Qué problemas de ONTAP pueden solucionar
+      url: "/online-help/reference-what-ontap-issues-can-unified-manager-fix.html"
+    - title: Sobrescribir las acciones de gestión a través de scripts
+      url: "/online-help/concept-overriding-management-actions-through-scripts.html"
+- title: Solucionar problemas de cargas de trabajo mediante el analizador de cargas
+    de trabajo
+  url: "/online-help/concept-troubleshooting-workloads-using-the-workload-analyzer.html"
+  entries:
+  - title: "¿Qué datos muestra el analizador de cargas de trabajo"
+    url: "/online-help/reference-what-data-does-the-workload-analyzer-display.html"
+  - title: "¿Cuándo se debe utilizar el analizador de cargas de trabajo"
+    url: "/online-help/concept-when-would-i-use-the-workload-analyzer.html"
+  - title: Mediante el analizador de cargas de trabajo
+    url: "/online-help/task-using-the-workload-analyzer.html"
+- title: Gestión de eventos
+  url: "/online-help/concept-managing-events.html"
+  entries:
+  - title: Qué eventos de salud son
+    url: "/online-help/concept-what-health-events-are.html"
+  - title: "¿Qué eventos de rendimiento son"
+    url: "/online-help/concept-what-performance-events-are.html"
+    entries:
+    - title: Fuentes de eventos de rendimiento
+      url: "/online-help/concept-sources-of-performance-events.html"
+    - title: Tipos de políticas de umbral de rendimiento definidas por el sistema
+      url: "/online-help/reference-types-of-system-defined-performance-threshold-policies.html"
+  - title: "¿Qué son los eventos de la plataforma Active IQ"
+    url: "/online-help/concept-what-active-iq-platform-events-are.html"
+  - title: Qué son los eventos del sistema de gestión de eventos
+    url: "/online-help/concept-what-event-management-system-events-are.html"
+    entries:
+    - title: Eventos de EMS que se añaden automáticamente a Unified Manager
+      url: "/online-help/reference-ems-events-that-are-added-automatically-to-unified-manager.html"
+  - title: Qué sucede cuando se recibe un evento
+    url: "/online-help/concept-what-happens-when-an-event-is-received.html"
+  - title: Configuración de los ajustes de notificación de eventos
+    url: "/online-help/task-configuring-event-notification-settings.html"
+  - title: Ver eventos y detalles de eventos
+    url: "/online-help/task-viewing-event-details.html"
+  - title: Visualización de eventos sin asignar
+    url: "/online-help/task-viewing-unassigned-events.html"
+  - title: Reconocer y resolver eventos
+    url: "/online-help/task-acknowledging-and-resolving-events.html"
+  - title: Asignar eventos a usuarios específicos
+    url: "/online-help/task-assigning-events-to-specific-users.html"
+  - title: Deshabilitar eventos no deseados
+    url: "/online-help/task-disabling-unwanted-events.html"
+  - title: Solución de problemas mediante soluciones automáticas de Unified Manager
+    url: "/online-help/task-fixing-issues-using-um-automatic-remediations.html"
+  - title: Habilitar y deshabilitar la generación de informes de eventos de Active
+      IQ
+    url: "/online-help/task-enabling-and-disabling-active-iq-event-reporting.html"
+  - title: Carga de un nuevo archivo de reglas de Active IQ
+    url: "/online-help/task-uploading-a-new-active-iq-rules-file.html"
+  - title: Cómo se generan los eventos de la plataforma Active IQ
+    url: "/online-help/concept-how-active-iq-platform-events-are-generated.html"
+  - title: Resolver eventos de la plataforma Active IQ
+    url: "/online-help/concept-resolving-active-iq-platform-events.html"
+  - title: Suscripción a eventos de EMS de ONTAP
+    url: "/online-help/task-subscribing-to-ontap-ems-events.html"
+  - title: Configuración de los ajustes de retención de eventos
+    url: "/online-help/task-configuring-event-retention-settings.html"
+  - title: Qué es una ventana de mantenimiento de Unified Manager
+    url: "/online-help/concept-what-a-um-maintenance-window-is.html"
+    entries:
+    - title: Programar una ventana de mantenimiento para deshabilitar las notificaciones
+        de eventos del clúster
+      url: "/online-help/task-scheduling-a-maintenance-window-to-disable-cluster-event-notifications.html"
+    - title: Cambiar o cancelar una ventana de mantenimiento programado
+      url: "/online-help/task-changing-or-canceling-a-scheduled-maintenance-window.html"
+    - title: Ver los eventos que se produjeron durante una ventana de mantenimiento
+      url: "/online-help/task-viewing-events-that-occurred-during-a-maintenance-window.html"
+  - title: Gestionar eventos de recursos del sistema host
+    url: "/online-help/task-managing-host-system-resource-events.html"
+  - title: Más información acerca de los eventos
+    url: "/online-help/concept-understanding-more-about-events.html"
+    entries:
+    - title: Definiciones de estado de eventos
+      url: "/online-help/concept-event-state-definitions.html"
+    - title: Descripción de los tipos de gravedad de los eventos
+      url: "/online-help/reference-description-of-event-severity-types.html"
+    - title: Descripción de los niveles de impacto de eventos
+      url: "/online-help/reference-description-of-event-impact-levels.html"
+    - title: Descripción de las áreas de impacto de eventos
+      url: "/online-help/reference-description-of-event-impact-areas.html"
+    - title: Cómo se calcula el estado del objeto
+      url: "/online-help/concept-how-object-status-is-computed.html"
+    - title: Detalles de gráficos de eventos de rendimiento dinámicos
+      url: "/online-help/reference-dynamic-performance-event-chart-details.html"
+    - title: Cambios de configuración detectados por Unified Manager
+      url: "/online-help/concept-cluster-configuration-changes-detected-by-unified-manager.html"
+  - title: Lista de eventos y tipos de gravedad
+    url: "/online-help/reference-list-of-events-and-severity-types.html"
+    entries:
+    - title: Eventos agregados
+      url: "/online-help/reference-aggregate-events.html"
+    - title: Eventos del clúster
+      url: "/online-help/reference-cluster-events.html"
+    - title: Eventos de discos
+      url: "/online-help/reference-disk-events.html"
+    - title: Eventos de compartimentos
+      url: "/online-help/reference-enclosures-events.html"
+    - title: Eventos de ventiladores
+      url: "/online-help/reference-fans-events.html"
+    - title: Eventos de tarjeta Flash
+      url: "/online-help/reference-flash-card-events.html"
+    - title: Eventos Inodes
+      url: "/online-help/reference-inodes-events.html"
+    - title: Eventos de la interfaz de red (LIF)
+      url: "/online-help/reference-logical-interface-events.html"
+    - title: Eventos de LUN
+      url: "/online-help/reference-lun-events.html"
+    - title: Eventos de la estación de gestión
+      url: "/online-help/reference-management-station-events.html"
+    - title: Eventos del puente MetroCluster
+      url: "/online-help/reference-metrocluster-bridge-events.html"
+    - title: Eventos de conectividad de MetroCluster
+      url: "/online-help/reference-metrocluster-connectivity-events.html"
+    - title: Eventos del switch de MetroCluster
+      url: "/online-help/reference-metrocluster-switch-events.html"
+    - title: Eventos de espacio de nombres de NVMe
+      url: "/online-help/reference-nvme-namespace-events.html"
+    - title: Eventos de nodo
+      url: "/online-help/reference-node-events.html"
+    - title: Eventos de la batería NVRAM
+      url: "/online-help/reference-nvram-battery-events.html"
+    - title: Eventos del puerto
+      url: "/online-help/reference-port-events.html"
+    - title: Eventos de suministro de alimentación
+      url: "/online-help/reference-power-supplies-events.html"
+    - title: Eventos de protección
+      url: "/online-help/reference-protection-events.html"
+    - title: Eventos para qtrees
+      url: "/online-help/reference-qtree-events.html"
+    - title: Eventos del procesador de servicios
+      url: "/online-help/reference-service-processor-events.html"
+    - title: Eventos de relaciones con SnapMirror
+      url: "/online-help/reference-snapmirror-relationship-events.html"
+    - title: Eventos de relaciones de reflejo asíncrono y almacén
+      url: "/online-help/reference-snapmirror-and-vault-relationship-events.html"
+    - title: Eventos Snapshot
+      url: "/online-help/reference-snapshot-events.html"
+    - title: Eventos de relaciones con SnapVault
+      url: "/online-help/reference-snapvault-relationship-events.html"
+    - title: Eventos de configuración de conmutación por error de almacenamiento
+      url: "/online-help/reference-storage-failover-settings-events.html"
+    - title: Eventos de servicios de almacenamiento
+      url: "/online-help/reference-storage-services-events.html"
+    - title: Eventos de la bandeja de almacenamiento
+      url: "/online-help/reference-storage-shelf-events.html"
+    - title: Eventos de máquinas virtuales de almacenamiento
+      url: "/online-help/reference-storage-vm-events.html"
+    - title: Eventos de cuota de usuarios y grupos
+      url: "/online-help/reference-user-and-group-quota-events.html"
+    - title: Eventos de volumen
+      url: "/online-help/reference-volume-events.html"
+    - title: Eventos de estado del movimiento de volúmenes
+      url: "/online-help/reference-volume-move-status-events.html"
+  - title: Descripción de ventanas de eventos y cuadros de diálogo
+    url: "/online-help/reference-description-of-event-windows-and-dialog-boxes.html"
+    entries:
+    - title: Notificaciones
+      url: "/online-help/reference-notifications-page.html"
+    - title: Página del inventario Event Management
+      url: "/online-help/reference-event-management-inventory-page.html"
+    - title: Página de detalles Event
+      url: "/online-help/reference-event-details-page.html"
+      entries:
+      - title: Qué se muestra en la sección Información del evento
+        url: "/online-help/reference-what-the-event-information-section-displays.html"
+      - title: Aparece la sección acciones recomendadas
+        url: "/online-help/reference-what-the-suggested-actions-section-displays.html"
+      - title: En qué se muestra la sección Diagnóstico del sistema
+        url: "/online-help/reference-what-the-system-diagnosis-section-displays.html"
+    - title: Página Event Setup
+      url: "/online-help/reference-event-setup-page.html"
+    - title: Cuadro de diálogo Disable Events
+      url: "/online-help/reference-disable-events-dialog-box.html"
+- title: Gestión de alertas
+  url: "/online-help/concept-managing-alerts.html"
+  entries:
+  - title: "¿Qué alertas son"
+    url: "/online-help/concept-what-alerts-are.html"
+  - title: Qué información se incluye en un correo electrónico de alerta
+    url: "/online-help/concept-what-information-is-contained-in-an-alert-email.html"
+  - title: Adición de alertas
+    url: "/online-help/task-adding-alerts.html"
+    entries:
+    - title: Directrices para añadir alertas
+      url: "/online-help/concept-guidelines-for-adding-alerts.html"
+  - title: Adición de alertas para eventos de rendimiento
+    url: "/online-help/task-adding-alerts-for-performance-events.html"
+  - title: Probar alertas
+    url: "/online-help/task-testing-alerts.html"
+  - title: Habilitar y deshabilitar alertas para eventos resueltos y obsoletos
+    url: "/online-help/task-disabling-alerts-for-resolved-and-obsolete-events.html"
+  - title: No se incluye el hecho de que los volúmenes de destino de recuperación
+      ante desastres generen alertas
+    url: "/online-help/task-excluding-disaster-recovery-destination-volumes-from-generating-alerts.html"
+  - title: Visualizar alertas
+    url: "/online-help/task-viewing-alerts.html"
+  - title: Editar alertas
+    url: "/online-help/task-editing-alerts.html"
+  - title: Eliminar alertas
+    url: "/online-help/task-deleting-alerts.html"
+  - title: Descripción de ventanas de alerta y cuadros de diálogo
+    url: "/online-help/reference-description-of-health-alert-windows-and-dialog-boxes.html"
+    entries:
+    - title: Página Alert Setup
+      url: "/online-help/reference-alert-setup-page.html"
+    - title: Cuadro de diálogo Agregar alerta
+      url: "/online-help/reference-add-alert-dialog-box.html"
+    - title: Cuadro de diálogo Edit Alert
+      url: "/online-help/reference-edit-alert-dialog-box.html"
+- title: Gestión de umbrales de salud
+  url: "/online-help/concept-managing-health-thresholds.html"
+  entries:
+  - title: Los umbrales del estado de la capacidad del almacenamiento
+    url: "/online-help/concept-what-storage-capacity-health-thresholds-are.html"
+  - title: Configuración de los valores del umbral de estado global
+    url: "/online-help/task-configuring-global-health-threshold-settings.html"
+    entries:
+    - title: Configuración de los valores de umbral de estado globales del agregado
+      url: "/online-help/task-configuring-global-aggregate-health-threshold-values.html"
+    - title: Configurar los valores de umbral de estado de volúmenes globales
+      url: "/online-help/task-configuring-global-volume-health-threshold-values.html"
+    - title: Configuración de los valores de umbral de estado globales para qtrees
+      url: "/online-help/task-configuring-global-qtree-health-threshold-values.html"
+    - title: Configuración de la configuración del umbral de desfase para relaciones
+        de protección no administradas
+      url: "/online-help/task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.html"
+  - title: Editar la configuración de umbral de estado de cada agregado
+    url: "/online-help/task-editing-individual-aggregate-health-threshold-settings.html"
+  - title: Editar la configuración de umbral de estado de cada volumen
+    url: "/online-help/task-editing-individual-volume-health-threshold-settings.html"
+  - title: Editar la configuración de umbral de estado de qtree individual
+    url: "/online-help/task-editing-individual-qtree-health-threshold-settings.html"
+  - title: Descripción de las páginas umbrales de estado
+    url: "/online-help/reference-description-of-health-thresholds-pages.html"
+    entries:
+    - title: Umbrales del agregado
+      url: "/online-help/reference-aggregate-thresholds-page.html"
+    - title: Umbrales del volumen
+      url: "/online-help/reference-volume-thresholds-page.html"
+    - title: Umbrales de relación
+      url: "/online-help/reference-lag-thresholds-for-unmanaged-relationships-page.html"
+    - title: Página Qtree Thresholds
+      url: "/online-help/reference-qtree-thresholds-page.html"
+    - title: Cuadro de diálogo Edit Aggregate Thresholds
+      url: "/online-help/reference-edit-aggregate-thresholds-dialog-box.html"
+    - title: Cuadro de diálogo Edit Volume Thresholds
+      url: "/online-help/reference-edit-volume-thresholds-dialog-box.html"
+    - title: Cuadro de diálogo Edit Qtree Thresholds
+      url: "/online-help/reference-edit-qtree-thresholds-dialog-box.html"
+- title: Gestión de los umbrales de rendimiento
+  url: "/online-help/concept-managing-performance-thresholds.html"
+  entries:
+  - title: Cómo funcionan las políticas de umbral de rendimiento definidas por el
+      usuario
+    url: "/online-help/concept-how-user-defined-performance-threshold-policies-work-opm.html"
+  - title: Qué sucede cuando se incumple una política de umbral de rendimiento
+    url: "/online-help/concept-what-happens-when-a-performance-threshold-policy-is-breached-opm.html"
+  - title: Se puede realizar un seguimiento de los contadores de rendimiento mediante
+      umbrales
+    url: "/online-help/reference-what-performance-metrics-can-be-monitored-using-thresholds.html"
+  - title: Qué objetos y contadores pueden utilizarse en políticas de umbral de combinación
+    url: "/online-help/reference-what-objects-and-metrics-can-be-used-in-combination-threshold-policies.html"
+  - title: Creación de políticas de umbral de rendimiento definidas por el usuario
+    url: "/online-help/task-creating-user-defined-performance-threshold-policies.html"
+  - title: Asignación de políticas de umbral de rendimiento a objetos de almacenamiento
+    url: "/online-help/task-assigning-performance-threshold-policies-to-storage-objects.html"
+  - title: Ver las políticas de umbral de rendimiento
+    url: "/online-help/task-viewing-performance-threshold-policies.html"
+  - title: Editar políticas de umbral de rendimiento definidas por el usuario
+    url: "/online-help/task-editing-user-defined-performance-threshold-policies.html"
+  - title: Eliminación de políticas de umbral de rendimiento de objetos de almacenamiento
+    url: "/online-help/task-removing-performance-threshold-policies-from-storage-objects.html"
+  - title: Qué ocurre cuando se cambia una política de umbral de rendimiento
+    url: "/online-help/concept-what-happens-when-a-performance-threshold-policy-is-changed-opm.html"
+  - title: Qué sucede con las políticas de umbral de rendimiento cuando se mueve un
+      objeto
+    url: "/online-help/concept-what-happens-to-performance-threshold-policies-when-an-object-is-moved-opm.html"
+  - title: Descripciones de las páginas de políticas de umbral de rendimiento
+    url: "/online-help/reference-descriptions-of-the-performance-threshold-policy-pages.html"
+    entries:
+    - title: Umbrales de rendimiento
+      url: "/online-help/reference-user-defined-threshold-policies-page-opm.html"
+    - title: Cree o Clone Performance Threshold Policy
+      url: "/online-help/reference-create-or-clone-performance-threshold-policy-page-opm.html"
+    - title: Edite la página Performance Threshold Policy
+      url: "/online-help/reference-edit-performance-threshold-policy-page-opm.html"
+    - title: Asigne la página Performance Threshold Policy
+      url: "/online-help/reference-assign-performance-threshold-policy-page-opm.html"
+    - title: Borrar la página Performance Threshold Policy
+      url: "/online-help/reference-clear-performance-threshold-policy-page-opm.html"
+- title: Análisis de eventos de rendimiento
+  url: "/online-help/concept-analyzing-performance-events.html"
+  entries:
+  - title: Mostrar información acerca de los eventos de rendimiento
+    url: "/online-help/task-displaying-information-about-a-performance-event.html"
+  - title: Análisis de eventos de umbrales de rendimiento definidos por el usuario
+    url: "/online-help/concept-analyzing-events-from-user-defined-performance-thresholds.html"
+    entries:
+    - title: Respuesta a eventos de umbral de rendimiento definidos por el usuario
+      url: "/online-help/task-responding-to-user-defined-performance-threshold-events.html"
+  - title: Analizar eventos de umbrales de rendimiento definidos por el sistema
+    url: "/online-help/concept-analyzing-events-from-system-defined-performance-thresholds.html"
+    entries:
+    - title: Respuesta a eventos de umbral de rendimiento definidos por el sistema
+      url: "/online-help/task-responding-to-system-defined-performance-threshold-events.html"
+    - title: Responder a los eventos de rendimiento del grupo de políticas de calidad
+        de servicio
+      url: "/online-help/task-responding-to-a-system-defined-qos-policy-group-performance-event.html"
+    - title: Eventos de políticas de calidad de servicio adaptativas que tienen un
+        tamaño de bloque definido
+      url: "/online-help/concept-understanding-events-from-adaptive-qos-policies-that-have-a-defined-block-size.html"
+    - title: Respuesta a eventos de rendimiento sobreutilizados de recursos de nodos
+      url: "/online-help/task-responding-to-a-system-defined-node-resources-overutilized-performance-event.html"
+    - title: Responder a los eventos de rendimiento de desequilibrio de clústeres
+      url: "/online-help/task-responding-to-cluster-imbalance-performance-events.html"
+  - title: Analizar eventos de umbrales dinámicos de rendimiento
+    url: "/online-help/concept-analyzing-events-from-dynamic-performance-thresholds.html"
+    entries:
+    - title: Identificar las cargas de trabajo de las víctimas involucradas en un
+        evento de rendimiento dinámico
+      url: "/online-help/task-identifying-victim-workloads-involved-in-a-performance-event.html"
+    - title: Identificar las cargas de trabajo abusivas involucradas en un evento
+        de rendimiento dinámico
+      url: "/online-help/task-identifying-bully-workloads-involved-in-a-performance-event.html"
+    - title: Identificar cargas de trabajo de tiburón involucradas en un evento de
+        rendimiento dinámico
+      url: "/online-help/task-identifying-shark-workloads-involved-in-a-performance-event.html"
+    - title: Análisis de eventos de rendimiento para una configuración de MetroCluster
+      url: "/online-help/concept-performance-incident-analysis-for-a-metrocluster-configuration.html"
+      entries:
+      - title: Analizar un evento de rendimiento dinámico en un clúster en una configuración
+          de MetroCluster
+        url: "/online-help/task-analyzing-a-performance-incident-on-a-cluster-in-a-metrocluster-configuration.html"
+      - title: Analizar un evento de rendimiento dinámico para un clúster remoto en
+          una configuración de MetroCluster
+        url: "/online-help/task-analyzing-a-performance-incident-on-a-remote-cluster-in-a-metrocluster-configuration.html"
+    - title: Responder a un evento de rendimiento dinámico causado por la limitación
+        del grupo de políticas de calidad de servicio
+      url: "/online-help/task-responding-to-a-dynamic-performance-event-caused-by-qos-policy-group-throttling.html"
+    - title: Responder a un evento de rendimiento dinámico causado por un fallo del
+        disco
+      url: "/online-help/task-responding-to-a-performance-incident-caused-by-a-disk-failure.html"
+    - title: Responder a un evento de rendimiento dinámico causado por la toma de
+        control de alta disponibilidad
+      url: "/online-help/task-responding-to-a-performance-incident-caused-by-ha-takeover.html"
+- title: Resolver eventos de rendimiento
+  url: "/online-help/reference-resolving-performance-events.html"
+  entries:
+  - title: Confirmación de que la latencia se encuentra dentro del rango esperado
+    url: "/online-help/concept-confirm-that-the-response-time-is-within-the-expected-range.html"
+  - title: Revise el impacto de los cambios de configuración en el rendimiento de
+      la carga de trabajo
+    url: "/online-help/concept-review-the-impact-of-configuration-changes-on-workload-performance.html"
+  - title: Opciones para mejorar el rendimiento de las cargas de trabajo desde el
+      cliente
+    url: "/online-help/concept-options-for-improving-workload-performance-from-the-client-side.html"
+  - title: Compruebe si existen problemas con los clientes o la red
+    url: "/online-help/concept-check-for-client-or-network-issues.html"
+  - title: Verifique si otros volúmenes del grupo de políticas de calidad de servicio
+      tienen una actividad inusualmente alta
+    url: "/online-help/concept-verify-whether-other-volumes-in-the-qos-policy-group-have-unusually-high-activity.html"
+  - title: Mover interfaces lógicas (LIF)
+    url: "/online-help/concept-move-logical-interfaces.html"
+  - title: Ejecute operaciones de eficiencia del almacenamiento en momentos de menor
+      actividad
+    url: "/online-help/concept-run-storage-efficiency-operations-at-less-busy-times.html"
+    entries:
+    - title: Qué es la eficiencia del almacenamiento
+      url: "/online-help/concept-what-storage-efficiency-is.html"
+  - title: Añada discos y reasigne datos
+    url: "/online-help/concept-add-disks-and-reallocate-data.html"
+  - title: Cómo habilitar Flash Cache en un nodo puede mejorar el rendimiento de la
+      carga de trabajo
+    url: "/online-help/reference-how-enabling-flash-cache-on-a-node-can-improve-workload-performance.html"
+  - title: Cómo habilitar Flash Pool en un agregado de almacenamiento puede mejorar
+      el rendimiento de la carga de trabajo
+    url: "/online-help/concept-how-enabling-flash-pool-on-a-storage-aggregate-can-improve-workload-performance.html"
+  - title: Comprobación del estado de la configuración de MetroCluster
+    url: "/online-help/concept-metrocluster-configuration-health-check.html"
+  - title: Verificación de la configuración de MetroCluster
+    url: "/online-help/concept-metrocluster-configuration-verification.html"
+  - title: Mover las cargas de trabajo a otro agregado
+    url: "/online-help/task-moving-workloads-to-a-different-aggregate.html"
+  - title: Mover las cargas de trabajo a un nodo diferente
+    url: "/online-help/task-moving-workloads-to-a-different-node.html"
+  - title: Mover las cargas de trabajo a un agregado en un nodo diferente
+    url: "/online-help/task-moving-workloads-to-an-aggregate-on-a-different-node.html"
+  - title: Mover cargas de trabajo a un nodo en un par de alta disponibilidad diferente
+    url: "/online-help/task-moving-workloads-to-a-node-in-a-different-ha-pair.html"
+  - title: Mover cargas de trabajo a otro nodo en un par de alta disponibilidad diferente
+    url: "/online-help/task-moving-workloads-to-another-node-in-a-different-ha-pair.html"
+  - title: Utilice la configuración de la política de calidad de servicio para priorizar
+      el trabajo de este nodo
+    url: "/online-help/concept-use-qos-policy-settings-to-prioritize-the-work-on-this-node.html"
+  - title: Quite los volúmenes y las LUN inactivos
+    url: "/online-help/concept-remove-inactive-volumes-and-luns.html"
+  - title: Añada discos y realice la reconstrucción de distribución de agregados
+    url: "/online-help/concept-add-disks-and-perform-aggregate-layout-reconstruction.html"
+- title: Gestionar y supervisar clústeres y el estado de objetos del clúster
+  url: "/online-help/concept-managing-and-monitoring-clusters-and-cluster-object-health.html"
+  entries:
+  - title: Supervisión del clúster
+    url: "/online-help/concept-understanding-cluster-monitoring.html"
+    entries:
+    - title: Volúmenes raíz de nodos
+      url: "/online-help/concept-understanding-node-root-volumes.html"
+    - title: Eventos y umbrales para agregados raíz de nodos
+      url: "/online-help/concept-understanding-capacity-events-and-thresholds-for-node-root-aggregates.html"
+    - title: Comprensión del quórum y del épsilon
+      url: "/online-help/concept-understanding-quorum-and-epsilon.html"
+  - title: Ver la lista del clúster y sus detalles
+    url: "/online-help/task-viewing-the-cluster-list-and-details.html"
+  - title: Comprobar el estado de los clústeres en una configuración de MetroCluster
+    url: "/online-help/task-checking-the-health-of-clusters-in-a-metrocluster-configuration.html"
+  - title: Ver el estado y la capacidad de los clústeres de la cabina All SAN
+    url: "/online-help/task-viewing-the-health-and-capacity-status-of-all-san-array-clusters.html"
+  - title: Ver la lista y los detalles del nodo
+    url: "/online-help/task-viewing-the-node-list-and-details.html"
+  - title: Generar un informe de inventario de hardware para la renovación de contrato
+    url: "/online-help/task-generating-a-hardware-inventory-report-for-contract-renewal.html"
+  - title: Consulte la lista y los detalles de la máquina virtual de almacenamiento
+    url: "/online-help/task-viewing-the-svm-list-and-details.html"
+  - title: Consulte la lista de agregados y los detalles
+    url: "/online-help/task-viewing-the-aggregate-list-and-details.html"
+  - title: Visualización de información de capacidad de FabricPool
+    url: "/online-help/task-viewing-fabricpool-capacity-information.html"
+  - title: Ver los detalles del pool de almacenamiento
+    url: "/online-help/task-viewing-storage-pool-details.html"
+  - title: Ver la lista de volúmenes y los detalles
+    url: "/online-help/task-viewing-the-volume-list-and-details.html"
+  - title: Ver detalles acerca de los recursos compartidos de NFS
+    url: "/online-help/task-viewing-details-about-nfs-shares.html"
+  - title: Ver detalles sobre los recursos compartidos de SMB/CIFS
+    url: "/online-help/task-viewing-details-about-cifs-shares.html"
+  - title: Ver la lista de copias Snapshot
+    url: "/online-help/task-viewing-the-list-of-snapshot-copies.html"
+  - title: Eliminar copias Snapshot
+    url: "/online-help/task-deleting-snapshot-copies.html"
+  - title: Cálculo del espacio de la reclamación para las copias snapshot
+    url: "/online-help/task-calculating-reclaimable-space-for-snapshot-copies.html"
+  - title: Descripción de las ventanas y cuadros de diálogo del objeto del clúster
+    url: "/online-help/reference-description-of-cluster-object-windows-and-dialog-boxes.html"
+    entries:
+    - title: 'Estado: Vista todos los clústeres'
+      url: "/online-help/reference-health-all-clusters-view.html"
+    - title: Campos de estado del clúster
+      url: "/online-help/reference-cluster-health-fields.html"
+    - title: 'Capacity: Vista All Clusters'
+      url: "/online-help/reference-capacity-all-clusters-view.html"
+    - title: Campos de capacidad del clúster
+      url: "/online-help/reference-cluster-capacity-fields.html"
+    - title: Página de detalles Cluster / Health
+      url: "/online-help/reference-health-cluster-details-page.html"
+    - title: 'Estado: Vista de todos los nodos'
+      url: "/online-help/reference-health-all-nodes-view.html"
+    - title: Campos de estado del nodo
+      url: "/online-help/reference-node-health-fields.html"
+    - title: 'Estado: Vista todos los agregados'
+      url: "/online-help/reference-health-all-aggregates-view.html"
+    - title: Agregar campos de salud
+      url: "/online-help/reference-aggregate-health-fields.html"
+    - title: 'Capacity: Vista All Aggregates'
+      url: "/online-help/reference-capacity-all-aggregates-view.html"
+    - title: Campos de capacidad de agregados
+      url: "/online-help/reference-aggregate-capacity-fields.html"
+    - title: Página de detalles Aggregate / Health
+      url: "/online-help/reference-health-aggregate-details-page.html"
+    - title: 'Estado: Vista todas las máquinas virtuales de almacenamiento'
+      url: "/online-help/reference-health-all-svms-view.html"
+    - title: Campos de estado de SVM
+      url: "/online-help/reference-svm-health-fields.html"
+    - title: Página de detalles Storage VM / Health
+      url: "/online-help/reference-health-svm-details-page.html"
+    - title: Cuadro de diálogo Storage Pool
+      url: "/online-help/reference-storage-pool-dialog-box.html"
+    - title: 'Estado: Vista de todos los volúmenes'
+      url: "/online-help/reference-health-all-volumes-view.html"
+    - title: Campos de estado del volumen
+      url: "/online-help/reference-volume-health-fields.html"
+    - title: 'Capacity: Vista de todos los volúmenes'
+      url: "/online-help/reference-capacity-all-volumes-view.html"
+    - title: Campos de capacidad de volúmenes
+      url: "/online-help/reference-volume-capacity-fields.html"
+    - title: Página de detalles Volume / Health
+      url: "/online-help/reference-health-volume-details-page.html"
+    - title: 'Capacidad: Toda la vista Qtrees'
+      url: "/online-help/reference-capacity-all-qtrees-view.html"
+    - title: Campos de capacidad de Qtree
+      url: "/online-help/reference-qtree-capacity-fields.html"
+    - title: 'Estado: Todos los recursos compartidos NFS vista'
+      url: "/online-help/reference-health-all-nfs-shares-view.html"
+    - title: NFS comparte campos de estado
+      url: "/online-help/reference-nfs-shares-health-fields.html"
+    - title: 'Estado: Todos los recursos compartidos de SMB'
+      url: "/online-help/reference-health-all-smb-shares-view.html"
+    - title: Campos de estado de los recursos compartidos SMB/CIFS
+      url: "/online-help/reference-smb-cifs-shares-health-fields.html"
+    - title: Cuadro de diálogo Export Policy Rules
+      url: "/online-help/reference-export-policy-rules-dialog-box.html"
+    - title: Cuadro de diálogo Snapshot Copies on a Volume
+      url: "/online-help/reference-snapshot-copies-on-a-volume-dialog-box.html"
+- title: Gestión de los objetivos de seguridad del clúster
+  url: "/online-help/concept-managing-cluster-security-objectives.html"
+  entries:
+  - title: Qué criterios de seguridad se están evaluando
+    url: "/online-help/concept-what-security-criteria-is-being-evaluated.html"
+    entries:
+    - title: Categorías de cumplimiento de clusters
+      url: "/online-help/reference-cluster-compliance-categories.html"
+    - title: Categorías de cumplimiento de normativas de SVM
+      url: "/online-help/reference-svm-compliance-categories.html"
+    - title: Categorías de cumplimiento de volúmenes
+      url: "/online-help/reference-volume-compliance-categories.html"
+  - title: Qué significa no cumplir con las normativas
+    url: "/online-help/concept-what-does-not-compliant-mean.html"
+  - title: Ver el estado de seguridad de clúster de alto nivel
+    url: "/online-help/task-viewing-high-level-cluster-security-status.html"
+  - title: Ver el estado de seguridad detallado de los clústeres y las SVM
+    url: "/online-help/task-viewing-detailed-security-status-for-clusters-and-svms.html"
+  - title: Ver eventos de seguridad que pueden requerir actualizaciones de software
+      o firmware
+    url: "/online-help/task-viewing-security-events-that-may-require-software-or-firmware-updates.html"
+  - title: Ver cómo se gestiona la autenticación de usuario en todos los clústeres
+    url: "/online-help/task-viewing-how-user-authentication-is-being-managed-on-all-clusters.html"
+  - title: Ver el estado de cifrado de todos los volúmenes
+    url: "/online-help/task-viewing-the-encryption-status-of-all-volumes.html"
+  - title: Ver todos los eventos de seguridad activos
+    url: "/online-help/task-viewing-all-security-events.html"
+  - title: Agregar alertas para eventos de seguridad
+    url: "/online-help/task-adding-alerts-for-security-events.html"
+  - title: Desactivación de eventos de seguridad específicos
+    url: "/online-help/task-disabling-specific-security-events.html"
+  - title: Eventos de seguridad
+    url: "/online-help/reference-security-events.html"
+- title: Supervisión de la infraestructura virtual de VMware
+  url: "/online-help/concept-monitoring-vmware-virtual-infrastructure.html"
+  entries:
+  - title: Ver y añadir vCenter Server
+    url: "/online-help/task-viewing-and-adding-vcenter-servers.html"
+  - title: Supervisar máquinas virtuales
+    url: "/online-help/concept-monitoring-vms.html"
+  - title: Visualización de la infraestructura virtual en una configuración de recuperación
+      ante desastres
+    url: "/online-help/concept-mcc-svmdr-vmawareness.html"
+- title: Aprovisionamiento y gestión de cargas de trabajo
+  url: "/online-help/concept-provisioning-and-managing-workloads.html"
+  entries:
+  - title: Información general de cargas de trabajo
+    url: "/online-help/concept-workloads-dashboard.html"
+    entries:
+    - title: Ver cargas de trabajo
+      url: "/online-help/concept-all-workloads.html"
+    - title: Asignar políticas a cargas de trabajo
+      url: "/online-help/concept-assigning-policies-on-workloads.html"
+    - title: Aprovisionar los volúmenes compartidos de archivos
+      url: "/online-help/task-provisioning-fileshares.html"
+    - title: Aprovisionar las LUN
+      url: "/online-help/task-provisioning-luns.html"
+  - title: Gestión de niveles de servicio de rendimiento
+    url: "/online-help/concept-managing-performance-service-levels.html"
+    entries:
+    - title: Creación y edición de niveles de servicio de rendimiento
+      url: "/online-help/task-creating-and-editing-psls.html"
+  - title: Gestión de políticas de eficiencia del almacenamiento
+    url: "/online-help/concept-managing-storage-efficiency-policies.html"
+    entries:
+    - title: Crear y editar políticas de eficiencia del almacenamiento
+      url: "/online-help/task-creating-and-editing-seps.html"
+- title: Gestión de informes
+  url: "/online-help/concept-managing-reports.html"
+  entries:
+  - title: Comprensión de la relación de vista e informe
+    url: "/online-help/concept-understanding-the-view-and-reports-relationship.html"
+  - title: Tipos de informes
+    url: "/online-help/reference-types-of-reports.html"
+  - title: Flujo de trabajo de informes
+    url: "/online-help/concept-report-work-flow.html"
+  - title: Inicio rápido de informes
+    url: "/online-help/task-reporting-quick-start.html"
+  - title: Uso de Excel para personalizar el informe
+    url: "/online-help/task-using-excel-to-customize-your-report.html"
+  - title: Buscando un informe programado
+    url: "/online-help/task-searching-for-a-scheduled-report.html"
+  - title: Descargando informes
+    url: "/online-help/task-downloading-reports.html"
+  - title: Programar un informe
+    url: "/online-help/task-scheduling-a-report.html"
+  - title: Gestión de programas de informes
+    url: "/online-help/task-managing-report-schedules.html"
+  - title: Bases de datos de Unified Manager accesibles para la generación de informes
+      personalizados
+    url: "/online-help/concept-unified-manager-databases-accessible-for-reporting.html"
+  - title: Página Report Schedules
+    url: "/online-help/reference-scheduled-reports-page.html"
+- title: Gestionar y supervisar configuraciones de MetroCluster
+  url: "/online-help/concept-managing-and-monitoring-metrocluster-configurations.html"
+  entries:
+  - title: Partes de una configuración de MetroCluster estructural
+    url: "/online-help/concept-parts-of-a-fabric-metrocluster-configuration.html"
+    entries:
+    - title: Parte de una configuración de MetroCluster con ampliación de dos nodos
+        conectada a SAS
+      url: "/online-help/concept-parts-of-a-two-node-sas-attached-stretch-metrocluster-configuration.html"
+    - title: Partes de una configuración de MetroCluster con ampliación de dos nodos
+        y conexión a puente
+      url: "/online-help/concept-parts-of-a-two-node-metrocluster-configuration-using-fc-to-sas-bridges.html"
+  - title: Definiciones de estado de conectividad de clúster
+    url: "/online-help/reference-cluster-connectivity-status-definitions.html"
+  - title: Definiciones de estado de mirroring de datos
+    url: "/online-help/reference-data-mirroring-status-definitions.html"
+  - title: Supervisar las configuraciones de MetroCluster
+    url: "/online-help/task-monitoring-metrocluster-configurations.html"
+  - title: Supervisar la replicación de MetroCluster
+    url: "/online-help/task-monitoring-metrocluster-replication.html"
+- title: Gestión de cuotas
+  url: "/online-help/concept-managing-quotas.html"
+  entries:
+  - title: Qué límites de cuota son
+    url: "/online-help/concept-what-quota-limits-are.html"
+  - title: Visualización de cuotas de usuarios y grupos de usuarios
+    url: "/online-help/task-viewing-user-and-user-group-quotas.html"
+  - title: Creación de reglas para generar direcciones de correo electrónico
+    url: "/online-help/task-creating-rules-to-generate-email-addresses.html"
+  - title: Creación de un formato de notificación por correo electrónico para cuotas
+      de usuarios y grupos de usuarios
+    url: "/online-help/task-creating-an-email-notification-format-for-user-and-user-group-quotas.html"
+  - title: Edición de direcciones de correo electrónico de cuotas de usuarios y grupos
+    url: "/online-help/task-editing-user-and-group-quota-email-addresses.html"
+  - title: Más información acerca de las cuotas
+    url: "/online-help/concept-understanding-more-about-quotas.html"
+    entries:
+    - title: Descripción general del proceso de cuotas
+      url: "/online-help/concept-overview-of-the-quota-process-um-6-1.html"
+    - title: Acerca de las cuotas
+      url: "/online-help/concept-about-quotas.html"
+    - title: Por qué se usan cuotas
+      url: "/online-help/concept-why-you-use-quotas.html"
+  - title: Descripción de los cuadros de diálogo cuotas
+    url: "/online-help/reference-description-of-quotas-dialog-boxes.html"
+    entries:
+    - title: Formato de notificación por correo electrónico
+      url: "/online-help/reference-email-notification-format-page.html"
+    - title: Reglas para generar la página Dirección de correo electrónico de cuota
+        de usuario y grupo
+      url: "/online-help/reference-rules-to-generate-user-and-group-quota-email-address-dialog-box.html"
+- title: Administrar scripts
+  url: "/online-help/concept-managing-scripts.html"
+  entries:
+  - title: Cómo funcionan los scripts con alertas
+    url: "/online-help/concept-how-scripts-work-with-alerts.html"
+  - title: Añadiendo scripts
+    url: "/online-help/task-adding-scripts.html"
+  - title: Eliminar scripts
+    url: "/online-help/task-deleting-scripts.html"
+  - title: Prueba de la ejecución de scripts
+    url: "/online-help/task-testing-script-execution.html"
+  - title: Habilitar y deshabilitar la carga de scripts
+    url: "/online-help/task-enabling-and-disabling-the-ability-to-upload-scripts.html"
+  - title: Comandos de CLI de Unified Manager compatibles
+    url: "/online-help/reference-supported-unified-manager-cli-commands.html"
+  - title: Descripción de ventanas de script y cuadros de diálogo
+    url: "/online-help/reference-description-of-script-windows-and-dialog-boxes.html"
+    entries:
+    - title: Scripts
+      url: "/online-help/reference-management-scripts-page.html"
+    - title: Cuadro de diálogo Add Script
+      url: "/online-help/reference-add-script-dialog-box.html"
+- title: Gestionar anotaciones para objetos de almacenamiento
+  url: "/online-help/concept-managing-annotations-for-storage-objects.html"
+  entries:
+  - title: Qué son las anotaciones
+    url: "/online-help/concept-what-annotations-are.html"
+  - title: Cómo funcionan las reglas de anotación en Unified Manager
+    url: "/online-help/concept-how-annotation-rules-work-in-unified-manager.html"
+  - title: Descripción de los valores de anotación predefinidos
+    url: "/online-help/reference-description-of-predefined-annotation-values.html"
+  - title: Ver la lista de anotaciones y los detalles
+    url: "/online-help/task-viewing-the-annotation-list-and-details.html"
+  - title: Adición dinámica de anotaciones
+    url: "/online-help/task-adding-annotations-dynamically.html"
+  - title: Añadir anotaciones manualmente a objetos de almacenamiento individuales
+    url: "/online-help/task-adding-annotations-manually-to-individual-storage-objects.html"
+  - title: Adición de valores a anotaciones
+    url: "/online-help/task-adding-values-to-annotations.html"
+  - title: Creación de reglas de anotación
+    url: "/online-help/task-creating-annotation-rules.html"
+  - title: Configuración de condiciones para reglas de anotación
+    url: "/online-help/task-configuring-conditions-for-annotation-rules.html"
+  - title: Edición de reglas de anotación
+    url: "/online-help/task-editing-annotation-rules.html"
+  - title: Reordenación de las reglas de anotación
+    url: "/online-help/task-reordering-annotation-rules.html"
+  - title: Eliminar anotaciones
+    url: "/online-help/task-deleting-annotations.html"
+  - title: Eliminar valores de anotaciones
+    url: "/online-help/task-deleting-values-from-annotations.html"
+  - title: Eliminación de reglas de anotación
+    url: "/online-help/task-deleting-annotation-rules.html"
+  - title: Descripción de las ventanas de anotaciones y cuadros de diálogo
+    url: "/online-help/reference-description-of-annotations-windows-and-dialog-boxes.html"
+    entries:
+    - title: Anotaciones
+      url: "/online-help/reference-management-annotations-page.html"
+    - title: Cuadro de diálogo Agregar anotación
+      url: "/online-help/reference-add-annotation-dialog-box.html"
+    - title: Cuadro de diálogo Editar anotación
+      url: "/online-help/reference-edit-annotation-dialog-box.html"
+    - title: Cuadro de diálogo Agregar regla de anotación
+      url: "/online-help/reference-add-annotation-rule-dialog-box.html"
+    - title: Cuadro de diálogo Editar regla de anotación
+      url: "/online-help/reference-edit-annotation-rule-dialog-box.html"
+    - title: Cuadro de diálogo reorganizar regla de anotación
+      url: "/online-help/reference-reorder-annotation-rule-dialog-box.html"
+    - title: Cuadro de diálogo Annotate Cluster
+      url: "/online-help/reference-annotate-cluster-dialog-box.html"
+    - title: Cuadro de diálogo Annotate SVM
+      url: "/online-help/reference-annotate-svm-dialog-box.html"
+    - title: Cuadro de diálogo Annotate Volume
+      url: "/online-help/reference-annotate-volume-dialog-box.html"
+- title: Gestión y supervisión de grupos
+  url: "/online-help/concept-managing-and-monitoring-groups.html"
+  entries:
+  - title: Comprender los grupos
+    url: "/online-help/concept-understanding-groups.html"
+    entries:
+    - title: Qué es un grupo
+      url: "/online-help/concept-what-a-group-is.html"
+    - title: Cómo funcionan las reglas de grupo para los grupos
+      url: "/online-help/concept-how-group-rules-work-for-groups.html"
+    - title: Cómo funcionan las acciones de grupo en los objetos de almacenamiento
+      url: "/online-help/concept-how-group-actions-work-on-storage-objects.html"
+  - title: Gestionar grupos de objetos de almacenamiento
+    url: "/online-help/concept-managing-groups-of-storage-objects.html"
+    entries:
+    - title: Agregar grupos
+      url: "/online-help/task-adding-groups.html"
+    - title: Eliminación de grupos
+      url: "/online-help/task-deleting-groups.html"
+    - title: Edición de grupos
+      url: "/online-help/task-editing-the-group-settings.html"
+    - title: Agregando reglas de grupo
+      url: "/online-help/task-adding-group-rules.html"
+    - title: Editar reglas de grupo
+      url: "/online-help/task-editing-group-rules.html"
+    - title: Eliminando reglas de grupo
+      url: "/online-help/task-deleting-group-rules.html"
+    - title: Configurar condiciones para reglas de grupo
+      url: "/online-help/task-configuring-conditions-for-group-rules.html"
+    - title: Agregando acciones de grupo
+      url: "/online-help/task-adding-group-actions.html"
+    - title: Editar acciones de grupo
+      url: "/online-help/task-editing-group-actions.html"
+    - title: Configurar los umbrales de estado de volúmenes para grupos
+      url: "/online-help/task-configuring-volume-health-thresholds-for-groups.html"
+    - title: Eliminar acciones de grupo
+      url: "/online-help/task-deleting-group-actions.html"
+    - title: Reordenación de acciones de grupo
+      url: "/online-help/task-reordering-group-actions.html"
+  - title: Descripción de las ventanas de grupos y cuadros de diálogo
+    url: "/online-help/reference-description-of-groups-windows-and-dialog-boxes.html"
+    entries:
+    - title: Grupos
+      url: "/online-help/reference-management-groups-page.html"
+    - title: Cuadro de diálogo Agregar grupo
+      url: "/online-help/reference-add-group-dialog-box.html"
+    - title: Cuadro de diálogo Edit Group
+      url: "/online-help/reference-edit-group-dialog-box.html"
+    - title: Página de detalles Groups
+      url: "/online-help/reference-groups-detail-page.html"
+    - title: Cuadro de diálogo Agregar regla de grupo
+      url: "/online-help/reference-add-group-rule-dialog-box.html"
+    - title: Cuadro de diálogo Edit Group Rule
+      url: "/online-help/reference-edit-group-rule-dialog-box.html"
+    - title: Cuadro de diálogo Agregar acción de grupo
+      url: "/online-help/reference-add-action-dialog-box.html"
+    - title: Sección Group Action-volume Thresholds
+      url: "/online-help/reference-group-action-volume-thresholds-section.html"
+    - title: Cuadro de diálogo Edit Group Action
+      url: "/online-help/reference-edit-group-action-dialog-box.html"
+    - title: Cuadro de diálogo Reorder Group Actions
+      url: "/online-help/reference-reorder-group-action-dialog-box.html"
+- title: Gestión y supervisión de relaciones de protección
+  url: "/online-help/concept-managing-and-monitoring-protection-relationships.html"
+  entries:
+  - title: Tipos de protección SnapMirror
+    url: "/online-help/concept-types-of-snapmirror-protection.html"
+  - title: Visualización de las relaciones de protección de volúmenes
+    url: "/online-help/task-viewing-volume-protection-relationships.html"
+  - title: 'Crear una relación de protección SnapVault desde la vista Estado: Todos
+      los volúmenes'
+    url: "/online-help/task-creating-a-snapvault-protection-relationship-from-the-health-volumes-page.html"
+  - title: Crear una relación de protección SnapVault desde la página de detalles
+      Volume/Health
+    url: "/online-help/task-creating-a-snapvault-protection-relationship-from-the-health-volume-details-page.html"
+  - title: 'Crear una relación de protección de SnapMirror desde la vista Estado:
+      Todos los volúmenes'
+    url: "/online-help/task-creating-a-snapmirror-protection-relationship-from-the-health-volumes-page.html"
+  - title: Crear una relación de protección SnapMirror desde la página de detalles
+      Volume/Health
+    url: "/online-help/task-creating-a-snapmirror-protection-relationship-from-the-health-volume-details-page.html"
+  - title: Crear una relación de SnapMirror con una replicación de versión flexible
+    url: "/online-help/task-creating-a-snapmirror-relationship-with-version-flexible-replication.html"
+  - title: Crear relaciones SnapMirror con una replicación de versión flexible con
+      la opción de backup
+    url: "/online-help/task-creating-snapmirror-relationships-with-version-flexible-replication-with-backup-option.html"
+  - title: Configurar los ajustes de eficiencia de destino
+    url: "/online-help/task-configuring-protection-destination-settings.html"
+  - title: Crear programaciones de SnapMirror y SnapVault
+    url: "/online-help/task-creating-snapmirror-and-snapvault-schedules.html"
+  - title: Crear relaciones en cascada o con ventilador para ampliar la protección
+      a partir de una relación de protección existente
+    url: "/online-help/task-creating-cascade-or-fanout-relationships-to-extend-protection-from-an-existing-destination-or-secondary-volume.html"
+  - title: Editar las relaciones de protección en la página Volume Relationships
+    url: "/online-help/task-editing-protection-relationships-from-the-protection-volume-relationships-page.html"
+  - title: Editar las relaciones de protección desde la página de detalles volumen
+      / Estado
+    url: "/online-help/task-editing-protection-relationships-from-the-health-volume-details-page.html"
+  - title: Creación de una política de SnapMirror para maximizar la eficiencia de
+      transferencia
+    url: "/online-help/task-creating-a-snapmirror-policy-to-maximize-transfer-efficiency.html"
+  - title: Creación de una política de SnapVault para maximizar la eficiencia de transferencia
+    url: "/online-help/task-creating-a-snapvault-policy-to-maximize-transfer-efficiency.html"
+  - title: Cancelar una transferencia de protección de datos activa desde la página
+      Relaciones de volumen
+    url: "/online-help/task-aborting-an-active-data-protection-transfer.html"
+  - title: Cancelación de una transferencia de protección de datos activa desde la
+      página de detalles volumen / Salud
+    url: "/online-help/task-aborting-an-active-data-protection-transfer-from-the-health-volume-details-page.html"
+  - title: Desactivación de una relación de protección en la página Relaciones de
+      volumen
+    url: "/online-help/task-quiescing-a-protection-relationship-from-the-volume-relationships-page.html"
+  - title: Desactivación de una relación de protección desde la página de detalles
+      volumen / Salud
+    url: "/online-help/task-quiescing-a-protection-relationship-from-the-health-volume-details-page.html"
+  - title: Interrumpir una relación de SnapMirror en la página Volume Relationships
+    url: "/online-help/task-breaking-a-snapmirror-relationship.html"
+  - title: Romper una relación de SnapMirror en la página de detalles Volume/Health
+    url: "/online-help/task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.html"
+  - title: Quitar una relación de protección en la página Volume Relationships
+    url: "/online-help/task-removing-a-protection-relationship.html"
+  - title: Eliminación de una relación de protección de la página de detalles Volume
+      / Health
+    url: "/online-help/task-removing-a-protection-relationship-from-the-health-volume-details-page.html"
+  - title: Reanude las transferencias programadas en una relación de modo inactivo
+      en la página Relaciones de volumen
+    url: "/online-help/task-resuming-scheduled-transfers-on-a-quiesced-relationship.html"
+  - title: Reanude las transferencias programadas en una relación en modo inactivo
+      en la página de detalles Volume/Health
+    url: "/online-help/task-resuming-scheduled-transfers-on-a-quiesced-relationship-from-the-health-volume-details-page.html"
+  - title: Inicializando o actualizando relaciones de protección en la página Volume
+      Relationships
+    url: "/online-help/task-initializing-or-updating-protection-relationships.html"
+  - title: Inicializar o actualizar las relaciones de protección en la página de detalles
+      Volume / Health
+    url: "/online-help/task-initializing-or-updating-protection-relationships-from-the-health-volume-details-page.html"
+  - title: Resincronizando las relaciones de protección desde la página Volume Relationships
+    url: "/online-help/task-resynchronizing-protection-relationships.html"
+  - title: Resincronizando las relaciones de protección desde la página de detalles
+      Volume / Health
+    url: "/online-help/task-resynchronizing-protection-relationships-from-the-health-volume-details-page.html"
+  - title: Inversión de las relaciones de protección en la página Volume Relationships
+    url: "/online-help/task-reversing-protection-relationships.html"
+  - title: Inversión de las relaciones de protección desde la página de detalles volumen
+      / Estado
+    url: "/online-help/task-reversing-protection-relationships-from-the-health-volume-details-page.html"
+  - title: 'Restaurar datos con la vista Estado: Todos los volúmenes'
+    url: "/online-help/task-restoring-data-using-the-health-volumes-page.html"
+  - title: Restaurar datos mediante la página de detalles Volume / Health
+    url: "/online-help/task-restoring-data-using-the-health-volume-details-page.html"
+  - title: Qué pools de recursos son
+    url: "/online-help/concept-what-resource-pools-are.html"
+  - title: Creación de pools de recursos
+    url: "/online-help/task-creating-resource-pools.html"
+  - title: Editar pools de recursos
+    url: "/online-help/task-editing-resource-pools.html"
+  - title: Ver el inventario de pools de recursos
+    url: "/online-help/task-viewing-resource-pool-inventory.html"
+  - title: Agregar miembros del pool de recursos
+    url: "/online-help/task-adding-resource-pool-members.html"
+  - title: Eliminación de agregados de pools de recursos
+    url: "/online-help/task-removing-aggregates-from-resource-pools.html"
+  - title: Eliminación de pools de recursos
+    url: "/online-help/task-deleting-resource-pools.html"
+  - title: Supervisar las relaciones de protección de recuperación ante desastres
+      de las máquinas virtuales de almacenamiento
+    url: "/online-help/concept-monitoring-storage-vm-disaster-recovery-protection-relationships.html"
+    entries:
+    - title: Supervisión de máquinas virtuales de almacenamiento mediante la página
+        Relaciones
+      url: "/online-help/task-monitoring-storage-vms-using-relationships-page.html"
+    - title: Ver las relaciones de protección en la página Storage VMs
+      url: "/online-help/task-viewing-protection-relationships-from-storage-vms-page.html"
+    - title: Ver las máquinas virtuales de almacenamiento en función del estado de
+        protección
+      url: "/online-help/task-viewing-storage-vms-based-on-protection-status.html"
+  - title: Comprensión de los compañeros de las máquinas virtuales de almacenamiento
+    url: "/online-help/concept-understanding-svm-associations.html"
+  - title: Requisitos de SVM y pool de recursos para dar soporte a servicios de almacenamiento
+    url: "/online-help/concept-storage-virtual-machine-and-resource-pool-requirements-to-support-storage-services.html"
+  - title: Creación de iguales de máquinas virtuales de almacenamiento
+    url: "/online-help/task-creating-storage-virtual-machine-svm-associations.html"
+  - title: Ver empresas de iguales de máquinas virtuales de almacenamiento
+    url: "/online-help/task-viewing-svm-associations.html"
+  - title: Eliminación de pares de equipos virtuales de almacenamiento
+    url: "/online-help/task-deleting-svm-associations.html"
+  - title: Qué trabajos son
+    url: "/online-help/concept-what-jobs-are.html"
+  - title: Supervisar trabajos de
+    url: "/online-help/task-monitoring-jobs.html"
+  - title: Ver los detalles del trabajo
+    url: "/online-help/task-viewing-job-details.html"
+  - title: Anulación de trabajos
+    url: "/online-help/task-aborting-jobs.html"
+  - title: Volver a intentar un trabajo de protección con errores
+    url: "/online-help/task-retrying-a-failed-protection-job.html"
+  - title: Descripción de las ventanas y cuadros de diálogo de relaciones de protección
+    url: "/online-help/reference-description-of-protection-relationships-window-and-dialog-boxes.html"
+    entries:
+    - title: Página Resource Pools
+      url: "/online-help/reference-resource-pools-page.html"
+    - title: Cuadro de diálogo Create Resource Pool
+      url: "/online-help/reference-create-resource-pool-dialog-box.html"
+    - title: Cuadro de diálogo Edit Resource Pool
+      url: "/online-help/reference-edit-resource-pool-dialog-box.html"
+    - title: Cuadro de diálogo Aggregates
+      url: "/online-help/reference-aggregates-dialog-box.html"
+    - title: Página SVM Peers
+      url: "/online-help/reference-protection-storage-virtual-machine-associations-page.html"
+    - title: Asistente Create Storage Virtual Machine Peers
+      url: "/online-help/reference-create-storage-virtual-machine-associations-wizard.html"
+    - title: Trabajos
+      url: "/online-help/reference-protection-jobs-page.html"
+    - title: Página de detalles Job
+      url: "/online-help/reference-job-details-page.html"
+    - title: Cuadro de diálogo Advanced Secondary Settings
+      url: "/online-help/reference-advanced-secondary-setting-dialog-box.html"
+    - title: Cuadro de diálogo Advanced Destination Settings
+      url: "/online-help/reference-advanced-destination-settings-dialog-box.html"
+    - title: Restaurar
+      url: "/online-help/reference-restore-dialog-box.html"
+    - title: Cuadro de diálogo Browse Directories
+      url: "/online-help/reference-browse-directories-dialog-box.html"
+    - title: Cuadro de diálogo Configure Protection
+      url: "/online-help/reference-configure-protection-dialog-box.html"
+    - title: Cuadro de diálogo Create Schedule
+      url: "/online-help/reference-create-schedule-dialog-box.html"
+    - title: Cuadro de diálogo Create SnapMirror Policy
+      url: "/online-help/reference-create-snapmirror-policy-dialog-box.html"
+    - title: Cuadro de diálogo Create SnapVault Policy
+      url: "/online-help/reference-create-snapvault-policy-dialog-box.html"
+    - title: Cuadro de diálogo Edit Relationship
+      url: "/online-help/reference-edit-relationship-dialog-box.html"
+    - title: Cuadro de diálogo Initialize/Update
+      url: "/online-help/reference-initialize-update-relationship-dialog-box.html"
+    - title: Cuadro de diálogo Resynchronize
+      url: "/online-help/reference-resynchronize-dialog-box.html"
+    - title: Cuadro de diálogo Select Source Snapshot Copy
+      url: "/online-help/reference-select-source-snapshot-copy-dialog-box.html"
+    - title: Cuadro de diálogo Reverse Resync
+      url: "/online-help/reference-reverse-resync-dialog-box.html"
+    - title: 'Relación: Vista todas las relaciones'
+      url: "/online-help/reference-relationship-all-relationships-view.html"
+    - title: 'Relación: Vista Estado de transferencia de último 1 mes'
+      url: "/online-help/reference-relationship-last-1-month-transfer-status-view.html"
+    - title: 'Relación: Última vista de tarifa de transferencia de 1 mes'
+      url: "/online-help/reference-relationship-last-1-month-transfer-rate-view.html"
+- title: Ejecutar flujos de trabajo de protección mediante OnCommand Workflow Automation
+  url: "/online-help/concept-executing-protection-workflows-using-wfa.html"
+  entries:
+  - title: Configuración de una conexión entre Workflow Automation y Unified Manager
+    url: "/online-help/task-configuring-a-connection-between-workflow-automation-and-unified-manager.html"
+  - title: Se elimina la configuración de OnCommand Workflow Automation de Unified
+      Manager
+    url: "/online-help/task-removing-workflow-automation.html"
+  - title: Qué ocurre cuando se vuelve a instalar o actualizar OnCommand Workflow
+      Automation
+    url: "/online-help/concept-what-happens-when-wfa-is-reinstalled-or-upgraded.html"
+  - title: Descripción de las ventanas y cuadros de diálogo de configuración de OnCommand
+      Workflow Automation
+    url: "/online-help/reference-description-of-oncommand-workflow-automation-settings-windows-and-dialog-boxes.html"
+    entries:
+    - title: Página Workflow Automation
+      url: "/online-help/reference-setup-workflow-automation-page.html"
+- title: Gestión del rendimiento mediante la capacidad de rendimiento y la información
+    de IOPS disponible
+  url: "/online-help/concept-managing-performance-using-perf-capacity-and-available-iops-information.html"
+  entries:
+  - title: La capacidad de rendimiento utilizada
+    url: "/online-help/concept-what-performance-capacity-used-is.html"
+  - title: Qué significa el valor de capacidad de rendimiento utilizada
+    url: "/online-help/concept-what-the-used-headroom-value-means.html"
+  - title: Qué es IOPS disponible
+    url: "/online-help/concept-what-available-iops-is.html"
+  - title: Ver los valores de capacidad de rendimiento de los nodos y los agregados
+    url: "/online-help/concept-viewing-node-and-aggregate-performance-capacity-used-values.html"
+  - title: Ver los valores de IOPS disponibles de los nodos y los agregados
+    url: "/online-help/concept-viewing-node-and-aggregate-available-iops-values.html"
+  - title: Ver los gráficos de contadores de capacidad de rendimiento para identificar
+      los problemas
+    url: "/online-help/task-viewing-performance-capacity-counter-charts-to-identify-issues.html"
+  - title: La capacidad de rendimiento utilizada condiciones de umbral de rendimiento
+    url: "/online-help/concept-performance-capacity-used-threshold-conditions.html"
+  - title: Uso del contador de capacidad de rendimiento utilizada para gestionar el
+      rendimiento
+    url: "/online-help/concept-using-the-performance-capacity-used-counter-to-manage-performance.html"
+- title: Supervisión del rendimiento mediante las páginas Performance Inventory
+  url: "/online-help/concept-monitoring-performance-using-the-object-performance-inventory-pages.html"
+  entries:
+  - title: Supervisión de objetos mediante las páginas de inventario de objetos Performance
+    url: "/online-help/concept-object-monitoring-using-the-object-inventory-performance-pages.html"
+  - title: Afinar el contenido de la página del inventario de rendimiento
+    url: "/online-help/concept-refining-object-inventory-performance-page-content.html"
+    entries:
+    - title: Buscar en páginas rendimiento de inventario de objetos
+      url: "/online-help/task-searching-on-object-inventory-performance-pages.html"
+    - title: Ordenar en las páginas rendimiento de inventario de objetos
+      url: "/online-help/task-sorting-on-the-object-inventory-performance-pages.html"
+    - title: Filtrar datos en las páginas rendimiento de inventario de objetos
+      url: "/online-help/task-filtering-on-the-object-inventory-performance-pages.html"
+  - title: Descripción de las recomendaciones de Unified Manager para organizar los
+      datos en niveles en el cloud
+    url: "/online-help/concept-understanding-the-um-recommendations-to-tier-data-to-the-cloud.html"
+  - title: Las descripciones de las páginas de inventario Performance
+    url: "/online-help/reference-descriptions-of-the-object-inventory-performance-pages.html"
+    entries:
+    - title: 'Rendimiento: Vista All Clusters'
+      url: "/online-help/reference-performance-all-clusters-view.html"
+    - title: Campos de rendimiento del clúster
+      url: "/online-help/reference-cluster-performance-fields.html"
+    - title: 'Rendimiento: Vista de todos los nodos'
+      url: "/online-help/reference-performance-all-nodes-view.html"
+    - title: Campos de rendimiento de nodos
+      url: "/online-help/reference-node-performance-fields.html"
+    - title: 'Rendimiento: Vista de todos los agregados'
+      url: "/online-help/reference-performance-all-aggregates-view.html"
+    - title: Campos de rendimiento de agregados
+      url: "/online-help/reference-aggregate-performance-fields.html"
+    - title: 'Rendimiento: Vista de todas las máquinas virtuales de almacenamiento'
+      url: "/online-help/reference-performance-all-svms-view.html"
+    - title: Campos de rendimiento de máquinas virtuales de almacenamiento
+      url: "/online-help/reference-svm-performance-fields.html"
+    - title: 'Rendimiento: Vista de todos los volúmenes'
+      url: "/online-help/concept-performance-all-volumes-view.html"
+    - title: 'Rendimiento: Volúmenes en la vista del grupo de políticas de calidad
+        de servicio'
+      url: "/online-help/reference-performance-volumes-in-qos-policy-group-view.html"
+    - title: Campos de rendimiento de volumen
+      url: "/online-help/reference-volume-performance-fields.html"
+    - title: 'Rendimiento: Vista de todas las LUN'
+      url: "/online-help/reference-performance-all-luns-view.html"
+    - title: 'Rendimiento: LUN en la vista Grupo de políticas de calidad de servicio'
+      url: "/online-help/reference-performance-luns-in-qos-policy-group-view.html"
+    - title: Campos de rendimiento de LUN
+      url: "/online-help/reference-lun-performance-fields.html"
+    - title: 'Performance: Toda la vista NVMe Namespaces'
+      url: "/online-help/reference-performance-all-nvme-namespaces-view.html"
+    - title: Campos de rendimiento del espacio de nombres de NVMe
+      url: "/online-help/reference-nvme-namespace-performance-fields.html"
+    - title: 'Performance: Vista de todas las interfaces de red'
+      url: "/online-help/reference-performance-all-lifs-view.html"
+    - title: Campos de rendimiento de la interfaz de red
+      url: "/online-help/reference-lif-performance-fields.html"
+    - title: 'Rendimiento: Vista de todos los puertos'
+      url: "/online-help/reference-performance-all-ports-view.html"
+    - title: Campos de rendimiento de puertos
+      url: "/online-help/reference-port-performance-fields.html"
+    - title: 'Rendimiento: Vista QoS Policy Groups'
+      url: "/online-help/reference-performance-qos-policy-groups-view.html"
+    - title: Campos del grupo de políticas de QoS
+      url: "/online-help/reference-qos-policy-group-fields.html"
+- title: Supervisar el rendimiento del clúster en la página Performance Cluster Landing
+  url: "/online-help/concept-monitoring-cluster-performance-from-the-cluster-landing-page.html"
+  entries:
+  - title: Descripción de la página de destino del clúster de rendimiento
+    url: "/online-help/concept-understanding-the-performance-cluster-landing-page.html"
+  - title: Página de destino de Cluster de rendimiento
+    url: "/online-help/reference-performance-cluster-landing-page.html"
+    entries:
+    - title: Página Performance Cluster Summary
+      url: "/online-help/reference-cluster-summary-page-opm.html"
+      entries:
+      - title: Panel de eventos de rendimiento del clúster
+        url: "/online-help/reference-cluster-performance-events-pane.html"
+      - title: Panel Managed Objects
+        url: "/online-help/reference-managed-objects-pane.html"
+    - title: Página Top Performers
+      url: "/online-help/reference-top-performers-page.html"
+- title: Supervisión del rendimiento mediante las páginas Performance Explorer
+  url: "/online-help/concept-monitoring-performance-using-the-performance-explorer-pages.html"
+  entries:
+  - title: Descripción del objeto raíz
+    url: "/online-help/concept-understanding-the-root-object.html"
+  - title: Aplicar filtrado para reducir la lista de objetos correlacionados de la
+      cuadrícula
+    url: "/online-help/concept-applying-filtering-to-correlated-objects.html"
+  - title: Especificación de un intervalo de tiempo para objetos correlacionados
+    url: "/online-help/task-specifying-a-correlated-objects-time-range.html"
+    entries:
+    - title: Selección de un intervalo de tiempo predefinido
+      url: "/online-help/task-selecting-a-predefined-time-range.html"
+    - title: Especificación de un intervalo de tiempo personalizado
+      url: "/online-help/task-specifying-a-custom-time-range.html"
+  - title: Definir la lista de objetos correlacionados para la representación gráfica
+      de comparación
+    url: "/online-help/task-defining-the-list-of-correlated-objects-for-comparison-graphing.html"
+  - title: Gráficos de contadores
+    url: "/online-help/concept-understanding-counter-charts.html"
+  - title: Tipos de gráficos de contadores de rendimiento
+    url: "/online-help/reference-types-of-performance-counter-charts.html"
+  - title: Selección de gráficos de rendimiento para mostrar
+    url: "/online-help/task-selecting-performance-charts-to-display.html"
+  - title: Ampliación del panel Contador de gráficos
+    url: "/online-help/task-expanding-the-counter-charts-pane.html"
+  - title: Cambiar el enfoque de los gráficos de contador a un período de tiempo más
+      corto
+    url: "/online-help/task-changing-the-counter-charts-focus-to-a-smaller-period-of-time.html"
+  - title: Visualización de detalles de eventos en la línea de tiempo de eventos
+    url: "/online-help/task-viewing-event-details-in-the-performance-explorer-events-timeline.html"
+  - title: Vista de zoom de las cartas de contador
+    url: "/online-help/concept-counter-charts-zoom-view.html"
+    entries:
+    - title: Visualización de la vista Zoom de las cartas del contador
+      url: "/online-help/task-displaying-the-counter-charts-zoom-view.html"
+    - title: Especificación del intervalo de tiempo en la vista Zoom
+      url: "/online-help/task-specifying-the-time-range-in-zoom-view.html"
+    - title: Selección de umbrales de rendimiento en la vista Zoom de gráficos de
+        contador
+      url: "/online-help/task-selecting-performance-thresholds-in-zoom-view.html"
+  - title: Ver la latencia de volumen por componente del clúster
+    url: "/online-help/task-viewing-volume-latency-by-cluster-component.html"
+  - title: Ver tráfico de IOPS de SVM por protocolo
+    url: "/online-help/task-viewing-svm-iops-traffic-by-protocol.html"
+  - title: Vea los gráficos de latencia de volúmenes y LUN para verificar la garantía
+      de rendimiento
+    url: "/online-help/task-viewing-volume-and-lun-latency-charts-to-verify-performance-guarantee.html"
+  - title: Visualización del rendimiento de los clústeres de cabinas All SAN
+    url: "/online-help/task-viewing-the-performance-status-of-all-san-array-clusters.html"
+  - title: Ver las IOPS de los nodos según las cargas de trabajo que solo residen
+      en el nodo local
+    url: "/online-help/task-viewing-node-iops-based-on-workloads-that-reside-only-on-the-local-node.html"
+  - title: Componentes de las páginas de destino de objetos
+    url: "/online-help/concept-components-of-the-object-landing-pages-opm.html"
+    entries:
+    - title: Resumen
+      url: "/online-help/reference-summary-page-opm.html"
+    - title: Componentes de la página Performance Explorer
+      url: "/online-help/concept-components-of-the-performance-explorer-page.html"
+  - title: Descripciones de los gráficos de contadores
+    url: "/online-help/reference-descriptions-of-the-counter-charts.html"
+    entries:
+    - title: Gráficos de contadores de rendimiento de latencia
+      url: "/online-help/reference-latency-performance-counter-charts.html"
+    - title: Gráficos de contadores de rendimiento de IOPS
+      url: "/online-help/reference-iops-performance-counter-charts.html"
+    - title: Gráficos de contadores de rendimiento MB/s.
+      url: "/online-help/reference-mbps-performance-counter-charts.html"
+    - title: Gráfico de contadores de rendimiento de utilización
+      url: "/online-help/reference-utilization-performance-counter-chart.html"
+    - title: Gráficos de contadores de capacidad de rendimiento utilizada
+      url: "/online-help/reference-performance-capacity-used-performance-counter-charts.html"
+    - title: Gráfico de contadores IOPS Performance disponible
+      url: "/online-help/reference-available-iops-performance-counter-chart.html"
+    - title: Gráfico de contadores de rendimiento de la relación de falta de caché
+      url: "/online-help/reference-cache-miss-ratio-performance-counter-chart.html"
+  - title: Descripciones de las páginas Performance Explorer
+    url: "/online-help/reference-page-descriptions-for-object-landing-pages.html"
+    entries:
+    - title: Página Cluster/Performance Explorer
+      url: "/online-help/concept-cluster-performance-explorer-page.html"
+    - title: Página Node/Performance Explorer
+      url: "/online-help/concept-node-performance-explorer-page.html"
+    - title: Página Aggregate/Performance Explorer
+      url: "/online-help/concept-aggregate-performance-explorer-page.html"
+    - title: Página Storage VM/Performance Explorer
+      url: "/online-help/concept-storage-vm-performance-explorer-page.html"
+    - title: Página Volume/Performance Explorer
+      url: "/online-help/concept-volume-performance-explorer-page.html"
+    - title: Página del explorador de volumen de componentes/rendimiento
+      url: "/online-help/concept-constituent-volume-performance-explorer-page.html"
+    - title: Página LUN/Performance Explorer
+      url: "/online-help/concept-lun-performance-explorer-page.html"
+    - title: Página del explorador de espacio de nombres/rendimiento de NVMe
+      url: "/online-help/concept-nvme-namespace-performance-explorer-page.html"
+    - title: Página Network Interface/Performance Explorer
+      url: "/online-help/concept-network-interface-performance-explorer-page.html"
+    - title: Explorador de puerto/rendimiento
+      url: "/online-help/concept-port-performance-explorer-page.html"
+    - title: Página Cluster/Performance Information
+      url: "/online-help/reference-cluster-performance-information-page.html"
+    - title: Información sobre el nodo/rendimiento
+      url: "/online-help/reference-node-performance-information-page.html"
+    - title: Página Aggregate/Performance Information
+      url: "/online-help/reference-aggregate-performance-information-page.html"
+    - title: Página Storage VM/Performance Information
+      url: "/online-help/reference-storage-vm-performance-information-page.html"
+    - title: Página Volume/Performance Information
+      url: "/online-help/reference-volume-performance-information-page.html"
+    - title: Página Constituyente de información sobre el volumen/rendimiento
+      url: "/online-help/reference-constituent-volume-performance-information-page.html"
+    - title: Página LUN/Performance Information
+      url: "/online-help/reference-lun-performance-information-page.html"
+    - title: Página NVMe Namespace/Performance Information
+      url: "/online-help/reference-nvme-namespace-performance-information-page.html"
+    - title: Página Network Interface/Performance Information
+      url: "/online-help/reference-network-interface-performance-information-page.html"
+    - title: Información sobre Port/Performance
+      url: "/online-help/reference-port-performance-information-page.html"
+- title: Gestione el rendimiento mediante información del grupo de políticas de calidad
+    de servicio
+  url: "/online-help/concept-managing-performance-using-qos-policy-group-information.html"
+  entries:
+  - title: Cómo la calidad de servicio de almacenamiento puede controlar el rendimiento
+      de la carga de trabajo
+    url: "/online-help/concept-how-storage-qos-can-control-workload-throughput.html"
+  - title: Ver todos los grupos de políticas de calidad de servicio disponibles en
+      todos los clústeres
+    url: "/online-help/task-viewing-all-qos-policy-groups-available-on-all-clusters.html"
+  - title: Ver volúmenes o LUN que estén en el mismo grupo de políticas de calidad
+      de servicio
+    url: "/online-help/task-viewing-volumes-or-luns-that-are-in-the-same-qos-policy-group.html"
+  - title: Ver la configuración del grupo de políticas de calidad de servicio aplicable
+      a volúmenes o LUN específicos
+    url: "/online-help/task-viewing-the-qos-policy-group-settings-for-specific-volumes-or-luns.html"
+  - title: Ver los gráficos de rendimiento para comparar volúmenes o LUN que están
+      en el mismo grupo de políticas de calidad de servicio
+    url: "/online-help/task-viewing-performance-charts-to-compare-volumes-or-luns-that-are-in-the-same-qos-policy-group.html"
+  - title: Cómo se muestran los diferentes tipos de políticas de calidad de servicio
+      en los gráficos de rendimiento
+    url: "/online-help/concept-how-qos-policies-are-displayed-in-the-throughput-charts.html"
+  - title: Ver la configuración mínima y máxima de calidad de servicio de la carga
+      de trabajo en el Explorador de rendimiento
+    url: "/online-help/task-viewing-workload-qos-minimum-and-maximum-settings.html"
+- title: Comprender y utilizar la página Node Failover Planning
+  url: "/online-help/reference-understanding-and-using-the-node-failover-planning-page.html"
+  entries:
+  - title: Uso de la página Planificación de conmutación por error de nodos para determinar
+      las acciones correctivas
+    url: "/online-help/concept-using-the-failover-planning-page-to-determine-corrective-actions.html"
+  - title: Componentes de la página Node Failover Planning
+    url: "/online-help/reference-components-of-the-node-failover-planning-page.html"
+  - title: Uso de una directiva de umbral con la página Planificación de conmutación
+      por error de nodos
+    url: "/online-help/concept-using-a-threshold-policy-with-the-node-failover-planning-page.html"
+  - title: Usar el gráfico de desglose de capacidad de rendimiento utilizada para
+      la planificación de conmutación por error
+    url: "/online-help/task-using-the-perf-capacity-used-breakdown-chart-for-failover-planning.html"
+- title: Recogida de datos y supervisión del rendimiento de carga de trabajo
+  url: "/online-help/concept-collecting-data-and-monitoring-workload-performance.html"
+  entries:
+  - title: Tipos de cargas de trabajo supervisadas por Unified Manager
+    url: "/online-help/concept-types-of-workloads-monitored-by-unified-manager.html"
+  - title: Valores de medición del rendimiento de la carga de trabajo
+    url: "/online-help/reference-workload-performance-measurement-values.html"
+  - title: Qué rango esperado de rendimiento es
+    url: "/online-help/concept-what-the-expected-range-of-performance-is.html"
+  - title: Cómo se utiliza el pronóstico de latencia en el análisis de rendimiento
+    url: "/online-help/reference-how-the-expected-range-is-used-in-performance-analysis.html"
+  - title: Cómo Unified Manager utiliza la latencia de carga de trabajo para identificar
+      problemas de rendimiento
+    url: "/online-help/concept-how-unified-manager-uses-workload-response-time-to-identify-performance-issues.html"
+  - title: Cómo las operaciones del clúster pueden afectar a la latencia de carga
+      de trabajo
+    url: "/online-help/concept-how-cluster-operations-can-affect-workload-latency.html"
+  - title: Supervisión del rendimiento de las configuraciones de MetroCluster
+    url: "/online-help/concept-performance-monitoring-of-metrocluster-configurations.html"
+    entries:
+    - title: Comportamiento del volumen durante la conmutación de sitios y la conmutación
+        de estado
+      url: "/online-help/concept-volume-behavior-during-switchover-and-switchback.html"
+    - title: Análisis y notificación de eventos de rendimiento
+      url: "/online-help/reference-performance-event-analysis-and-notification.html"
+    - title: La forma en que Unified Manager determina el impacto en el rendimiento
+        de un evento
+      url: "/online-help/concept-how-unified-manager-determines-the-performance-impact-for-an-incident.html"
+    - title: Los componentes del clúster y el motivo por los que pueden estar en contención
+      url: "/online-help/concept-cluster-components-and-why-they-can-be-in-contention.html"
+    - title: Funciones de las cargas de trabajo involucradas en un evento de rendimiento
+      url: "/online-help/concept-roles-of-workloads-involved-in-a-performance-incident.html"
+- title: Gestión de operaciones de backup y restauración
+  url: "/online-help/concept-managing-backup-and-restore-operations.html"
+  entries:
+  - title: Backup y restauración para Unified Manager en dispositivo virtual
+    url: "/online-help/concept-backup-and-restore-on-virtual-appliance.html"
+  - title: Realizar backups y restauraciones con un volcado de base de datos de MySQL
+    url: "/online-help/concept-backup-and-restore-using-a-mysql-database-dump.html"
+    entries:
+    - title: Configurar el destino y la programación para backups de volcado de base
+        de datos
+      url: "/online-help/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html"
+    - title: Qué es una restauración de base de datos
+      url: "/online-help/concept-what-a-database-restore-is.html"
+    - title: Restaurar un backup de base de datos de MySQL en un sistema Linux
+      url: "/online-help/task-restoring-a-mysql-database-backup-on-red-hat-enterprise-linux-or-centos.html"
+    - title: Restaurar un backup de base de datos de MySQL en Windows
+      url: "/online-help/task-restoring-a-mysql-database-backup-on-windows.html"
+  - title: Backups y restauraciones con Snapshot de NetApp
+    url: "/online-help/concept-backup-and-restore-using-netapp-snapshots.html"
+    entries:
+    - title: Configuración de backup en Linux
+      url: "/online-help/concept-configuring-backup-for-linux.html"
+      entries:
+      - title: Configurar la ubicación de backup de Snapshot
+        url: "/online-help/task-creating-the-volume-where-backups-are-stored.html"
+      - title: Especificar la ubicación de destino para los backups de Snapshot
+        url: "/online-help/task-specifying-the-destination-location-for-snapshot-backups.html"
+    - title: Configuración de la copia de seguridad en Windows
+      url: "/online-help/concept-configuring-backup-for-windows.html"
+      entries:
+      - title: Configuración de la ubicación de la copia de seguridad para Windows
+        url: "/online-help/task-configuring-the-backup-location-for-windows-snapshot-backup.html"
+      - title: Configurando clúster de ONTAP
+        url: "/online-help/reference-configuring-ontap-cluster.html"
+      - title: Configuración de máquina host de Windows
+        url: "/online-help/task-configuring-windows-host-machine.html"
+      - title: Especificar la ubicación de destino para los backups de Snapshot de
+          Windows
+        url: "/online-help/task-specifying-the-destination-location-for-windows-snapshot-backups.html"
+    - title: Configurar el backup de Snapshot de NetApp desde la consola de mantenimiento
+      url: "/online-help/task-configuring-netapp-snapshot-backup-from-maintenance-console.html"
+    - title: Definición de una programación de backup para Linux y Windows
+      url: "/online-help/task-defining-a-schedule-for-snapshot-backups.html"
+    - title: Restaurar un backup de Snapshot para Linux y Windows
+      url: "/online-help/task-restoring-a-snapshot-backup.html"
+    - title: Modificación del tipo de backup
+      url: "/online-help/task-unconfiguring-netapp-snapshot-backup.html"
+  - title: Backup bajo demanda para Unified Manager
+    url: "/online-help/concept-on-demand-backup-for-unified-manger.html"
+  - title: Descripción de ventanas de copia de seguridad y cuadros de diálogo
+    url: "/online-help/reference-description-of-backup-windows-and-dialog-boxes.html"
+    entries:
+    - title: Página Database Backup
+      url: "/online-help/reference-database-backup-page.html"
+    - title: Cuadro de diálogo Backup Settings
+      url: "/online-help/reference-backup-settings-dialog-box.html"
+- title: Gestionar clústeres
+  url: "/online-help/concept-managing-clusters.html"
+  entries:
+  - title: Cómo funciona el proceso de detección del clúster
+    url: "/online-help/concept-how-discovery-process-works.html"
+  - title: Se muestra la lista de clústeres supervisados
+    url: "/online-help/task-viewing-the-list-of-monitored-clusters.html"
+  - title: Añadir clústeres
+    url: "/online-help/task-adding-clusters.html"
+  - title: Editar clústeres
+    url: "/online-help/task-editing-clusters.html"
+  - title: Quitar clústeres
+    url: "/online-help/task-removing-clusters.html"
+  - title: Volver a detectar clústeres
+    url: "/online-help/task-rediscovering-clusters.html"
+  - title: Descripciones de páginas para la administración de orígenes de datos
+    url: "/online-help/concept-page-descriptions-for-cluster-management.html"
+    entries:
+    - title: Página Cluster Setup
+      url: "/online-help/reference-cluster-setup-page.html"
+    - title: Cuadro de diálogo Agregar clúster
+      url: "/online-help/reference-add-cluster-dialog-box.html"
+    - title: Cuadro de diálogo Edit Cluster
+      url: "/online-help/reference-edit-cluster-dialog-box.html"
+- title: Gestión del acceso de usuarios
+  url: "/online-help/concept-managing-user-access.html"
+  entries:
+  - title: Adición de usuarios
+    url: "/online-help/task-adding-users.html"
+  - title: Edición de la configuración de usuario
+    url: "/online-help/task-editing-user-settings.html"
+  - title: Ver usuarios
+    url: "/online-help/task-viewing-users.html"
+  - title: Eliminación de usuarios o grupos
+    url: "/online-help/task-deleting-users-or-groups.html"
+  - title: Cambiando la contraseña de usuario local
+    url: "/online-help/task-changing-the-local-user-password.html"
+  - title: Lo que hace el usuario de mantenimiento
+    url: "/online-help/concept-what-the-maintenance-user-does.html"
+  - title: Qué es RBAC
+    url: "/online-help/concept-what-rbac-is.html"
+  - title: Qué hace el control de acceso basado en roles
+    url: "/online-help/concept-what-role-based-access-control-does.html"
+  - title: Definiciones de tipos de usuario
+    url: "/online-help/reference-definitions-of-user-types.html"
+  - title: Definiciones de roles de usuario
+    url: "/online-help/reference-definitions-of-user-roles.html"
+  - title: Roles y funcionalidades de usuario de Unified Manager
+    url: "/online-help/reference-unified-manager-roles-and-capabilities.html"
+  - title: Descripción de las ventanas de acceso del usuario y cuadros de diálogo
+    url: "/online-help/reference-description-of-user-access-windows-and-dialog-boxes.html"
+    entries:
+    - title: Usuarios
+      url: "/online-help/reference-management-users-page-um.html"
+    - title: Cuadro de diálogo Add User
+      url: "/online-help/reference-add-user-dialog-box-um.html"
+    - title: Cuadro de diálogo Edit User
+      url: "/online-help/reference-edit-user-dialog-box-um.html"
+- title: Gestión de la autenticación
+  url: "/online-help/concept-managing-authentication.html"
+  entries:
+  - title: Habilitación de la autenticación remota
+    url: "/online-help/task-enabling-remote-authentication.html"
+  - title: Deshabilitar grupos anidados de la autenticación remota
+    url: "/online-help/task-disabling-nested-groups-from-remote-authentication.html"
+  - title: Configurar servicios de autenticación
+    url: "/online-help/task-setting-up-authentication-services.html"
+  - title: Añadiendo servidores de autenticación
+    url: "/online-help/task-adding-authentication-servers.html"
+  - title: Prueba de la configuración de los servidores de autenticación
+    url: "/online-help/task-testing-the-configuration-of-authentication-servers-um-6-0.html"
+  - title: Editar servidores de autenticación
+    url: "/online-help/task-editing-authentication-servers.html"
+  - title: Eliminar servidores de autenticación
+    url: "/online-help/task-deleting-authentication-servers.html"
+  - title: Autenticación con Active Directory u OpenLDAP
+    url: "/online-help/concept-authentication-with-active-directory-or-openldap.html"
+  - title: Habilitación de la autenticación SAML
+    url: "/online-help/task-enabling-saml-authentication-um.html"
+  - title: Requisitos del proveedor de identidades
+    url: "/online-help/reference-identity-provider-requirements-um.html"
+  - title: Cambiar el proveedor de identidades utilizado para la autenticación SAML
+    url: "/online-help/task-changing-the-identity-provider-idp-used-for-saml-authentication-um.html"
+  - title: Deshabilitación de la autenticación SAML
+    url: "/online-help/task-disabling-saml-authentication-um.html"
+  - title: Registro de auditoría
+    url: "/online-help/concept-audit-logging.html"
+    entries:
+    - title: Configuración de registros de auditoría
+      url: "/online-help/task-configuring-audit-logs.html"
+    - title: Habilitación de registro remoto de registros de auditoría
+      url: "/online-help/task-enabling-remote-logging-of-audit-logs.html"
+  - title: Descripción de las ventanas de autenticación y cuadros de diálogo
+    url: "/online-help/reference-description-of-authentication-windows-and-dialog-boxes.html"
+    entries:
+    - title: Autenticación remota
+      url: "/online-help/reference-remote-authentication-page.html"
+    - title: Página autenticación SAML
+      url: "/online-help/reference-saml-authentication-page-um.html"
+- title: Gestión de certificados de seguridad
+  url: "/online-help/concept-managing-security-certificates-ocf.html"
+  entries:
+  - title: Visualizar el certificado de seguridad HTTPS
+    url: "/online-help/task-viewing-the-https-security-certificate-ocf.html"
+  - title: Generar un certificado de seguridad HTTPS
+    url: "/online-help/task-generating-an-https-security-certificate-ocf.html"
+    entries:
+    - title: Reiniciar la máquina virtual de Unified Manager
+      url: "/online-help/task-restarting-the-unified-manager-virtual-machine.html"
+  - title: Descargar una solicitud de firma de certificación HTTPS
+    url: "/online-help/task-downloading-an-https-certificate-signing-request-ocf.html"
+  - title: Instalar una CA firmada y devolvió un certificado HTTPS
+    url: "/online-help/task-installing-a-ca-signed-and-returned-https-certificate.html"
+  - title: Instalar un certificado HTTPS generado con herramientas externas
+    url: "/online-help/concept-installing-a-https-certificate-generated-using-external-tools.html"
+  - title: Descripciones de página para la gestión de certificados
+    url: "/online-help/concept-page-descriptions-for-certificate-management-ocf.html"
+    entries:
+    - title: Página HTTPS Certificate
+      url: "/online-help/reference-https-dialog-box-ocf.html"
+    - title: Cuadro de diálogo Regenerate HTTPS Certificate
+      url: "/online-help/reference-regenerate-https-certificate-dialog-box.html"
+- title: Gestión de la configuración de funciones
+  url: "/online-help/concept-managing-feature-settings.html"
+  entries:
+  - title: Administración del almacenamiento basada en políticas
+    url: "/online-help/concept-policy-based-storage-management.html"
+  - title: Puerta de enlace API
+    url: "/online-help/concept-api-gateway.html"
+  - title: Tiempo de espera de inactividad
+    url: "/online-help/concept-inactivity-timeout.html"
+  - title: Eventos del portal de Active IQ
+    url: "/online-help/concept-active-iq-platform-events.html"
+  - title: Panel de seguridad
+    url: "/online-help/concept-security-dashboard.html"
+- title: Resolución de problemas
+  url: "/online-help/concept-troubleshooting.html"
+  entries:
+  - title: Cambie el nombre de host de Unified Manager
+    pdf-filename: Cambiar el nombre de host de Unified Manager (gestión y supervisión)
+    url: "/online-help/concept-changing-the-unified-manager-host-name.html"
+    entries:
+    - title: Cambiar el nombre de host de la aplicación virtual de Unified Manager
+      url: "/online-help/task-changing-the-unified-manager-host-name-on-vmware.html"
+    - title: Cambiar el nombre de host de Unified Manager en sistemas Linux
+      url: "/online-help/task-changing-the-unified-manager-host-name-on-rhel-or-centos.html"
+  - title: Agregar espacio en disco al directorio de la base de datos de Unified Manager
+    pdf-filename: Agregar espacio en disco al directorio de la base de datos de Unified
+      Manager (gestionar y supervisar)
+    url: "/online-help/concept-adding-disk-space-to-the-unified-manager-database-directory.html"
+    entries:
+    - title: Adición de espacio al disco de datos de la máquina virtual de VMware
+      url: "/online-help/task-adding-space-to-the-data-disk-of-the-vmware-virtual-machine.html"
+    - title: Adición de espacio al directorio de datos del host Linux
+      url: "/online-help/task-adding-space-to-the-data-directory-of-the-unified-manager-red-hat-enterprise-linux-host.html"
+    - title: Agregar espacio a la unidad lógica del servidor Microsoft Windows
+      url: "/online-help/task-adding-space-to-the-data-disk-of-the-microsoft-windows-server.html"
+  - title: Cambiar el intervalo de recogida de estadísticas de rendimiento
+    url: "/online-help/task-changing-the-performance-statistics-collection-interval.html"
+  - title: Cambiar el periodo de tiempo, Unified Manager conserva los datos de eventos
+      y rendimiento
+    url: "/online-help/task-changing-the-length-of-time-um-retains-event-and-performance-data.html"
+  - title: Enviar mensajes de AutoSupport y paquetes de soporte al soporte técnico
+    url: "/online-help/reference-setup-autosupport-page.html"
+  - title: Error de autenticación desconocido
+    url: "/online-help/reference-unknown-authentication-error.html"
+  - title: Usuario no encontrado
+    url: "/online-help/reference-user-not-found.html"
+  - title: Problema al agregar LDAP mediante otros servicios de autenticación
+    url: "/online-help/reference-issue-with-adding-ldap-using-other-authentication-services.html"

@@ -1,0 +1,101 @@
+---
+permalink: online-help/reference-qos-policy-group-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Los siguientes campos están disponibles en la página Performance: QoS Policy Groups y se pueden utilizar en vistas personalizadas y en informes.' 
+---
+= Campos del grupo de políticas de QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los siguientes campos están disponibles en la página Performance: QoS Policy Groups y se pueden utilizar en vistas personalizadas y en informes.
+
+* *Grupo de políticas QoS*
++
+El nombre del grupo de políticas de calidad de servicio.
+
++
+Para las políticas de Service Level Manager (NSLM) 1.3 de NetApp que se han importado a Unified Manager 9.7 o posterior, el nombre que se muestra aquí incluye el nombre de SVM y otra información que no aparece en el nombre cuando se definió Performance Service Levelwas en NSLM. Por ejemplo, el nombre «'NSLM_vs6_Performance_2_0'» significa que se trata de la política de «'Performance'» definida por el sistema de NSLM creada en SVM «'vs6' PSL» con una latencia esperada de «'2 ms/op».
+
+* *Cluster*
++
+El clúster al que pertenece el grupo de políticas de calidad de servicio. Puede hacer clic en el nombre del clúster para ir a la página de detalles de ese clúster.
+
+* *Cluster FQDN*
++
+El nombre de dominio completo (FQDN) del clúster.
+
+* *SVM*
++
+La máquina virtual de almacenamiento (SVM) a la que pertenece el grupo de políticas de calidad de servicio. Puede hacer clic en el nombre de la SVM para desplazarse a la página de detalles de esa SVM.
+
++
+[NOTE]
+====
+Este campo está vacío si la política de calidad de servicio se ha creado en la SVM de administrador, ya que este tipo de SVM representa el clúster.
+
+====
+* *Rendimiento mínimo*
++
+El rendimiento mínimo, en IOPS, que se garantizará al grupo de políticas.
+
++
+Para las políticas adaptativas, se trata del número mínimo esperado de IOPS por TB asignado al volumen o LUN, según el tamaño del objeto de almacenamiento asignado.
+
+* *Rendimiento máximo*
++
+El rendimiento, en IOPS y/o MB/s, que el grupo de políticas no debe superar. Cuando este campo está en blanco, significa que el máximo definido en ONTAP es infinito.
+
++
+Para las políticas adaptativas, se trata del número máximo (pico) de IOPS posible por TB asignados al volumen o LUN, según el tamaño del objeto de almacenamiento _asignado_ o del tamaño del objeto de almacenamiento _utilizado_.
+
+* *IOPS mínimo absoluto*
++
+Para las políticas adaptativas, es el valor mínimo absoluto de IOPS que se utiliza como anulación cuando las IOPS esperadas son inferiores a este valor.
+
+* *Tamaño de bloque*
++
+El tamaño de bloque especificado para la política adaptativa de calidad de servicio.
+
+* *Asignación mínima*
++
+Tanto si se utiliza «espacio asignado» como «espacio utilizado» para determinar el rendimiento máximo (pico) de IOPS.
+
+* *Latencia esperada*
++
+La latencia media esperada para operaciones de entrada/salida de almacenamiento.
+
+* *Compartido*
++
+Para las políticas de calidad de servicio tradicionales, si los valores de rendimiento definidos en el grupo de políticas se comparten entre varios objetos.
+
+* *Objetos asociados*
++
+El número de cargas de trabajo que se asignan al grupo de políticas de calidad de servicio.
+
+
+
+Puede hacer clic en el botón expandir (image:../media/chevron-down.gif[""]) Junto al Nombre del grupo de políticas QoS para ver más detalles acerca del grupo de políticas.
+
+* *Capacidad asignada*
++
+La cantidad de espacio que están usando los objetos del grupo de políticas de calidad de servicio.
+
+* *Objetos asociados*
++
+El número de cargas de trabajo que se asignan al grupo de políticas de calidad de servicio, separadas en volúmenes y LUN.
+
++
+Puede hacer clic en el número para desplazarse a una página que proporciona más detalles sobre los volúmenes o LUN seleccionados.
+
+* *Eventos*
++
+Si un objeto, u objetos, que se asignan al grupo de políticas de calidad de servicio han provocado una filtración de la política de calidad de servicio, el icono del indicador de eventos identifica la gravedad del evento (crucial, error o advertencia) y muestra un mensaje de error.
+
++
+Puede hacer clic en el mensaje para desplazarse a la página Events que se ha filtrado para mostrar los objetos implicados en el evento.
+
+

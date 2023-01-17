@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-performance-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista Performance: All Clusters muestra una descripción general de los eventos de rendimiento, los datos y la información de configuración para cada clúster supervisado por una instancia de Unified Manager. Esta página permite supervisar el rendimiento de los clústeres y solucionar problemas de rendimiento y eventos de umbral.' 
+---
+= Rendimiento: Vista All Clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista Performance: All Clusters muestra una descripción general de los eventos de rendimiento, los datos y la información de configuración para cada clúster supervisado por una instancia de Unified Manager. Esta página permite supervisar el rendimiento de los clústeres y solucionar problemas de rendimiento y eventos de umbral.
+
+De forma predeterminada, los objetos de las páginas de vista se ordenan en función de la gravedad del evento. Los objetos con eventos críticos se enumeran primero y los objetos con eventos de advertencia aparecen en segundo lugar. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Puede asignar directivas de umbral de rendimiento a cualquier objeto de las páginas de inventario de objetos o borrar directivas de umbral mediante los botones *asignar directiva de umbral de rendimiento* y *Borrar directiva de umbral de rendimiento*.
+
+Consulte xref:reference-cluster-performance-fields.adoc[Campos de rendimiento del clúster] para obtener descripciones de todos los campos de esta página.

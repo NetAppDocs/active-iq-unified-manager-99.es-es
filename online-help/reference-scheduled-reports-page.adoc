@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-scheduled-reports-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La página Report Schedules permite ver información detallada sobre los informes que ha creado y la programación en la que se generan. Puede buscar un informe específico, modificar ciertos atributos de una programación de informes y eliminar una programación de informes. 
+---
+= Página Report Schedules
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La página Report Schedules permite ver información detallada sobre los informes que ha creado y la programación en la que se generan. Puede buscar un informe específico, modificar ciertos atributos de una programación de informes y eliminar una programación de informes.
+
+La página Report Schedules muestra la lista de informes que se han creado en el sistema.
+
+* *Nombre del programa*
++
+El nombre del informe programado. Inicialmente, este nombre incluye el nombre de la vista y la frecuencia. Puede cambiar este nombre para reflejar mejor el contenido del informe.
+
+* *Vista*
++
+Vista que se utilizó para crear el informe.
+
+* *Destinatarios*
++
+Las direcciones de correo electrónico de los usuarios que recibirán el informe generado. Cada dirección de correo electrónico debe estar separada por una coma.
+
+* *Frecuencia*
++
+Con qué frecuencia se genera y se envía el informe a los destinatarios.
+
+* *Formato*
++
+Si el informe se genera como un archivo PDF o en formato XLSX o CSV.
+
+* * Botón de acción*
++
+Opciones disponibles para editar o eliminar el programa de informes.
+
+

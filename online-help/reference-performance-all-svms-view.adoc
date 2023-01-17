@@ -1,0 +1,27 @@
+---
+permalink: online-help/reference-performance-all-svms-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vista rendimiento: Todas las máquinas virtuales de almacenamiento muestra una descripción general de los eventos de rendimiento, los datos y la información de configuración de cada máquina virtual de almacenamiento \(SVM\) que supervisa una instancia de Unified Manager. Esto le permite supervisar rápidamente el rendimiento de las SVM y solucionar problemas de rendimiento y eventos de umbral.' 
+---
+= Rendimiento: Vista de todas las máquinas virtuales de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista rendimiento: All Storage VMs muestra información general sobre los eventos de rendimiento, los datos y la información de configuración para cada máquina virtual de almacenamiento (SVM) que supervisa una instancia de Unified Manager. Esto le permite supervisar rápidamente el rendimiento de las SVM y solucionar problemas de rendimiento y eventos de umbral.
+
+De forma predeterminada, los objetos de las páginas de vista se ordenan en función de la gravedad del evento. Los objetos con eventos críticos se enumeran primero y los objetos con eventos de advertencia aparecen en segundo lugar. Esto proporciona una indicación visual inmediata de los problemas que deben abordarse.
+
+Los controles de la parte superior de la página le permiten seleccionar una vista concreta (de estado, rendimiento, capacidad, etc.), realizar búsquedas para localizar objetos específicos, crear y aplicar filtros para limitar la lista de datos mostrados, añadir/eliminar/reordenar columnas en la página, y exportar los datos de la página a un `.csv`, `.pdf`, o. `.xlsx` archivo. Después de personalizar la página, puede guardar los resultados como una vista personalizada y, a continuación, programar un informe de estos datos para que se genere y se envíe por correo electrónico regularmente.
+
+Puede asignar directivas de umbral de rendimiento a cualquier objeto de las páginas de inventario de objetos o borrar directivas de umbral mediante los botones *asignar directiva de umbral de rendimiento* y *Borrar directiva de umbral de rendimiento*.
+
+[NOTE]
+====
+Las SVM que aparecen en esta página incluyen solo SVM de datos y clúster. Unified Manager no utiliza ni muestra las SVM de administrador ni de nodo.
+
+====
+Consulte xref:reference-svm-performance-fields.adoc[Campos de rendimiento de SVM] para obtener descripciones de todos los campos de esta página.

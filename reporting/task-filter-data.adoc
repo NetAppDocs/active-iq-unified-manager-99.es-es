@@ -1,0 +1,25 @@
+---
+permalink: reporting/task-filter-data.html 
+sidebar: sidebar 
+keywords:  
+summary: Filtre los datos para asegurarse de que los resultados coinciden con los requisitos del informe. El filtrado le permite mostrar únicamente los datos que le interesen. 
+---
+= Filtrado de datos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Filtre los datos para asegurarse de que los resultados coinciden con los requisitos del informe. El filtrado le permite mostrar únicamente los datos que le interesen.
+
+
+
+== Pasos
+
+. Haga clic en el icono de filtro para agregar filtros para enfocar los resultados que desea ver y, a continuación, haga clic en *aplicar filtro*.
++
+image::../media/filter-cold-data-2.png[filtrar datos fríos 2]
+
+. Asigne un nombre a la vista sin guardar para guardar los cambios.
+

@@ -13101,4 +13101,13 @@
   <block id="771e98bbe9589d45b337bc78adb9531d" category="paragraph">Los valores promedio por hora se usan en algunas de las páginas de la interfaz de usuario y se conservan durante 180 días.</block>
   <block id="0ba3af5961ef4af07c36ce128bba2523" category="paragraph">Análisis de previsión y eliminación de datos</block>
   <block id="ba21aa231e8c432979cf2df4929fbc1f" category="paragraph">Todos los días después de medianoche</block>
+  <block id="d2a94210021c8b039ff02205332050d6" category="list-text">Detenga el servicio Unified Manager y el servicio MySQL asociado en este orden:</block>
+  <block id="404da40c487927dba2ac8fbeaf4164c7" category="paragraph"><block ref="82c3764445bb3b06901e7b63a3d77b33" prefix="" category="inline-code"></block></block>
+  <block id="67c3532937b08ee6ee4886253d23ae77" category="paragraph"><block ref="0c8678e149988f32ce26363dd973e3e4" prefix="" category="inline-code"></block></block>
+  <block id="9598c79c23eecd03d44d0bc68e248fac" category="paragraph"><block ref="fe1af313f8dcd22f206587251241e628" prefix="" category="inline-code"></block></block>
+  <block id="bc3bdda2dda9f3fd07e80e72f7823d5c" category="list-text">Inicie los servicios de MySQL y Unified Manager en el siguiente orden:</block>
+  <block id="c296640e14086f0c65597a8f86200a7f" category="paragraph"><block ref="150805955ea8d01043ed67741faa3231" prefix="" category="inline-code"></block></block>
+  <block id="9189a17a0b9197d3243162eb3951a42e" category="paragraph"><block ref="95f8b16a4dbd2fadc67eaff9a5242c74" prefix="" category="inline-code"></block></block>
+  <block id="1808b5aaf7bd49816b66667808cd4cc7" category="paragraph"><block ref="b506087ff19db2de96b73b035cc1d174" prefix="" category="inline-code"></block></block>
+  <block id="228689b16f6e524fb9ed06d81f33db6b" category="paragraph"><block ref="7e3bc202e89677c6d62e218685393bf5" prefix="" category="inline-code"></block> Es un programa daemon requerido para iniciar y detener el servidor MySQL.</block>
 </blocks>

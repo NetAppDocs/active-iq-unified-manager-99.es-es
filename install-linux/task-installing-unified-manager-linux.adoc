@@ -93,7 +93,7 @@ En el caso del sistema Red Hat Enterprise Linux 8, si tiene repositorios interno
 ----
 # sudo yum --disablerepo=rhel-8-for-x86_64-appstream-rpms install  mysql-community-server
 ----
-. Debe realizar <<STEP_EFB6C72C92504ED68EFE5AE44E710D98,paso 7>>_only_ si su sistema no está conectado a internet y tiene que descargar manualmente los paquetes necesarios para su instalación. Si su sistema tiene acceso a Internet y todos los paquetes necesarios están disponibles, vaya a. <<STEP_84638F64625B460D9B39BB07971C2480,paso 8>>. Para los sistemas que no están conectados a Internet o que no utilizan los repositorios de Red Hat Enterprise Linux, realice los siguientes pasos para determinar si falta algún paquete necesario y, a continuación, descargue dichos paquetes:
+. Debe realizar el paso 7 _only_ si su sistema no está conectado a Internet y tiene que descargar manualmente los paquetes necesarios para su instalación. Si su sistema tiene acceso a Internet y todos los paquetes necesarios están disponibles, vaya al paso 8. Para los sistemas que no están conectados a Internet o que no utilizan los repositorios de Red Hat Enterprise Linux, realice los siguientes pasos para determinar si falta algún paquete necesario y, a continuación, descargue dichos paquetes:
 +
 .. En el sistema en el que está instalando Unified Manager, consulte la lista de paquetes disponibles y no disponibles: `yum install netapp-um<version\>.x86_64.rpm --assumeno`
 +

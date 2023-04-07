@@ -55,4 +55,4 @@ Se le pregunta si desea cambiar los puertos y reiniciar Unified Manager ahora.
 
 == Resultados
 
-Una vez realizado este cambio, los usuarios deben incluir el nuevo número de puerto en la URL para acceder a la interfaz de usuario web de Unified Manager, por ejemplo, _https://host.company.com:1234_, _https://12.13.14.15:1122_ o _https://[2001:db8:0:1]:2123_.
+Después de este cambio, los usuarios deben incluir el nuevo número de puerto en la URL para acceder a la interfaz de usuario web de Unified Manager, por ejemplo: +https://host.company.com:1234+, +https://12.13.14.15:1122+ o +https://[2001:db8:0:1]:2123+.

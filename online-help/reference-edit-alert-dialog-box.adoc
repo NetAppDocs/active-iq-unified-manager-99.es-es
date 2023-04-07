@@ -50,7 +50,7 @@ Permite excluir recursos para los que no desea activar alertas. Por ejemplo, pue
 +
 [NOTE]
 ====
-La ficha excluir sólo se muestra cuando se seleccionan todos los recursos de un tipo de recurso en particular, por ejemplo, <<All Volumes>> o. <<All Volumes whose name contains '_xyz_'>>.
+La pestaña exclude se muestra solo cuando selecciona todos los recursos de un tipo de recurso particular, por ejemplo, \<<All Volumes>> o \<<All Volumes whose name contains '_xyz_'>>.
 
 ====
 

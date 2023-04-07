@@ -37,7 +37,7 @@ Realice los siguientes pasos en el cuadro de diálogo Agregar alerta:
 . Haga clic en *Recursos* y, a continuación, seleccione la ficha *incluir*.
 +
 .. Seleccione *volumen* en la lista desplegable y, a continuación, introduzca `vol1` En el campo *Nombre contiene* para mostrar los volúmenes cuyo nombre contiene "'vol1'".
-.. Seleccione *<<All Volumes whose name contains 'vol1'>>* Desde el área *Recursos disponibles*, y muévalos al área *Recursos seleccionados*.
+.. Seleccione *\<<All Volumes whose name contains 'vol1'>>* en el área *Recursos disponibles* y muévalos al área *Recursos seleccionados*.
 
 
 . Seleccione la ficha *excluir*, seleccione *volumen*, introduzca `vs1-dr` En el campo *Nombre contiene* y, a continuación, haga clic en *Agregar*.

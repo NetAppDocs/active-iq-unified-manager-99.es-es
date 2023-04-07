@@ -24,7 +24,7 @@ Debe proporcionar una descripción de la alerta para ayudarle a realizar un segu
 Debe decidir qué recurso físico o lógico requiere una alerta. Puede incluir y excluir recursos, según sea necesario. Por ejemplo, si desea supervisar de cerca los agregados mediante la configuración de una alerta, debe seleccionar los agregados necesarios de la lista de recursos.
 
 +
-Si selecciona una categoría de recursos, por ejemplo, *<<All User or Group Quotas>>*, entonces usted recibirá alertas para todos los objetos de esa categoría.
+Si selecciona una categoría de recursos, por ejemplo, *+<<All User or Group Quotas>>+*, entonces recibirá alertas para todos los objetos de esa categoría.
 
 +
 [NOTE]

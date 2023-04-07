@@ -32,7 +32,7 @@ En algunos casos, en la descripción del evento se proporciona un motivo para el
 Para eventos de rendimiento dinámicos, esta sección muestra iconos que representan los componentes lógicos y físicos del clúster. Si un componente es objeto de disputa, su icono está en un círculo y se resalta en rojo.
 
 +
-Consulte link:concept-cluster-components-and-why-they-can-be-in-contention.adoc["Los componentes del clúster y el motivo por los que pueden estar en contención"] para obtener una descripción de los componentes que se muestran aquí.
+Consulte xref:concept-cluster-components-and-why-they-can-be-in-contention.adoc[Los componentes del clúster y el motivo por los que pueden estar en contención] para obtener una descripción de los componentes que se muestran aquí.
 
 
 

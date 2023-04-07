@@ -10,8 +10,7 @@ summary:
 :imagesdir: ../media/
 
 
-* *Edición*
-+
+[role="lead"]
 Cuando se realiza una operación relacionada con la autenticación, como agregar, editar, eliminar o probar usuarios o grupos remotos, se muestra el siguiente mensaje de error: `User not found`.
 
 * *Causa*

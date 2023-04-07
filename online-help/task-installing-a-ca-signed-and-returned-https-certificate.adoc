@@ -44,7 +44,7 @@ Si la validez del certificado para el que se creó una CSR es superior a 397 dí
 . En el cuadro de diálogo que aparece, haga clic en *elegir archivo...* para localizar el archivo que se va a cargar.
 . Seleccione el archivo y haga clic en *instalar* para instalarlo.
 +
-link:concept-installing-a-https-certificate-generated-using-external-tools.dita["concept-installing-a-https-certificate-generated-using-external-tools.dita"]
+Para obtener más información, consulte link:concept-installing-a-https-certificate-generated-using-external-tools.html["Instalar un certificado HTTPS generado con herramientas externas"]
 
 
 

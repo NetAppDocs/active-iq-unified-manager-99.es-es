@@ -10,8 +10,7 @@ summary:
 :imagesdir: ../media/
 
 
-* *Edición*
-+
+[role="lead"]
 Al realizar una operación relacionada con la autenticación, como agregar, editar, eliminar o probar usuarios o grupos remotos, puede aparecer el siguiente mensaje de error: `Unknown authentication error`.
 
 * *Causa*

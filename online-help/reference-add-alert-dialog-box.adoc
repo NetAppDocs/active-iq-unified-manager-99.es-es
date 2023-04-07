@@ -48,7 +48,7 @@ Le permite incluir los recursos para los que desea activar alertas. Puede especi
 Permite excluir recursos para los que no desea activar alertas. Por ejemplo, puede excluir todos los volúmenes cuyo nombre contenga la cadena "'xyz'".
 
 +
-La ficha excluir sólo se muestra cuando se seleccionan todos los recursos de un tipo de recurso en particular: Por ejemplo, <<All Volumes>> o. <<All Volumes whose name contains '_xyz_'>>.
+La pestaña exclude se muestra solo cuando selecciona todos los recursos de un tipo de recurso particular: Por ejemplo, \<<All Volumes>> o \<<All Volumes whose name contains '_xyz_'>>.
 
 +
 Si un recurso cumple las reglas de inclusión y exclusión especificadas, la regla de exclusión tiene prioridad sobre la regla de inclusión y no se genera la alerta para el evento.

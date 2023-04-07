@@ -10,8 +10,7 @@ summary:
 :imagesdir: ../media/
 
 
-* *Edición*
-+
+[role="lead"]
 Cuando selecciona otros como servicio de autenticación, el usuario y groupObjectClass retienen los valores de la plantilla seleccionada anteriormente. Si el servidor LDAP no utiliza los mismos valores, es posible que se produzca un error en la operación.
 
 * *Causa*

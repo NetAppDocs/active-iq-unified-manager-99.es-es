@@ -81,7 +81,7 @@ Realice los siguientes pasos en el cuadro de diálogo Agregar alerta:
 . Haga clic en *Recursos* y, en la ficha incluir, seleccione *volúmenes* en la lista desplegable.
 +
 .. Introduzca `abc` En el campo *Nombre contiene* para mostrar los volúmenes cuyo nombre contiene "'abc'".
-.. Seleccione *<<All Volumes whose name contains 'abc'>>* Desde el área Recursos disponibles y muévalos al área Recursos seleccionados.
+.. Seleccione *\<<All Volumes whose name contains 'abc'>>* en el área Available Resources y muévalos al área Selected Resources.
 .. Haga clic en *excluir* e introduzca `xyz` En el campo *Nombre contiene* y, a continuación, haga clic en *Agregar*.
 
 

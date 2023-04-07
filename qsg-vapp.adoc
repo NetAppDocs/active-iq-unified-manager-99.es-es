@@ -8,6 +8,9 @@ summary: Guía de inicio rápido para Unified Manager en plataforma VMware vSphe
 :allow-uri-read: 
 
 
+[role="lead"]
+Puede descargar la `.tar` archivo que contiene un certificado raíz, un `README` archivo, y una `OVA` Archivar y poner en marcha Unified Manager como dispositivo virtual.
+
 
 
 == Requisitos del sistema

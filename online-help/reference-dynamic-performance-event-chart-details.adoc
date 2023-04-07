@@ -22,7 +22,7 @@ Los gráficos de latencia y actividades muestran los nombres de las cargas de tr
 Cuando se ordena según la desviación máxima en latencia, las cargas de trabajo definidas por el sistema no se muestran en la tabla, ya que la latencia solo se aplica a las cargas de trabajo definidas por el usuario. Las cargas de trabajo con valores bajos de latencia no se muestran en la tabla.
 
 ====
-Para obtener más información sobre los umbrales de rendimiento dinámico, consulte link:reference-performance-event-analysis-and-notification.adoc["Qué eventos son"]. Para obtener información acerca de cómo Unified Manager clasifica las cargas de trabajo y determina el orden de clasificación, consulte xref:concept-how-unified-manager-determines-the-performance-impact-for-an-incident.adoc[La forma en que Unified Manager determina el impacto en el rendimiento de un evento].
+Para obtener más información sobre los umbrales de rendimiento dinámico, consulte xref:reference-performance-event-analysis-and-notification.adoc[Qué eventos son]. Para obtener información acerca de cómo Unified Manager clasifica las cargas de trabajo y determina el orden de clasificación, consulte xref:concept-how-unified-manager-determines-the-performance-impact-for-an-incident.adoc[La forma en que Unified Manager determina el impacto en el rendimiento de un evento].
 
 Los datos en los gráficos muestran 24 horas de estadísticas de rendimiento antes de la última vez que se analizó el evento. Los valores reales y esperados para cada carga de trabajo se basan en el momento en el que participó la carga de trabajo en el evento. Por ejemplo, es posible que una carga de trabajo participe en un evento después de que se detecte el evento, por lo que es posible que sus estadísticas de rendimiento no coincidan con los valores en el momento de la detección de eventos. De forma predeterminada, las cargas de trabajo se ordenan por desviación máxima (mayor) en la latencia.
 
@@ -39,7 +39,7 @@ Muestra el impacto del evento en la latencia de la carga de trabajo durante el �
 
 ** *Columna de uso de componentes*
 +
-Muestra detalles acerca del uso de la carga de trabajo del componente de clúster en disputa. En los gráficos, el uso real es una línea azul. Una barra roja resalta la duración del evento, desde el tiempo de detección hasta el último tiempo analizado. Para obtener más información, consulte link:reference-workload-performance-measurement-values.adoc["Mediciones de rendimiento de las cargas de trabajo"].
+Muestra detalles acerca del uso de la carga de trabajo del componente de clúster en disputa. En los gráficos, el uso real es una línea azul. Una barra roja resalta la duración del evento, desde el tiempo de detección hasta el último tiempo analizado. Para obtener más información, consulte xref:reference-workload-performance-measurement-values.adoc[Mediciones de rendimiento de las cargas de trabajo].
 
 +
 [NOTE]

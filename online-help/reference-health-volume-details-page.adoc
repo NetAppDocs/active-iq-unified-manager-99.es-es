@@ -15,9 +15,6 @@ Puede usar la página de detalles Volume / Health para ver información detallad
 
 Debe tener el rol de administrador de aplicaciones o de administrador del almacenamiento.
 
-* <<reference-health-volume-details-page,Panel Related Groups>>
-
-
 
 
 == Botones de comando

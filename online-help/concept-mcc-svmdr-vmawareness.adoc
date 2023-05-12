@@ -30,7 +30,7 @@ xref:concept-managing-and-monitoring-metrocluster-configurations.adoc[Gestionar 
 
 * La configuración necesaria debe completarse en ONTAP y vCenter Server. Para obtener información, consulte la documentación de ONTAP y vCenter.
 +
-https://docs.netapp.com/ontap-9/index.jsp["Centro de documentación de ONTAP 9"]
+https://["Centro de documentación de ONTAP 9"]
 
 
 
@@ -63,7 +63,7 @@ En caso de recuperación, es necesario sincronizar los datos entre los volúmene
 Para obtener información sobre la configuración, consulte la documentación de ONTAP y vCenter Server.
 
 +
-https://docs.netapp.com/ontap-9/index.jsp["Centro de documentación de ONTAP 9"]
+https://["Centro de documentación de ONTAP 9"]
 
 
 

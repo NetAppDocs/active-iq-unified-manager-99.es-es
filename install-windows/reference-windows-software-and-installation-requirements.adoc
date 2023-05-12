@@ -33,7 +33,7 @@ Puede instalar Unified Manager en las siguientes ediciones de Windows:
 
 Tenga en cuenta que Windows Server 2012 no es compatible como lo era en versiones anteriores. Consulte la matriz de interoperabilidad para ver la lista completa y más actual de versiones de Windows compatibles.
 
-http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+http://["mysupport.netapp.com/matrix"]
 
 El servidor debe estar dedicado a ejecutar Unified Manager. No se deben instalar otras aplicaciones en el servidor.
 

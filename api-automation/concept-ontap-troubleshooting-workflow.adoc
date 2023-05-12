@@ -24,7 +24,7 @@ Antes de ejecutar los pasos del flujo de trabajo, asegúrese de lo siguiente:
 
 xref:concept-gateway-apis.adoc[Acceso a API de ONTAP a través de acceso de proxy]
 
-* Conoce el uso de las API de REST de ONTAP. Para obtener información sobre el uso de las API de REST de ONTAP, consulte https://docs.netapp.com/us-en/ontap-automation/index.html["Documentación de automatización de ONTAP"].
+* Conoce el uso de las API de REST de ONTAP. Para obtener información sobre el uso de las API de REST de ONTAP, consulte https://["Documentación de automatización de ONTAP"].
 * Es administrador de aplicaciones.
 * El clúster en el cual desea ejecutar las operaciones de API REST es compatible con ONTAP 9.5 o una versión posterior, y el clúster se añade a Unified Manager a HTTPS.
 

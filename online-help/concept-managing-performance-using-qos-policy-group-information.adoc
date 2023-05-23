@@ -15,4 +15,4 @@ Unified Manager permite ver los grupos de políticas de calidad de servicio (QoS
 
 Para obtener más información acerca del ajuste de la configuración de QoS, consulte la _ONTAP 9 Guía completa de supervisión del rendimiento_.
 
-http://["Guía completa de supervisión del rendimiento de ONTAP 9"]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["Guía completa de supervisión del rendimiento de ONTAP 9"]

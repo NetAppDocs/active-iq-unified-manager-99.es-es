@@ -85,4 +85,4 @@ La pantalla muestra el nombre de la política de organización en niveles de Fab
 
 Para obtener más información acerca de los agregados de FabricPool, consulte la _ONTAP 9 Guía completa de discos y agregados.
 
-http://["Guía completa de discos y agregados de ONTAP 9"]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html["Guía completa de discos y agregados de ONTAP 9"]

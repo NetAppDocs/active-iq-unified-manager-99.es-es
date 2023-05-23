@@ -25,7 +25,7 @@ Unified Manager busca un nuevo archivo de reglas de Active IQ automáticamente y
 
 == Acerca de esta tarea
 
-Se recomienda descargar un nuevo archivo de reglas aproximadamente una vez al mes para asegurarse de que sus sistemas de almacenamiento están protegidos y de que se ejecutan de forma óptima. El archivo de reglas está ubicado en el directorio: http://[]
+Se recomienda descargar un nuevo archivo de reglas aproximadamente una vez al mes para asegurarse de que sus sistemas de almacenamiento están protegidos y de que se ejecutan de forma óptima. El archivo de reglas está ubicado en el directorio: http://mysupport.netapp.com/NOW/public/unified_manager/bin/secure_rules.zip[]
 
 
 

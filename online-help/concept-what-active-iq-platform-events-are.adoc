@@ -17,4 +17,4 @@ Unified Manager comprueba si hay un nuevo archivo de reglas automáticamente y s
 
 Estos eventos de Active IQ no se superponen con los eventos existentes de Unified Manager e identifican incidentes o riesgos relacionados con la configuración, el cableado, las mejores prácticas y los problemas de disponibilidad del sistema.
 
-Active IQ de NetApp es un servicio basado en cloud que proporciona análisis predictivos y soporte proactivo para optimizar las operaciones de los sistemas de almacenamiento en el cloud híbrido de NetApp. Consulte https://["Active IQ de NetApp"] si quiere más información.
+Active IQ de NetApp es un servicio basado en cloud que proporciona análisis predictivos y soporte proactivo para optimizar las operaciones de los sistemas de almacenamiento en el cloud híbrido de NetApp. Consulte https://www.netapp.com/us/products/data-infrastructure-management/active-iq.aspx["Active IQ de NetApp"] si quiere más información.

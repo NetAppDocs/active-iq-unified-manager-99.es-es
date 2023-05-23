@@ -37,6 +37,6 @@ La herramienta muestra el contenido de `/support` directorio, así como todos lo
 
 *Información relacionada*
 
-https://["Filezilla - https://filezilla-project.org/"]
+https://filezilla-project.org/["Filezilla - https://filezilla-project.org/"]
 
-http://["WinSCP - http://winscp.net"]
+http://winscp.net["WinSCP - http://winscp.net"]

@@ -19,7 +19,7 @@ settings:
   - name: Unified Manager
     url: "/oncommand-unified-manager-95"
     version-number: '9.5'
-  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr
+  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr,it-it
 sidebar:
   entries:
   - title: Documentos de Active IQ Unified Manager 9.9

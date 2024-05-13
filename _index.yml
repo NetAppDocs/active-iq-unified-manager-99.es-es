@@ -1,0 +1,46 @@
+---
+indexpage:
+  title: Documentación de Active IQ Unified Manager
+  summary: Documentación para Active IQ Unified Manager 9,9.
+  keywords: activeiq unified manager, install, vmware vsphere, linux, windows
+  lead: Active IQ Unified Manager (Unified Manager y anteriormente OnCommand Unified
+    Manager) le permite supervisar y gestionar el estado y el rendimiento de sus sistemas
+    de almacenamiento de ONTAP desde una única interfaz. Esta biblioteca de documentación
+    incluye información para la versión 9,9.
+  tiles:
+  - title: Manos a la obra
+    links:
+    - title: Notas de la versión
+      url: release-notes.html
+    - title: Instalación rápida para VMware vSphere
+      url: qsg-vapp.html
+    - title: Instalación de inicio rápido para Linux
+      url: qsg-linux.html
+    - title: Instalación de inicio rápido para Windows
+      url: qsg-windows.html
+  - title: Instale y configure Unified Manager
+    links:
+    - title: Instale y actualice en sistemas VMware vSphere
+      url: install-vapp/concept-requirements-for-installing-unified-manager.html
+    - title: Instalación y actualización en sistemas Linux
+      url: install-linux/concept-requirements-for-installing-unified-manager.html
+    - title: Instalar y actualizar en sistemas Windows
+      url: install-windows/concept-requirements-for-installing-unified-manager.html
+    - title: Configure Unified Manager
+      url: config/concept-configuring-unified-manager.html
+  - title: Supervisión del rendimiento
+    links:
+    - title: Umbrales de rendimiento
+      url: performance-checker/concept-managing-performance-thresholds.html
+    - title: Rendimiento del clúster
+      url: performance-checker/concept-monitoring-cluster-performance-from-the-dashboard.html
+    - title: Grupo de políticas de calidad de servicio
+      url: performance-checker/concept-managing-performance-using-qos-policy-group-information.html
+  - title: Más recursos
+    links:
+    - title: Vídeos de Unified Manager
+      url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7mp3jFSg0IJgo3oeDQRY-Gl
+    - title: Blogs de Unified Manager
+      url: https://www.netapp.com/blog/#q=active%20iq%20unified%20manager&t=Blogs&sort=%40publish_date_mktg%20descending&layout=card&f:@facet_language_mktg=[English]
+    - title: Documentación para la versión más reciente de Active IQ Unified Manager
+      url: https://docs.netapp.com/us-en/active-iq-unified-manager/index.html

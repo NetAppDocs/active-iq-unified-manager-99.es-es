@@ -3481,7 +3481,6 @@
   <block id="e81c4e4f2b7b93b481e13a8553c2ae1b" category="paragraph">o.</block>
   <block id="dd854846aea94ba1a105f5cf0285e3c9" category="paragraph"><block ref="067d2b4b576ab1dc248b6bc8a80c9131" prefix="" category="inline-code"></block></block>
   <block id="9dad4be1966363eea84f7bd4f788ae07" category="paragraph">Al finalizar la instalación, se muestra la información para conectarse a la interfaz de usuario web de Unified Manager. Si no puede conectarse a la interfaz de usuario web, consulte<block ref="c47c7c7383225ab55ff591cb59c41e6b" prefix=" " category="inline-code"></block> archivo empaquetado con el software para obtener más información acerca de las restricciones del puerto 443.</block>
-  <block id="91d9102f2b20d2487525cb47bf7d79a5" category="summary">Documentación para documentos de Active IQ Unified Manager, documentos de AIUM y de UM</block>
   <block id="4a58c6ba2ac7cf0f2cd001d223b14e50" category="doc">Documentación de Active IQ Unified Manager</block>
   <block id="f00ccaab775ffb93da4d04a527962c06" category="summary">Puede realizar una actualización a una versión más reciente de MySQL en el servidor Linux en el que está instalado Unified Manager para obtener soluciones frente a vulnerabilidades de seguridad. Si la versión instalada de MySQL en el sistema es anterior a 8.0.25, el proceso de actualización de Unified Manager 9.9 actualiza automáticamente MySQL a 8.0.25. No debe ejecutar una actualización independiente de MySQL desde una versión anterior a la versión 8.0.25.</block>
   <block id="bae43629fc80334bfb253eda91870d0a" category="doc">Actualizar MySQL en Linux</block>
@@ -13100,4 +13099,20 @@
   <block id="5c54cb8f927a6c5a90622e1c7bd0bda5" category="paragraph">NTP</block>
   <block id="4a8598febd97e32d0698051cd71f02fa" category="paragraph">123/UDP</block>
   <block id="cb2a1ba65000d6677f2856e06530ac31" category="paragraph">Se utiliza para sincronizar la hora en el servidor de Unified Manager con un servidor de hora NTP externo. (Solo sistemas VMware)</block>
+  <block id="67fde88ecdbd1fc85837595186b984a3" category="sidebar">Active IQ Unified Manager (Unified Manager y anteriormente OnCommand Unified Manager) le permite supervisar y gestionar el estado y el rendimiento de sus sistemas de almacenamiento de ONTAP desde una única interfaz. Esta biblioteca de documentación incluye información para la versión 9,9.</block>
+  <block id="bd37abac39311a4e4bf00abc8bea791a" category="sidebar">Documentación para Active IQ Unified Manager 9,9.</block>
+  <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">Notas de la versión</block>
+  <block id="828adfb3faf6bb0d6a86602f92d97f36" category="sidebar">Instale y configure Unified Manager</block>
+  <block id="e53d36a21edd215027333eb7ea60fbc1" category="sidebar">Instale y actualice en sistemas VMware vSphere</block>
+  <block id="e16bdcc955b9441255836a75b797d710" category="sidebar">Instalación y actualización en sistemas Linux</block>
+  <block id="5088a593884b9f5b6d52f0765c1c1554" category="sidebar">Instalar y actualizar en sistemas Windows</block>
+  <block id="40a3a0e70dc43e9efc5b6e90644739dd" category="sidebar">Configure Unified Manager</block>
+  <block id="d8be01b779b72fb7ad353d45426e7fe3" category="sidebar">Supervisión del rendimiento</block>
+  <block id="eb7e776ba84f97e32ca2522829847d83" category="sidebar">Umbrales de rendimiento</block>
+  <block id="e4b3ba4cc2976d5d2c21b446db787620" category="sidebar">Rendimiento del clúster</block>
+  <block id="13b1a36194bc49ac73c5077e1c1f6dd7" category="sidebar">Grupo de políticas de calidad de servicio</block>
+  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">Más recursos</block>
+  <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Vídeos de Unified Manager</block>
+  <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Blogs de Unified Manager</block>
+  <block id="c0fd3a67a0f9d526734eae8cf8142cb4" category="sidebar">Documentación para la versión más reciente de Active IQ Unified Manager</block>
 </blocks>

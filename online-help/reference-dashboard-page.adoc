@@ -53,7 +53,7 @@ Este panel muestra el número total de cargas de trabajo conformes y no conforme
 
 * *Panel de seguridad*
 +
-Al ver todos los clústeres, este panel muestra el número de clústeres que cumplen las normativas y no cumplen las normativas, el número de equipos virtuales de almacenamiento que cumplen las normativas y no cumplen las normativas, y el número de volúmenes cifrados y no cifrados. El cumplimiento se basa en la http://www.netapp.com/us/media/tr-4569.pdf["Guía de fortalecimiento de la seguridad de NetApp para ONTAP 9"]. Haga clic en la flecha derecha de la parte superior del panel para ver los detalles de seguridad de todos los clústeres de la página Seguridad.
+Al ver todos los clústeres, este panel muestra el número de clústeres que cumplen las normativas y no cumplen las normativas, el número de equipos virtuales de almacenamiento que cumplen las normativas y no cumplen las normativas, y el número de volúmenes cifrados y no cifrados. El cumplimiento se basa en https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf["Guía de fortalecimiento de la seguridad de NetApp para ONTAP 9"^]la . Haga clic en la flecha derecha de la parte superior del panel para ver los detalles de seguridad de todos los clústeres de la página Seguridad.
 
 +
 Al ver un único clúster, este panel muestra si el clúster cumple o no con las normativas, el número de equipos virtuales de almacenamiento que cumplen las normativas y no cumplen las normativas, y el número de volúmenes cifrados y no cifrados. Haga clic en la flecha derecha de la parte superior del panel para ver los detalles de seguridad del clúster en la página Seguridad.
